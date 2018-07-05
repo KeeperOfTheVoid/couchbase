@@ -1,0 +1,1666 @@
+[ns_server:info,2018-06-14T21:19:35.929Z,nonode@nohost:<0.89.0>:ns_server:init_logging:138]Started & configured logging
+[ns_server:info,2018-06-14T21:19:35.938Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]Static config terms:
+[{error_logger_mf_dir,"/opt/couchbase/var/lib/couchbase/logs"},
+ {path_config_bindir,"/opt/couchbase/bin"},
+ {path_config_etcdir,"/opt/couchbase/etc/couchbase"},
+ {path_config_libdir,"/opt/couchbase/lib"},
+ {path_config_datadir,"/opt/couchbase/var/lib/couchbase"},
+ {path_config_tmpdir,"/opt/couchbase/var/lib/couchbase/tmp"},
+ {path_config_secdir,"/opt/couchbase/etc/security"},
+ {nodefile,"/opt/couchbase/var/lib/couchbase/couchbase-server.node"},
+ {loglevel_default,debug},
+ {loglevel_couchdb,info},
+ {loglevel_ns_server,debug},
+ {loglevel_error_logger,debug},
+ {loglevel_user,debug},
+ {loglevel_menelaus,debug},
+ {loglevel_ns_doctor,debug},
+ {loglevel_stats,debug},
+ {loglevel_rebalance,debug},
+ {loglevel_cluster,debug},
+ {loglevel_views,debug},
+ {loglevel_mapreduce_errors,debug},
+ {loglevel_xdcr,debug},
+ {loglevel_xdcr_trace,error},
+ {loglevel_access,info},
+ {disk_sink_opts,
+     [{rotation,
+          [{compress,true},
+           {size,41943040},
+           {num_files,10},
+           {buffer_size_max,52428800}]}]},
+ {disk_sink_opts_json_rpc,
+     [{rotation,
+          [{compress,true},
+           {size,41943040},
+           {num_files,2},
+           {buffer_size_max,52428800}]}]},
+ {disk_sink_opts_xdcr_trace,
+     [{rotation,[{compress,false},{size,83886080},{num_files,5}]}]},
+ {net_kernel_verbosity,10}]
+[ns_server:warn,2018-06-14T21:19:35.938Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter error_logger_mf_dir, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.938Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_bindir, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.938Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_etcdir, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.938Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_libdir, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.938Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_datadir, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_tmpdir, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_secdir, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter nodefile, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_default, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_couchdb, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_ns_server, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_error_logger, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_user, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_menelaus, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_ns_doctor, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_stats, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_rebalance, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_cluster, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_views, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_mapreduce_errors, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_xdcr, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_xdcr_trace, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_access, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter disk_sink_opts, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter disk_sink_opts_json_rpc, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter disk_sink_opts_xdcr_trace, which is given from command line
+[ns_server:warn,2018-06-14T21:19:35.939Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter net_kernel_verbosity, which is given from command line
+[ns_server:info,2018-06-14T21:19:35.952Z,nonode@nohost:ns_server_cluster_sup<0.144.0>:log_os_info:start_link:25]OS type: {unix,linux} Version: {4,9,60}
+Runtime info: [{otp_release,"R16B03-1"},
+               {erl_version,"5.10.4.0.0.1"},
+               {erl_version_long,
+                   "Erlang R16B03-1 (erts-5.10.4.0.0.1) [source-53c0d14] [64-bit] [smp:4:4] [async-threads:16] [kernel-poll:true]\n"},
+               {system_arch_raw,"x86_64-unknown-linux-gnu"},
+               {system_arch,"x86_64-unknown-linux-gnu"},
+               {localtime,{{2018,6,14},{21,19,35}}},
+               {memory,
+                   [{total,110321416},
+                    {processes,9276368},
+                    {processes_used,9274592},
+                    {system,101045048},
+                    {atom,339441},
+                    {atom_used,319380},
+                    {binary,66528},
+                    {code,7716502},
+                    {ets,2245608}]},
+               {loaded,
+                   [ns_info,log_os_info,local_tasks,restartable,
+                    ns_server_cluster_sup,calendar,ale_default_formatter,
+                    'ale_logger-metakv','ale_logger-rebalance',
+                    'ale_logger-xdcr_trace','ale_logger-menelaus',
+                    'ale_logger-stats','ale_logger-json_rpc',
+                    'ale_logger-access','ale_logger-ns_server',
+                    'ale_logger-user','ale_logger-ns_doctor',
+                    'ale_logger-cluster','ale_logger-xdcr',otp_internal,
+                    ns_log_sink,io_lib_fread,ale_disk_sink,misc,couch_util,
+                    ns_server,filelib,cpu_sup,memsup,disksup,os_mon,io,
+                    release_handler,overload,alarm_handler,sasl,timer,
+                    tftp_sup,httpd_sup,httpc_handler_sup,httpc_cookie,
+                    inets_trace,httpc_manager,httpc,httpc_profile_sup,
+                    httpc_sup,ftp_sup,inets_sup,inets_app,ssl,lhttpc_manager,
+                    lhttpc_sup,lhttpc,tls_connection_sup,ssl_session_cache,
+                    ssl_pkix_db,ssl_manager,ssl_sup,ssl_app,crypto_server,
+                    crypto_sup,crypto_app,ale_error_logger_handler,
+                    'ale_logger-ale_logger','ale_logger-error_logger',
+                    beam_opcodes,beam_dict,beam_asm,beam_validator,beam_z,
+                    beam_flatten,beam_trim,beam_receive,beam_bsm,beam_peep,
+                    beam_dead,beam_split,beam_type,beam_bool,beam_except,
+                    beam_clean,beam_utils,beam_block,beam_jump,beam_a,
+                    v3_codegen,v3_life,v3_kernel,sys_core_dsetel,erl_bifs,
+                    sys_core_fold,cerl_trees,sys_core_inline,core_lib,cerl,
+                    v3_core,erl_bits,erl_expand_records,sys_pre_expand,sofs,
+                    erl_internal,sets,ordsets,erl_lint,compile,
+                    dynamic_compile,ale_utils,io_lib_pretty,io_lib_format,
+                    io_lib,ale_codegen,dict,ale,ale_dynamic_sup,ale_sup,
+                    ale_app,epp,ns_bootstrap,child_erlang,file_io_server,
+                    orddict,erl_eval,file,c,kernel_config,user_io,user_sup,
+                    supervisor_bridge,standard_error,code_server,unicode,
+                    hipe_unified_loader,gb_sets,ets,binary,code,file_server,
+                    net_kernel,global_group,erl_distribution,filename,
+                    inet_gethost_native,os,inet_parse,inet,inet_udp,
+                    inet_config,inet_db,global,gb_trees,rpc,supervisor,kernel,
+                    application_master,sys,application,gen_server,erl_parse,
+                    proplists,erl_scan,lists,application_controller,proc_lib,
+                    gen,gen_event,error_logger,heart,error_handler,
+                    erts_internal,erlang,erl_prim_loader,prim_zip,zlib,
+                    prim_file,prim_inet,prim_eval,init,otp_ring0]},
+               {applications,
+                   [{lhttpc,"Lightweight HTTP Client","1.3.0"},
+                    {os_mon,"CPO  CXC 138 46","2.2.14"},
+                    {public_key,"Public key infrastructure","0.21"},
+                    {asn1,"The Erlang ASN1 compiler version 2.0.4","2.0.4"},
+                    {kernel,"ERTS  CXC 138 10","2.16.4"},
+                    {ale,"Another Logger for Erlang","5.1.1-5723-enterprise"},
+                    {inets,"INETS  CXC 138 49","5.9.8"},
+                    {ns_server,"Couchbase server","5.1.1-5723-enterprise"},
+                    {crypto,"CRYPTO version 2","3.2"},
+                    {ssl,"Erlang/OTP SSL application","5.3.3"},
+                    {sasl,"SASL  CXC 138 11","2.3.4"},
+                    {stdlib,"ERTS  CXC 138 10","1.19.4"}]},
+               {pre_loaded,
+                   [erts_internal,erlang,erl_prim_loader,prim_zip,zlib,
+                    prim_file,prim_inet,prim_eval,init,otp_ring0]},
+               {process_count,111},
+               {node,nonode@nohost},
+               {nodes,[]},
+               {registered,
+                   [inets_sup,lhttpc_sup,code_server,ale_stats_events,
+                    lhttpc_manager,ale,application_controller,httpd_sup,
+                    release_handler,kernel_safe_sup,ale_sup,overload,
+                    standard_error,error_logger,alarm_handler,
+                    'sink-xdcr_trace',ale_dynamic_sup,'sink-disk_reports',
+                    timer_server,standard_error_sup,'sink-disk_stats',
+                    'sink-disk_xdcr_errors','sink-ns_log',crypto_server,
+                    'sink-disk_xdcr',crypto_sup,sasl_safe_sup,
+                    'sink-disk_debug',ns_server_cluster_sup,init,tftp_sup,
+                    'sink-disk_error',os_mon_sup,'sink-disk_json_rpc',inet_db,
+                    user,'sink-disk_default',tls_connection_sup,rex,
+                    'sink-disk_metakv',ssl_sup,cpu_sup,kernel_sup,memsup,
+                    'sink-disk_access_int',global_name_server,disksup,
+                    httpc_sup,'sink-disk_access',file_server_2,ssl_manager,
+                    global_group,httpc_profile_sup,httpc_manager,
+                    httpc_handler_sup,ftp_sup,sasl_sup,erl_prim_loader,
+                    local_tasks]},
+               {cookie,nocookie},
+               {wordsize,8},
+               {wall_clock,1}]
+[ns_server:info,2018-06-14T21:19:35.960Z,nonode@nohost:ns_server_cluster_sup<0.144.0>:log_os_info:start_link:27]Manifest:
+["<manifest>",
+ "  <remote fetch=\"git://github.com/blevesearch/\" name=\"blevesearch\" />",
+ "  <remote fetch=\"git://github.com/couchbase/\" name=\"couchbase\" review=\"review.couchbase.org\" />",
+ "  <remote fetch=\"ssh://git@github.com/couchbase/\" name=\"couchbase-priv\" review=\"review.couchbase.org\" />",
+ "  <remote fetch=\"git://github.com/couchbasedeps/\" name=\"couchbasedeps\" review=\"review.couchbase.org\" />",
+ "  <remote fetch=\"git://github.com/couchbaselabs/\" name=\"couchbaselabs\" review=\"review.couchbase.org\" />",
+ "  ","  <default remote=\"couchbase\" revision=\"master\" />","  ",
+ "  <project groups=\"notdefault,enterprise\" name=\"backup\" path=\"goproj/src/github.com/couchbase/backup\" remote=\"couchbase-priv\" revision=\"d0ef3ae636719ac85d91154b44b4646d767e8077\" upstream=\"spock\" />",
+ "  <project groups=\"kv\" name=\"benchmark\" remote=\"couchbasedeps\" revision=\"9e3465560240ffb242b50a47cb7f19251a12ee42\" />",
+ "  <project name=\"bitset\" path=\"godeps/src/github.com/willf/bitset\" remote=\"couchbasedeps\" revision=\"28a4168144bb8ac95454e1f51c84da1933681ad4\" />",
+ "  <project name=\"blance\" path=\"godeps/src/github.com/couchbase/blance\" revision=\"5cd1345cca3ed72f1e63d41d622fcda73e63fea8\" upstream=\"spock\" />",
+ "  <project name=\"bleve\" path=\"godeps/src/github.com/blevesearch/bleve\" remote=\"blevesearch\" revision=\"48ac9862db1c5149fc1837464b0e6ea752657d3a\" />",
+ "  <project name=\"bleve-mapping-ui\" path=\"godeps/src/github.com/blevesearch/bleve-mapping-ui\" remote=\"blevesearch\" revision=\"f551b6d4f32bb920a83dd28c705bddd5de0d03b2\" />",
+ "  <project name=\"blevex\" path=\"godeps/src/github.com/blevesearch/blevex\" remote=\"blevesearch\" revision=\"090b7a1971e18e66d8e8775c90c9534aed566ffb\" />",
+ "  <project name=\"bolt\" path=\"godeps/src/github.com/boltdb/bolt\" remote=\"couchbasedeps\" revision=\"51f99c862475898df9773747d3accd05a7ca33c1\" />",
+ "  <project name=\"buffer\" path=\"godeps/src/github.com/tdewolff/buffer\" remote=\"couchbasedeps\" revision=\"43cef5ba7b6ce99cc410632dad46cf1c6c97026e\" />",
+ "  <project groups=\"notdefault,build\" name=\"build\" path=\"cbbuild\" revision=\"26e475522800c534972746502b03b30eb2c5b2ee\" upstream=\"spock\">",
+ "    <annotation name=\"RELEASE\" value=\"spock\" />",
+ "    <annotation name=\"PRODUCT_BRANCH\" value=\"master\" />",
+ "    <annotation name=\"PRODUCT\" value=\"couchbase-server\" />",
+ "    <annotation name=\"BLD_NUM\" value=\"5723\" />",
+ "    <annotation name=\"VERSION\" value=\"5.1.1\" />","  </project>",
+ "  <project name=\"cbauth\" path=\"godeps/src/github.com/couchbase/cbauth\" revision=\"ef55ede46a9f416e54608775c9a2dc23d7f29c5c\" upstream=\"spock\" />",
+ "  <project name=\"cbflag\" path=\"godeps/src/github.com/couchbase/cbflag\" revision=\"dbeda68bf448ce8e85e52a3216f3b031ef18a4b7\" />",
+ "  <project name=\"cbft\" path=\"goproj/src/github.com/couchbase/cbft\" revision=\"cb43f8c4bb7a9d22ad511b15005f3fd3f88d7776\" />",
+ "  <project name=\"cbgt\" path=\"goproj/src/github.com/couchbase/cbgt\" revision=\"8b1e83aa7dacc5a21d54794a7333713363f0febb\" />",
+ "  <project groups=\"notdefault,enterprise\" name=\"cbq-gui\" path=\"goproj/src/github.com/couchbase/cbq-gui\" remote=\"couchbase-priv\" revision=\"7a80f6b5f6ab870e70de80a802e18c0a973e8a37\" upstream=\"spock\" />",
+ "  <project name=\"cbsummary\" path=\"goproj/src/github.com/couchbase/cbsummary\" revision=\"82da4bce50b547d0744d83f3c6b561e967a0482c\" />",
+ "  <project name=\"clog\" path=\"godeps/src/github.com/couchbase/clog\" revision=\"ef844635a21403c0a5115bfdbbfb416cc57dae51\" upstream=\"spock\" />",
+ "  <project name=\"cobra\" path=\"godeps/src/github.com/spf13/cobra\" remote=\"couchbasedeps\" revision=\"0f056af21f5f368e5b0646079d0094a2c64150f7\" />",
+ "  <project name=\"context\" path=\"godeps/src/github.com/gorilla/context\" remote=\"couchbasedeps\" revision=\"215affda49addc4c8ef7e2534915df2c8c35c6cd\" />",
+ "  <project name=\"couchbase-cli\" revision=\"9cbdd78e02fc58080a899ffde4316dabd098614e\" upstream=\"spock\" />",
+ "  <project name=\"couchdb\" revision=\"3cf258de6f4b75ba732fbb6f9df7c9d658f2a2f0\" upstream=\"spock\" />",
+ "  <project groups=\"notdefault,packaging\" name=\"couchdbx-app\" revision=\"a4b3b3e67f1374cb1c4ae89a9ab0d155556d6d93\" />",
+ "  <project groups=\"kv\" name=\"couchstore\" revision=\"843103bbb54052d4f2ae98bd5371c9c23fbcd8e3\" upstream=\"spock\" />",
+ "  <project name=\"crypto\" path=\"godeps/src/golang.org/x/crypto\" remote=\"couchbasedeps\" revision=\"f23ba3a5ee43012fcb4b92e1a2a405a92554f4f2\" />",
+ "  <project name=\"cuckoofilter\" path=\"godeps/src/github.com/seiflotfy/cuckoofilter\" remote=\"couchbasedeps\" revision=\"d04838794ab86926d32b124345777e55e6f43974\" />",
+ "  <project name=\"cznic-b\" path=\"godeps/src/github.com/cznic/b\" remote=\"couchbasedeps\" revision=\"b96e30f1b7bd34b0b9d8760798d67eca83d7f09e\" />",
+ "  <project name=\"docloader\" path=\"goproj/src/github.com/couchbase/docloader\" revision=\"4265bee8cb592765b3c0b1b208726294c9eda59a\" />",
+ "  <project name=\"dparval\" path=\"godeps/src/github.com/couchbase/dparval\" revision=\"9def03782da875a2477c05bf64985db3f19f59ae\" upstream=\"master\" />",
+ "  <project name=\"flatbuffers\" path=\"godeps/src/github.com/google/flatbuffers\" remote=\"couchbasedeps\" revision=\"1a8968225130caeddd16e227678e6f8af1926303\" />",
+ "  <project groups=\"kv\" name=\"forestdb\" revision=\"99e2edb2ea078924c3810f48a50bdc104a041d7d\" upstream=\"spock\" />",
+ "  <project name=\"geocouch\" revision=\"e41c993a9c2f915aa72dc982d4ac69b3c46bb7e9\" />",
+ "  <project name=\"ghistogram\" path=\"godeps/src/github.com/couchbase/ghistogram\" revision=\"d910dd063dd68fb4d2a1ba344440f834ebb4ef62\" upstream=\"spock\" />",
+ "  <project name=\"go-bindata-assetfs\" path=\"godeps/src/github.com/elazarl/go-bindata-assetfs\" remote=\"couchbasedeps\" revision=\"57eb5e1fc594ad4b0b1dbea7b286d299e0cb43c2\" />",
+ "  <project name=\"go-couchbase\" path=\"godeps/src/github.com/couchbase/go-couchbase\" revision=\"baa7196b14d00497d5067851267a3fb94879595b\" upstream=\"spock\" />",
+ "  <project name=\"go-curl\" path=\"godeps/src/github.com/andelf/go-curl\" remote=\"couchbasedeps\" revision=\"3b0453ce6faae42ab4d8cdb9ac1f93919c9d8d69\" upstream=\"20161221-couchbase\" />",
+ "  <project name=\"go-jsonpointer\" path=\"godeps/src/github.com/dustin/go-jsonpointer\" remote=\"couchbasedeps\" revision=\"75939f54b39e7dafae879e61f65438dadc5f288c\" />",
+ "  <project name=\"go-metrics\" path=\"godeps/src/github.com/rcrowley/go-metrics\" remote=\"couchbasedeps\" revision=\"dee209f2455f101a5e4e593dea94872d2c62d85d\" />",
+ "  <project name=\"go-porterstemmer\" path=\"godeps/src/github.com/blevesearch/go-porterstemmer\" remote=\"blevesearch\" revision=\"23a2c8e5cf1f380f27722c6d2ae8896431dc7d0e\" />",
+ "  <project name=\"go-slab\" path=\"godeps/src/github.com/couchbase/go-slab\" revision=\"1f5f7f282713ccfab3f46b1610cb8da34bcf676f\" upstream=\"master\" />",
+ "  <project name=\"go-zookeeper\" path=\"godeps/src/github.com/samuel/go-zookeeper\" remote=\"couchbasedeps\" revision=\"fa6674abf3f4580b946a01bf7a1ce4ba8766205b\" />",
+ "  <project name=\"go_json\" path=\"godeps/src/github.com/couchbase/go_json\" revision=\"35445a51ec375da433acb511df2034ede5a101d8\" />",
+ "  <project name=\"go_n1ql\" path=\"godeps/src/github.com/couchbase/go_n1ql\" revision=\"6cf4e348b127e21f56e53eb8c3faaea56afdc588\" upstream=\"master\" />",
+ "  <project name=\"gocb\" path=\"godeps/src/github.com/couchbase/gocb\" revision=\"6019ad1377ffcc81184d2457c065fd72ea7a98dc\" />",
+ "  <project name=\"gocbconnstr\" path=\"godeps/src/gopkg.in/couchbaselabs/gocbconnstr.v1\" remote=\"couchbaselabs\" revision=\"710456e087a6d497e87f41d0a9d98d6a75672186\" upstream=\"master\" />",
+ "  <project name=\"gocbcore\" path=\"godeps/src/gopkg.in/couchbase/gocbcore.v7\" revision=\"afa21ae052b8b110c65f758571e404523e9b07f9\" />",
+ "  <project name=\"godbc\" path=\"godeps/src/github.com/couchbase/godbc\" revision=\"6f14d6b74b5c6761678e7c7b3929f7e763b7fbf8\" />",
+ "  <project name=\"gofarmhash\" path=\"godeps/src/github.com/leemcloughlin/gofarmhash\" remote=\"couchbasedeps\" revision=\"0a055c5b87a8c55ce83459cbf2776b563822a942\" />",
+ "  <project name=\"goforestdb\" path=\"godeps/src/github.com/couchbase/goforestdb\" revision=\"0b501227de0e8c55d99ed14e900eea1a1dbaf899\" upstream=\"master\" />",
+ "  <project name=\"gojson\" path=\"godeps/src/github.com/dustin/gojson\" remote=\"couchbasedeps\" revision=\"af16e0e771e2ed110f2785564ae33931de8829e4\" />",
+ "  <project name=\"golang-snappy\" path=\"godeps/src/github.com/golang/snappy\" remote=\"couchbasedeps\" revision=\"723cc1e459b8eea2dea4583200fd60757d40097a\" />",
+ "  <project name=\"goleveldb\" path=\"godeps/src/github.com/syndtr/goleveldb\" remote=\"couchbasedeps\" revision=\"fa5b5c78794bc5c18f330361059f871ae8c2b9d6\" />",
+ "  <project name=\"gomemcached\" path=\"godeps/src/github.com/couchbase/gomemcached\" revision=\"3caad6d47156ff7d62c3fc03eaba683ee783e4bf\" upstream=\"spock\" />",
+ "  <project name=\"gometa\" path=\"goproj/src/github.com/couchbase/gometa\" revision=\"73108a510f7e39cb7cc167b857a3a2453ea5343b\" upstream=\"spock\" />",
+ "  <project groups=\"kv\" name=\"googletest\" remote=\"couchbasedeps\" revision=\"f397fa5ec6365329b2e82eb2d8c03a7897bbefb5\" />",
+ "  <project name=\"goskiplist\" path=\"godeps/src/github.com/ryszard/goskiplist\" remote=\"couchbasedeps\" revision=\"2dfbae5fcf46374f166f8969cb07e167f1be6273\" />",
+ "  <project name=\"gosnappy\" path=\"godeps/src/github.com/syndtr/gosnappy\" remote=\"couchbasedeps\" revision=\"156a073208e131d7d2e212cb749feae7c339e846\" />",
+ "  <project name=\"goutils\" path=\"godeps/src/github.com/couchbase/goutils\" revision=\"7a02f3df0ea980574216f469c192985a2083b957\" />",
+ "  <project name=\"goxdcr\" path=\"goproj/src/github.com/couchbase/goxdcr\" revision=\"a2a9b337cde9482ae3562f7932ae3b8caa8d067b\" upstream=\"spock\" />",
+ "  <project name=\"gtreap\" path=\"godeps/src/github.com/steveyen/gtreap\" remote=\"couchbasedeps\" revision=\"0abe01ef9be25c4aedc174758ec2d917314d6d70\" />",
+ "  <project name=\"httprouter\" path=\"godeps/src/github.com/julienschmidt/httprouter\" remote=\"couchbasedeps\" revision=\"975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e\" />",
+ "  <project name=\"indexing\" path=\"goproj/src/github.com/couchbase/indexing\" revision=\"7f5a24cf3d59387e15aeee50141212eb60642b35\" upstream=\"spock\" />",
+ "  <project name=\"jsonx\" path=\"godeps/src/gopkg.in/couchbaselabs/jsonx.v1\" remote=\"couchbaselabs\" revision=\"5b7baa20429a46a5543ee259664cc86502738cad\" upstream=\"master\" />",
+ "  <project groups=\"kv\" name=\"kv_engine\" revision=\"bbb1bc7f041fbbc19b2b5279a8856fae2d585554\" upstream=\"spock\" />",
+ "  <project name=\"levigo\" path=\"godeps/src/github.com/jmhodges/levigo\" remote=\"couchbasedeps\" revision=\"1ddad808d437abb2b8a55a950ec2616caa88969b\" />",
+ "  <project name=\"liner\" path=\"godeps/src/github.com/peterh/liner\" remote=\"couchbasedeps\" revision=\"3681c2a912330352991ecdd642f257efe5b85518\" />",
+ "  <project name=\"liner\" path=\"godeps/src/github.com/sbinet/liner\" remote=\"couchbasedeps\" revision=\"d9335eee40a45a4f5d74524c90040d6fe6013d50\" />",
+ "  <project name=\"minify\" path=\"godeps/src/github.com/tdewolff/minify\" remote=\"couchbasedeps\" revision=\"ede45cc53f43891267b1fe7c689db9c76d4ce0fb\" />",
+ "  <project name=\"mmap-go\" path=\"godeps/src/github.com/edsrzf/mmap-go\" remote=\"couchbasedeps\" revision=\"935e0e8a636ca4ba70b713f3e38a19e1b77739e8\" />",
+ "  <project name=\"moss\" path=\"godeps/src/github.com/couchbase/moss\" revision=\"867412a2af63ef98bd1388bd7dcc5bd43fc457b7\" upstream=\"spock\" />",
+ "  <project name=\"mossScope\" path=\"godeps/src/github.com/couchbase/mossScope\" revision=\"7f2d5778cdb05336441ed78fc059b7412c6623b0\" upstream=\"spock\" />",
+ "  <project name=\"mousetrap\" path=\"godeps/src/github.com/inconshreveable/mousetrap\" remote=\"couchbasedeps\" revision=\"76626ae9c91c4f2a10f34cad8ce83ea42c93bb75\" />",
+ "  <project groups=\"kv\" name=\"moxi\" revision=\"cd8da46b9b953800d430c8b0aa4667790727ed6f\" upstream=\"master\" />",
+ "  <project name=\"mux\" path=\"godeps/src/github.com/gorilla/mux\" remote=\"couchbasedeps\" revision=\"043ee6597c29786140136a5747b6a886364f5282\" />",
+ "  <project name=\"net\" path=\"godeps/src/golang.org/x/net\" remote=\"couchbasedeps\" revision=\"8968c61983e8f51a91b8c0ef25bf739278c89634\" />",
+ "  <project name=\"nitro\" path=\"goproj/src/github.com/couchbase/nitro\" revision=\"4f5714e663ad109e0ad1bdcbcf48d226179d62f5\" upstream=\"spock\" />",
+ "  <project name=\"npipe\" path=\"godeps/src/github.com/natefinch/npipe\" remote=\"couchbasedeps\" revision=\"272c8150302e83f23d32a355364578c9c13ab20f\" />",
+ "  <project name=\"ns_server\" revision=\"d74774ec046770a216f2cb8b602fe3e40ce48c09\" upstream=\"spock\" />",
+ "  <project name=\"parse\" path=\"godeps/src/github.com/tdewolff/parse\" remote=\"couchbasedeps\" revision=\"0334a869253aca4b3a10c56c3f3139b394aec3a9\" />",
+ "  <project name=\"pflag\" path=\"godeps/src/github.com/spf13/pflag\" remote=\"couchbasedeps\" revision=\"a232f6d9f87afaaa08bafaff5da685f974b83313\" />",
+ "  <project groups=\"kv\" name=\"phosphor\" revision=\"f4c71b44bfa05fcb904026e29367b10087b3753d\" />",
+ "  <project groups=\"notdefault,enterprise\" name=\"plasma\" path=\"goproj/src/github.com/couchbase/plasma\" remote=\"couchbase-priv\" revision=\"8a6dce293895f2ae7c1093fbc0318a4e6f35ec01\" upstream=\"spock\" />",
+ "  <project groups=\"kv\" name=\"platform\" revision=\"4abe0d4bb782c095c821749d3bd3f1deb7d156c2\" upstream=\"spock\" />",
+ "  <project name=\"protobuf\" path=\"godeps/src/github.com/golang/protobuf\" remote=\"couchbasedeps\" revision=\"655cdfa588ea190e901bc5590e65d5621688847c\" />",
+ "  <project name=\"query\" path=\"goproj/src/github.com/couchbase/query\" revision=\"dba28197b6c84a0a25621889202142ad7d168675\" upstream=\"spock\" />",
+ "  <project name=\"query-ui\" revision=\"b476488f9b64deee8c1c15e0fa392c1fa457a582\" upstream=\"spock\" />",
+ "  <project name=\"retriever\" path=\"godeps/src/github.com/couchbase/retriever\" revision=\"e3419088e4d3b4fe3aad3b364fdbe9a154f85f17\" upstream=\"master\" />",
+ "  <project name=\"roaring\" path=\"godeps/src/github.com/RoaringBitmap/roaring\" remote=\"couchbasedeps\" revision=\"dd6b41e153cc91db0440d4155626f8e2c2f298a4\" />",
+ "  <project name=\"segment\" path=\"godeps/src/github.com/blevesearch/segment\" remote=\"blevesearch\" revision=\"762005e7a34fd909a84586299f1dd457371d36ee\" />",
+ "  <project groups=\"kv\" name=\"sigar\" revision=\"79ee06355851960858ed76f5633b661a9eff80f9\" />",
+ "  <project name=\"strconv\" path=\"godeps/src/github.com/tdewolff/strconv\" remote=\"couchbasedeps\" revision=\"9b189f5be77f33c46776f24dbddb2a7ab32af214\" />",
+ "  <project groups=\"kv\" name=\"subjson\" revision=\"85ed622c5959fa1c20c83993aec0e2293d7fd20f\" upstream=\"master\" />",
+ "  <project groups=\"solaris,notdefault\" name=\"sys\" path=\"godeps/src/golang.org/x/sys\" remote=\"couchbasedeps\" revision=\"9d4e42a20653790449273b3c85e67d6d8bae6e2e\" />",
+ "  <project name=\"testrunner\" revision=\"6bb490aee050b6661738139e89e03110fd3000b4\" upstream=\"master\" />",
+ "  <project name=\"text\" path=\"godeps/src/golang.org/x/text\" remote=\"couchbasedeps\" revision=\"601048ad6acbab6cedd582db09b8c4839ff25b15\" />",
+ "  <project groups=\"kv\" name=\"tlm\" revision=\"f7c0947e531e99a8b7668f5282ff13156eb77ef4\" upstream=\"spock\">",
+ "    <copyfile dest=\"GNUmakefile\" src=\"GNUmakefile\" />",
+ "    <copyfile dest=\"Makefile\" src=\"Makefile\" />",
+ "    <copyfile dest=\"CMakeLists.txt\" src=\"CMakeLists.txt\" />",
+ "    <copyfile dest=\".clang-format\" src=\"dot-clang-format\" />",
+ "  </project>",
+ "  <project name=\"ts\" path=\"godeps/src/github.com/olekukonko/ts\" remote=\"couchbasedeps\" revision=\"ecf753e7c962639ab5a1fb46f7da627d4c0a04b8\" />",
+ "  <project groups=\"notdefault,packaging\" name=\"voltron\" remote=\"couchbase-priv\" revision=\"a383d165c6cd62a889687a7047aae67d123a9a80\" upstream=\"spock\" />",
+ "</manifest>"]
+
+[ns_server:info,2018-06-14T21:19:35.964Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:read_address_config_from_path:86]Reading ip config from "/opt/couchbase/var/lib/couchbase/ip_start"
+[ns_server:info,2018-06-14T21:19:35.964Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:read_address_config_from_path:86]Reading ip config from "/opt/couchbase/var/lib/couchbase/ip"
+[ns_server:info,2018-06-14T21:19:35.966Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:init:163]ip config not found. Looks like we're brand new node
+[ns_server:info,2018-06-14T21:19:36.083Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:bringup:214]Attempting to bring up net_kernel with name 'ns_1@127.0.0.1'
+[ns_server:info,2018-06-14T21:19:36.095Z,ns_1@127.0.0.1:dist_manager<0.147.0>:dist_manager:save_node:147]saving node to "/opt/couchbase/var/lib/couchbase/couchbase-server.node"
+[ns_server:info,2018-06-14T21:19:36.124Z,ns_1@127.0.0.1:ns_config_sup<0.160.0>:ns_config_sup:init:32]loading static ns_config from "/opt/couchbase/etc/couchbase/config"
+[ns_server:info,2018-06-14T21:19:36.156Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_config:load_config:1082]Loading static config from "/opt/couchbase/etc/couchbase/config"
+[ns_server:info,2018-06-14T21:19:36.159Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_config:load_config:1096]Loading dynamic config from "/opt/couchbase/var/lib/couchbase/config/config.dat"
+[ns_server:info,2018-06-14T21:19:36.160Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_config:load_config:1101]No dynamic config file found. Assuming we're brand new node
+[ns_server:info,2018-06-14T21:19:36.163Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_config:load_config:1125]Here's full dynamic config we loaded + static & default config:
+[{{node,'ns_1@127.0.0.1',{project_intact,is_vulnerable}},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   false]},
+ {password_policy,[{min_length,6},{must_present,[]}]},
+ {drop_request_memory_threshold_mib,undefined},
+ {{request_limit,capi},undefined},
+ {{request_limit,rest},undefined},
+ {auto_reprovision_cfg,[{enabled,true},{max_nodes,1},{count,0}]},
+ {auto_failover_cfg,[{enabled,false},{timeout,120},{max_nodes,1},{count,0}]},
+ {replication,[{enabled,true}]},
+ {alert_limits,
+  [{max_overhead_perc,50},{max_disk_used,90},{max_indexer_ram,75}]},
+ {email_alerts,
+  [{recipients,["root@localhost"]},
+   {sender,"couchbase@localhost"},
+   {enabled,false},
+   {email_server,
+    [{user,[]},{pass,"*****"},{host,"localhost"},{port,25},{encrypt,false}]},
+   {alerts,
+    [auto_failover_node,auto_failover_maximum_reached,
+     auto_failover_other_nodes_down,auto_failover_cluster_too_small,
+     auto_failover_disabled,ip,disk,overhead,ep_oom_errors,
+     ep_item_commit_failed,audit_dropped_events,indexer_ram_max_usage,
+     ep_clock_cas_drift_threshold_exceeded,communication_issue]}]},
+ {{node,'ns_1@127.0.0.1',ns_log},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {filename,"/opt/couchbase/var/lib/couchbase/ns_log"}]},
+ {{node,'ns_1@127.0.0.1',port_servers},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}]},
+ {{node,'ns_1@127.0.0.1',moxi},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {port,11211},
+   {verbosity,[]}]},
+ {secure_headers,[]},
+ {buckets,[{configs,[]}]},
+ {fts_memory_quota,256},
+ {memory_quota,1198},
+ {{node,'ns_1@127.0.0.1',memcached_config},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   {[{interfaces,
+      {memcached_config_mgr,omit_missing_mcd_ports,
+       [{[{host,<<"*">>},{port,port},{maxconn,maxconn}]},
+        {[{host,<<"*">>},
+          {port,dedicated_port},
+          {maxconn,dedicated_port_maxconn}]},
+        {[{host,<<"*">>},
+          {port,ssl_port},
+          {maxconn,maxconn},
+          {ssl,
+           {[{key,
+              <<"/opt/couchbase/var/lib/couchbase/config/memcached-key.pem">>},
+             {cert,
+              <<"/opt/couchbase/var/lib/couchbase/config/memcached-cert.pem">>}]}}]}]}},
+     {ssl_cipher_list,{"~s",[ssl_cipher_list]}},
+     {client_cert_auth,{memcached_config_mgr,client_cert_auth,[]}},
+     {ssl_minimum_protocol,{memcached_config_mgr,ssl_minimum_protocol,[]}},
+     {connection_idle_time,connection_idle_time},
+     {privilege_debug,privilege_debug},
+     {breakpad,
+      {[{enabled,breakpad_enabled},
+        {minidump_dir,{memcached_config_mgr,get_minidump_dir,[]}}]}},
+     {extensions,
+      [{[{module,<<"/opt/couchbase/lib/memcached/stdin_term_handler.so">>},
+         {config,<<>>}]},
+       {[{module,<<"/opt/couchbase/lib/memcached/file_logger.so">>},
+         {config,
+          {"cyclesize=~B;sleeptime=~B;filename=~s/~s",
+           [log_cyclesize,log_sleeptime,log_path,log_prefix]}}]}]},
+     {admin,{"~s",[admin_user]}},
+     {verbosity,verbosity},
+     {audit_file,{"~s",[audit_file]}},
+     {rbac_file,{"~s",[rbac_file]}},
+     {dedupe_nmvb_maps,dedupe_nmvb_maps},
+     {xattr_enabled,{memcached_config_mgr,is_enabled,[[5,0]]}}]}]},
+ {{node,'ns_1@127.0.0.1',memcached},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {port,11210},
+   {dedicated_port,11209},
+   {ssl_port,11207},
+   {admin_user,"@ns_server"},
+   {other_users,["@cbq-engine","@projector","@goxdcr","@index","@fts"]},
+   {admin_pass,"*****"},
+   {engines,
+    [{membase,
+      [{engine,"/opt/couchbase/lib/memcached/ep.so"},
+       {static_config_string,"failpartialwarmup=false"}]},
+     {memcached,
+      [{engine,"/opt/couchbase/lib/memcached/default_engine.so"},
+       {static_config_string,"vb0=true"}]}]},
+   {config_path,"/opt/couchbase/var/lib/couchbase/config/memcached.json"},
+   {audit_file,"/opt/couchbase/var/lib/couchbase/config/audit.json"},
+   {rbac_file,"/opt/couchbase/var/lib/couchbase/config/memcached.rbac"},
+   {log_path,"/opt/couchbase/var/lib/couchbase/logs"},
+   {log_prefix,"memcached.log"},
+   {log_generations,20},
+   {log_cyclesize,10485760},
+   {log_sleeptime,19},
+   {log_rotation_period,39003}]},
+ {{node,'ns_1@127.0.0.1',memcached_defaults},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {maxconn,30000},
+   {dedicated_port_maxconn,5000},
+   {ssl_cipher_list,"HIGH"},
+   {connection_idle_time,0},
+   {verbosity,0},
+   {privilege_debug,false},
+   {breakpad_enabled,true},
+   {breakpad_minidump_dir_path,"/opt/couchbase/var/lib/couchbase/crash"},
+   {dedupe_nmvb_maps,false}]},
+ {memcached,[]},
+ {{node,'ns_1@127.0.0.1',audit},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}]},
+ {audit,
+  [{auditd_enabled,false},
+   {rotate_interval,86400},
+   {rotate_size,20971520},
+   {disabled,[]},
+   {sync,[]},
+   {log_path,"/opt/couchbase/var/lib/couchbase/logs"}]},
+ {{node,'ns_1@127.0.0.1',isasl},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {path,"/opt/couchbase/var/lib/couchbase/isasl.pw"}]},
+ {remote_clusters,[]},
+ {read_only_user_creds,null},
+ {rest_creds,null},
+ {{node,'ns_1@127.0.0.1',ssl_proxy_upstream_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   11215]},
+ {{node,'ns_1@127.0.0.1',ssl_proxy_downstream_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   11214]},
+ {{node,'ns_1@127.0.0.1',fts_ssl_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18094]},
+ {{node,'ns_1@127.0.0.1',fts_http_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   8094]},
+ {{node,'ns_1@127.0.0.1',indexer_stmaint_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9105]},
+ {{node,'ns_1@127.0.0.1',indexer_stcatchup_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9104]},
+ {{node,'ns_1@127.0.0.1',indexer_stinit_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9103]},
+ {{node,'ns_1@127.0.0.1',indexer_https_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   19102]},
+ {{node,'ns_1@127.0.0.1',indexer_http_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9102]},
+ {{node,'ns_1@127.0.0.1',indexer_scan_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9101]},
+ {{node,'ns_1@127.0.0.1',indexer_admin_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9100]},
+ {{node,'ns_1@127.0.0.1',xdcr_rest_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9998]},
+ {{node,'ns_1@127.0.0.1',projector_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9999]},
+ {{node,'ns_1@127.0.0.1',ssl_query_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18093]},
+ {{node,'ns_1@127.0.0.1',query_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   8093]},
+ {{node,'ns_1@127.0.0.1',ssl_capi_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18092]},
+ {{node,'ns_1@127.0.0.1',capi_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   8092]},
+ {{node,'ns_1@127.0.0.1',ssl_rest_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18091]},
+ {{node,'ns_1@127.0.0.1',rest},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {port,8091},
+   {port_meta,global}]},
+ {{couchdb,max_parallel_replica_indexers},2},
+ {{couchdb,max_parallel_indexers},4},
+ {rest,[{port,8091}]},
+ {{node,'ns_1@127.0.0.1',membership},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   active]},
+ {server_groups,
+  [[{uuid,<<"0">>},{name,<<"Group 1">>},{nodes,['ns_1@127.0.0.1']}]]},
+ {nodes_wanted,['ns_1@127.0.0.1']},
+ {{node,'ns_1@127.0.0.1',compaction_daemon},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {check_interval,30},
+   {min_db_file_size,131072},
+   {min_view_file_size,20971520}]},
+ {set_view_update_daemon,
+  [{update_interval,5000},
+   {update_min_changes,5000},
+   {replica_update_min_changes,5000}]},
+ {autocompaction,
+  [{database_fragmentation_threshold,{30,undefined}},
+   {view_fragmentation_threshold,{30,undefined}}]},
+ {max_bucket_count,10},
+ {index_aware_rebalance_disabled,false},
+ {{node,'ns_1@127.0.0.1',ldap_enabled},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   true]},
+ {{node,'ns_1@127.0.0.1',is_enterprise},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   true]},
+ {{node,'ns_1@127.0.0.1',config_version},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   {5,1,1}]},
+ {{node,'ns_1@127.0.0.1',uuid},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   <<"182c8baf6b88cf138096b52cf8cfc4e6">>]}]
+[ns_server:info,2018-06-14T21:19:36.200Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.179.0>:ns_ssl_services_setup:init:407]Used ssl options:
+[{keyfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {certfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {versions,[tlsv1,'tlsv1.1','tlsv1.2']},
+ {cacertfile,undefined},
+ {dh,<<48,130,1,8,2,130,1,1,0,152,202,99,248,92,201,35,238,246,5,77,93,120,10,
+       118,129,36,52,111,193,167,220,49,229,106,105,152,133,121,157,73,158,
+       232,153,197,197,21,171,140,30,207,52,165,45,8,221,162,21,199,183,66,
+       211,247,51,224,102,214,190,130,96,253,218,193,35,43,139,145,89,200,250,
+       145,92,50,80,134,135,188,205,254,148,122,136,237,220,186,147,187,104,
+       159,36,147,217,117,74,35,163,145,249,175,242,18,221,124,54,140,16,246,
+       169,84,252,45,47,99,136,30,60,189,203,61,86,225,117,255,4,91,46,110,
+       167,173,106,51,65,10,248,94,225,223,73,40,232,140,26,11,67,170,118,190,
+       67,31,127,233,39,68,88,132,171,224,62,187,207,160,189,209,101,74,8,205,
+       174,146,173,80,105,144,246,25,153,86,36,24,178,163,64,202,221,95,184,
+       110,244,32,226,217,34,55,188,230,55,16,216,247,173,246,139,76,187,66,
+       211,159,17,46,20,18,48,80,27,250,96,189,29,214,234,241,34,69,254,147,
+       103,220,133,40,164,84,8,44,241,61,164,151,9,135,41,60,75,4,202,133,173,
+       72,6,69,167,89,112,174,40,229,171,2,1,2>>},
+ {ciphers,[{dhe_rsa,aes_256_cbc,sha256},
+           {dhe_dss,aes_256_cbc,sha256},
+           {rsa,aes_256_cbc,sha256},
+           {dhe_rsa,aes_128_cbc,sha256},
+           {dhe_dss,aes_128_cbc,sha256},
+           {rsa,aes_128_cbc,sha256},
+           {dhe_rsa,aes_256_cbc,sha},
+           {dhe_dss,aes_256_cbc,sha},
+           {rsa,aes_256_cbc,sha},
+           {dhe_rsa,'3des_ede_cbc',sha},
+           {dhe_dss,'3des_ede_cbc',sha},
+           {rsa,'3des_ede_cbc',sha},
+           {dhe_rsa,aes_128_cbc,sha},
+           {dhe_dss,aes_128_cbc,sha},
+           {rsa,aes_128_cbc,sha}]}]
+[ns_server:info,2018-06-14T21:19:36.574Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.179.0>:ns_ssl_services_setup:maybe_generate_local_cert:576]Failed to read node certificate. Perhaps it wasn't created yet. Error: {error,
+                                                                        {badmatch,
+                                                                         {error,
+                                                                          enoent}}}
+[ns_server:info,2018-06-14T21:19:36.813Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.179.0>:ns_ssl_services_setup:do_generate_local_cert:564]Saved local cert for node 'ns_1@127.0.0.1'
+[ns_server:info,2018-06-14T21:19:36.877Z,ns_1@127.0.0.1:<0.186.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-14T21:19:36.877Z,ns_1@127.0.0.1:<0.186.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:info,2018-06-14T21:19:38.596Z,ns_1@127.0.0.1:ns_couchdb_port<0.218.0>:ns_port_server:log:223]ns_couchdb<0.218.0>: Apache CouchDB v4.5.1-60-g3cf258d (LogLevel=info) is starting.
+
+[ns_server:info,2018-06-14T21:19:38.869Z,ns_1@127.0.0.1:ns_server_sup<0.236.0>:dir_size:start_link:39]Starting quick version of dir_size with program name: godu
+[ns_server:warn,2018-06-14T21:19:38.883Z,ns_1@127.0.0.1:ns_log<0.241.0>:ns_log:read_logs:128]Couldn't load logs from "/opt/couchbase/var/lib/couchbase/ns_log" (perhaps it's first startup): {error,
+                                                                                                 enoent}
+[ns_server:info,2018-06-14T21:19:38.947Z,ns_1@127.0.0.1:ns_couchdb_port<0.218.0>:ns_port_server:log:223]ns_couchdb<0.218.0>: Apache CouchDB has started. Time to relax.
+ns_couchdb<0.218.0>: 166: Booted. Waiting for shutdown request
+
+[ns_server:info,2018-06-14T21:19:39.100Z,ns_1@127.0.0.1:<0.246.0>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:warn,2018-06-14T21:19:39.112Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[ns_server:warn,2018-06-14T21:19:39.115Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[user:info,2018-06-14T21:19:39.116Z,ns_1@127.0.0.1:ns_cookie_manager<0.158.0>:ns_cookie_manager:do_cookie_init:83]Initial otp cookie generated: {sanitized,
+                                  <<"xwkf11tmQ6a3OWN/Y5yFvjjSzkyKLTkNewFlf/oFKmg=">>}
+[ns_server:info,2018-06-14T21:19:39.194Z,ns_1@127.0.0.1:menelaus_sup<0.310.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-14T21:19:39.196Z,ns_1@127.0.0.1:menelaus_sup<0.310.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:info,2018-06-14T21:19:39.207Z,ns_1@127.0.0.1:ns_couchdb_port<0.218.0>:ns_port_server:log:223]ns_couchdb<0.218.0>: working as port
+
+[user:info,2018-06-14T21:19:39.220Z,ns_1@127.0.0.1:ns_server_sup<0.236.0>:menelaus_sup:start_link:46]Couchbase Server has started on web port 8091 on node 'ns_1@127.0.0.1'. Version: "5.1.1-5723-enterprise".
+[ns_server:warn,2018-06-14T21:19:39.238Z,ns_1@127.0.0.1:<0.366.0>:ns_memcached:connect:1187]Unable to connect: {error,{badmatch,{error,econnrefused}}}, retrying.
+[ns_server:info,2018-06-14T21:19:39.245Z,ns_1@127.0.0.1:<0.369.0>:ns_memcached_log_rotator:init:28]Starting log rotator on "/opt/couchbase/var/lib/couchbase/logs"/"memcached.log"* with an initial period of 39003ms
+[ns_server:info,2018-06-14T21:19:39.394Z,ns_1@127.0.0.1:<0.275.0>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:warn,2018-06-14T21:19:39.412Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[user:info,2018-06-14T21:19:39.554Z,ns_1@127.0.0.1:mb_master<0.434.0>:mb_master:init:86]I'm the only node, so I'm the master.
+[ns_server:info,2018-06-14T21:19:39.592Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_online_config_upgrader:upgrade_config_from_3_0_to_4_0:65]Performing online config upgrade to 4.0 version
+[ns_server:info,2018-06-14T21:19:39.597Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_online_config_upgrader:upgrade_config_from_4_0_to_4_1:70]Performing online config upgrade to 4.1 version
+[ns_server:info,2018-06-14T21:19:39.597Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_online_config_upgrader:upgrade_config_from_4_1_to_4_5:74]Performing online config upgrade to 4.5 version
+[ns_server:info,2018-06-14T21:19:39.597Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_online_config_upgrader:upgrade_config_from_4_6_to_5_0:97]Performing online config upgrade to 5.0 version
+[ns_server:info,2018-06-14T21:19:39.597Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_online_config_upgrader:upgrade_config_from_5_0_to_5_1:102]Performing online config upgrade to 5.1 version
+[user:warn,2018-06-14T21:19:39.604Z,ns_1@127.0.0.1:<0.442.0>:ns_orchestrator:consider_switching_compat_mode_dont_exit:1042]Changed cluster compat mode from undefined to [5,1]
+[ns_server:info,2018-06-14T21:19:39.611Z,ns_1@127.0.0.1:<0.459.0>:ns_ssl_services_setup:notify_service:604]Successfully notified service capi_ssl_service
+[ns_server:info,2018-06-14T21:19:39.613Z,ns_1@127.0.0.1:<0.186.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-14T21:19:39.614Z,ns_1@127.0.0.1:<0.186.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:info,2018-06-14T21:19:39.615Z,ns_1@127.0.0.1:<0.460.0>:ns_ssl_services_setup:notify_service:604]Successfully notified service ssl_service
+[ns_server:info,2018-06-14T21:19:39.615Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.179.0>:ns_ssl_services_setup:handle_info:532]Succesfully notified services [ssl_service,capi_ssl_service]
+[user:info,2018-06-14T21:19:39.715Z,ns_1@127.0.0.1:memcached_config_mgr<0.368.0>:memcached_config_mgr:hot_reload_config:221]Hot-reloaded memcached.json for config change of the following keys: [<<"client_cert_auth">>,
+                                                                      <<"xattr_enabled">>]
+[ns_server:warn,2018-06-14T23:30:51.216Z,ns_1@127.0.0.1:stats_archiver-@system<0.395.0>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-14T23:30:51.231Z,ns_1@127.0.0.1:stats_archiver-@query<0.401.0>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-14T23:30:51.231Z,ns_1@127.0.0.1:stats_archiver-@global<0.406.0>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-14T23:30:51.234Z,ns_1@127.0.0.1:menelaus_web_alerts_srv<0.348.0>:menelaus_web_alerts_srv:handle_info:190]Eaten 5 previously unconsumed check_alerts
+
+[ns_server:warn,2018-06-14T23:30:51.244Z,ns_1@127.0.0.1:ns_heart<0.288.0>:ns_heart:handle_info:116]Dropped 3 heartbeats
+[ns_server:warn,2018-06-14T23:30:51.247Z,ns_1@127.0.0.1:mb_master<0.434.0>:mb_master:handle_info:228]Skipped 8 heartbeats
+
+[ns_server:warn,2018-06-14T23:30:51.248Z,ns_1@127.0.0.1:stats_archiver-@system-processes<0.398.0>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:info,2018-06-14T23:30:51.269Z,ns_1@127.0.0.1:<0.442.0>:ns_orchestrator:handle_info:483]Skipping janitor in state janitor_running
+[ns_server:info,2018-06-14T23:30:51.269Z,ns_1@127.0.0.1:<0.442.0>:ns_orchestrator:handle_info:483]Skipping janitor in state janitor_running
+[ns_server:info,2018-06-14T23:30:51.270Z,ns_1@127.0.0.1:<0.442.0>:ns_orchestrator:handle_info:483]Skipping janitor in state janitor_running
+[ns_server:info,2018-06-15T13:56:40.004Z,ns_1@127.0.0.1:<0.442.0>:ns_orchestrator:handle_info:483]Skipping janitor in state janitor_running
+[ns_server:warn,2018-06-15T13:56:40.005Z,ns_1@127.0.0.1:stats_archiver-@system<0.395.0>:stats_archiver:flush:386]Dropped 7 {cascade,minute,hour,4} messages
+[ns_server:warn,2018-06-15T13:56:40.010Z,ns_1@127.0.0.1:stats_archiver-@system-processes<0.398.0>:stats_archiver:flush:386]Dropped 7 {cascade,minute,hour,4} messages
+[ns_server:warn,2018-06-15T13:56:40.016Z,ns_1@127.0.0.1:stats_archiver-@query<0.401.0>:stats_archiver:flush:386]Dropped 7 {cascade,minute,hour,4} messages
+[ns_server:warn,2018-06-15T13:56:40.016Z,ns_1@127.0.0.1:stats_archiver-@global<0.406.0>:stats_archiver:flush:386]Dropped 6 {cascade,minute,hour,4} messages
+[ns_server:warn,2018-06-15T13:56:40.019Z,ns_1@127.0.0.1:mb_master<0.434.0>:mb_master:handle_info:228]Skipped 2 heartbeats
+
+[ns_server:warn,2018-06-15T13:56:40.020Z,ns_1@127.0.0.1:menelaus_web_alerts_srv<0.348.0>:menelaus_web_alerts_srv:handle_info:190]Eaten 1 previously unconsumed check_alerts
+
+[stats:warn,2018-06-15T13:56:40.027Z,ns_1@127.0.0.1:query_stats_collector<0.404.0>:base_stats_collector:latest_tick:69](Collector: query_stats_collector) Dropped 6 ticks
+[stats:warn,2018-06-15T13:56:40.032Z,ns_1@127.0.0.1:<0.409.0>:base_stats_collector:latest_tick:69](Collector: global_stats_collector) Dropped 6 ticks
+[stats:warn,2018-06-15T13:56:40.032Z,ns_1@127.0.0.1:system_stats_collector<0.391.0>:base_stats_collector:latest_tick:69](Collector: system_stats_collector) Dropped 6 ticks
+[ns_server:info,2018-06-15T15:18:33.843Z,ns_1@127.0.0.1:mb_master<0.434.0>:mb_master:terminate:298]Synchronously shutting down child mb_master_sup
+[ns_server:info,2018-06-15T15:18:34.652Z,ns_1@127.0.0.1:ns_couchdb_port<0.218.0>:ns_port_server:log:223]ns_couchdb<0.218.0>: 166: got shutdown request. Exiting
+ns_couchdb<0.218.0>: [os_mon] memory supervisor port (memsup): Erlang has closed
+ns_couchdb<0.218.0>: [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+
+[ns_server:info,2018-06-15T15:18:34.660Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.3093.8>:ns_ssl_services_setup:init:407]Used ssl options:
+[{keyfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {certfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {versions,[tlsv1,'tlsv1.1','tlsv1.2']},
+ {cacertfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem-ca"},
+ {dh,<<48,130,1,8,2,130,1,1,0,152,202,99,248,92,201,35,238,246,5,77,93,120,10,
+       118,129,36,52,111,193,167,220,49,229,106,105,152,133,121,157,73,158,
+       232,153,197,197,21,171,140,30,207,52,165,45,8,221,162,21,199,183,66,
+       211,247,51,224,102,214,190,130,96,253,218,193,35,43,139,145,89,200,250,
+       145,92,50,80,134,135,188,205,254,148,122,136,237,220,186,147,187,104,
+       159,36,147,217,117,74,35,163,145,249,175,242,18,221,124,54,140,16,246,
+       169,84,252,45,47,99,136,30,60,189,203,61,86,225,117,255,4,91,46,110,
+       167,173,106,51,65,10,248,94,225,223,73,40,232,140,26,11,67,170,118,190,
+       67,31,127,233,39,68,88,132,171,224,62,187,207,160,189,209,101,74,8,205,
+       174,146,173,80,105,144,246,25,153,86,36,24,178,163,64,202,221,95,184,
+       110,244,32,226,217,34,55,188,230,55,16,216,247,173,246,139,76,187,66,
+       211,159,17,46,20,18,48,80,27,250,96,189,29,214,234,241,34,69,254,147,
+       103,220,133,40,164,84,8,44,241,61,164,151,9,135,41,60,75,4,202,133,173,
+       72,6,69,167,89,112,174,40,229,171,2,1,2>>},
+ {ciphers,[{dhe_rsa,aes_256_cbc,sha256},
+           {dhe_dss,aes_256_cbc,sha256},
+           {rsa,aes_256_cbc,sha256},
+           {dhe_rsa,aes_128_cbc,sha256},
+           {dhe_dss,aes_128_cbc,sha256},
+           {rsa,aes_128_cbc,sha256},
+           {dhe_rsa,aes_256_cbc,sha},
+           {dhe_dss,aes_256_cbc,sha},
+           {rsa,aes_256_cbc,sha},
+           {dhe_rsa,'3des_ede_cbc',sha},
+           {dhe_dss,'3des_ede_cbc',sha},
+           {rsa,'3des_ede_cbc',sha},
+           {dhe_rsa,aes_128_cbc,sha},
+           {dhe_dss,aes_128_cbc,sha},
+           {rsa,aes_128_cbc,sha}]}]
+[ns_server:info,2018-06-15T15:18:34.706Z,ns_1@127.0.0.1:<0.3095.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T15:18:34.706Z,ns_1@127.0.0.1:<0.3095.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:info,2018-06-15T15:18:36.500Z,ns_1@127.0.0.1:ns_couchdb_port<0.3122.8>:ns_port_server:log:223]ns_couchdb<0.3122.8>: Apache CouchDB v4.5.1-60-g3cf258d (LogLevel=info) is starting.
+
+[ns_server:info,2018-06-15T15:18:36.775Z,ns_1@127.0.0.1:ns_server_sup<0.3142.8>:dir_size:start_link:39]Starting quick version of dir_size with program name: godu
+[ns_server:info,2018-06-15T15:18:36.887Z,ns_1@127.0.0.1:ns_couchdb_port<0.3122.8>:ns_port_server:log:223]ns_couchdb<0.3122.8>: Apache CouchDB has started. Time to relax.
+ns_couchdb<0.3122.8>: 724: Booted. Waiting for shutdown request
+
+[ns_server:info,2018-06-15T15:18:36.939Z,ns_1@127.0.0.1:<0.3152.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:info,2018-06-15T15:18:36.979Z,ns_1@127.0.0.1:menelaus_sup<0.3218.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T15:18:36.980Z,ns_1@127.0.0.1:menelaus_sup<0.3218.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[user:info,2018-06-15T15:18:36.982Z,ns_1@127.0.0.1:ns_server_sup<0.3142.8>:menelaus_sup:start_link:46]Couchbase Server has started on web port 8091 on node 'ns_1@127.0.0.1'. Version: "5.1.1-5723-enterprise".
+[ns_server:info,2018-06-15T15:18:36.999Z,ns_1@127.0.0.1:<0.3279.8>:ns_memcached_log_rotator:init:28]Starting log rotator on "/opt/couchbase/var/lib/couchbase/logs"/"memcached.log"* with an initial period of 39003ms
+[user:info,2018-06-15T15:18:37.047Z,ns_1@127.0.0.1:mb_master<0.3343.8>:mb_master:init:86]I'm the only node, so I'm the master.
+[cluster:info,2018-06-15T15:18:37.064Z,ns_1@127.0.0.1:ns_cluster<0.159.0>:ns_cluster:handle_call:204]Changing address to "127.0.0.1" due to client request
+[cluster:info,2018-06-15T15:18:37.065Z,ns_1@127.0.0.1:ns_cluster<0.159.0>:ns_cluster:do_change_address:437]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2018-06-15T15:18:37.106Z,ns_1@127.0.0.1:ns_couchdb_port<0.3122.8>:ns_port_server:log:223]ns_couchdb<0.3122.8>: working as port
+
+[ns_server:info,2018-06-15T15:18:37.193Z,ns_1@127.0.0.1:<0.3208.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:info,2018-06-15T15:19:02.056Z,ns_1@127.0.0.1:mb_master<0.3343.8>:mb_master:terminate:298]Synchronously shutting down child mb_master_sup
+[ns_server:info,2018-06-15T15:19:02.713Z,ns_1@127.0.0.1:ns_couchdb_port<0.3122.8>:ns_port_server:log:223]ns_couchdb<0.3122.8>: 724: got shutdown request. Exiting
+ns_couchdb<0.3122.8>: [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+ns_couchdb<0.3122.8>: [os_mon] memory supervisor port (memsup): Erlang has closed
+
+[ns_server:info,2018-06-15T15:19:02.730Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.3946.8>:ns_ssl_services_setup:init:407]Used ssl options:
+[{keyfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {certfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {versions,[tlsv1,'tlsv1.1','tlsv1.2']},
+ {cacertfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem-ca"},
+ {dh,<<48,130,1,8,2,130,1,1,0,152,202,99,248,92,201,35,238,246,5,77,93,120,10,
+       118,129,36,52,111,193,167,220,49,229,106,105,152,133,121,157,73,158,
+       232,153,197,197,21,171,140,30,207,52,165,45,8,221,162,21,199,183,66,
+       211,247,51,224,102,214,190,130,96,253,218,193,35,43,139,145,89,200,250,
+       145,92,50,80,134,135,188,205,254,148,122,136,237,220,186,147,187,104,
+       159,36,147,217,117,74,35,163,145,249,175,242,18,221,124,54,140,16,246,
+       169,84,252,45,47,99,136,30,60,189,203,61,86,225,117,255,4,91,46,110,
+       167,173,106,51,65,10,248,94,225,223,73,40,232,140,26,11,67,170,118,190,
+       67,31,127,233,39,68,88,132,171,224,62,187,207,160,189,209,101,74,8,205,
+       174,146,173,80,105,144,246,25,153,86,36,24,178,163,64,202,221,95,184,
+       110,244,32,226,217,34,55,188,230,55,16,216,247,173,246,139,76,187,66,
+       211,159,17,46,20,18,48,80,27,250,96,189,29,214,234,241,34,69,254,147,
+       103,220,133,40,164,84,8,44,241,61,164,151,9,135,41,60,75,4,202,133,173,
+       72,6,69,167,89,112,174,40,229,171,2,1,2>>},
+ {ciphers,[{dhe_rsa,aes_256_cbc,sha256},
+           {dhe_dss,aes_256_cbc,sha256},
+           {rsa,aes_256_cbc,sha256},
+           {dhe_rsa,aes_128_cbc,sha256},
+           {dhe_dss,aes_128_cbc,sha256},
+           {rsa,aes_128_cbc,sha256},
+           {dhe_rsa,aes_256_cbc,sha},
+           {dhe_dss,aes_256_cbc,sha},
+           {rsa,aes_256_cbc,sha},
+           {dhe_rsa,'3des_ede_cbc',sha},
+           {dhe_dss,'3des_ede_cbc',sha},
+           {rsa,'3des_ede_cbc',sha},
+           {dhe_rsa,aes_128_cbc,sha},
+           {dhe_dss,aes_128_cbc,sha},
+           {rsa,aes_128_cbc,sha}]}]
+[ns_server:info,2018-06-15T15:19:02.791Z,ns_1@127.0.0.1:<0.3948.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T15:19:02.791Z,ns_1@127.0.0.1:<0.3948.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:info,2018-06-15T15:19:04.573Z,ns_1@127.0.0.1:ns_couchdb_port<0.3974.8>:ns_port_server:log:223]ns_couchdb<0.3974.8>: Apache CouchDB v4.5.1-60-g3cf258d (LogLevel=info) is starting.
+
+[ns_server:info,2018-06-15T15:19:04.858Z,ns_1@127.0.0.1:ns_server_sup<0.3995.8>:dir_size:start_link:39]Starting quick version of dir_size with program name: godu
+[ns_server:info,2018-06-15T15:19:04.949Z,ns_1@127.0.0.1:ns_couchdb_port<0.3974.8>:ns_port_server:log:223]ns_couchdb<0.3974.8>: Apache CouchDB has started. Time to relax.
+ns_couchdb<0.3974.8>: 790: Booted. Waiting for shutdown request
+
+[ns_server:info,2018-06-15T15:19:05.006Z,ns_1@127.0.0.1:<0.4005.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:info,2018-06-15T15:19:05.032Z,ns_1@127.0.0.1:menelaus_sup<0.4071.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T15:19:05.033Z,ns_1@127.0.0.1:menelaus_sup<0.4071.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[user:info,2018-06-15T15:19:05.037Z,ns_1@127.0.0.1:ns_server_sup<0.3995.8>:menelaus_sup:start_link:46]Couchbase Server has started on web port 8091 on node 'ns_1@127.0.0.1'. Version: "5.1.1-5723-enterprise".
+[ns_server:info,2018-06-15T15:19:05.053Z,ns_1@127.0.0.1:<0.4132.8>:ns_memcached_log_rotator:init:28]Starting log rotator on "/opt/couchbase/var/lib/couchbase/logs"/"memcached.log"* with an initial period of 39003ms
+[user:info,2018-06-15T15:19:05.091Z,ns_1@127.0.0.1:mb_master<0.4196.8>:mb_master:init:86]I'm the only node, so I'm the master.
+[cluster:info,2018-06-15T15:19:05.102Z,ns_1@127.0.0.1:ns_cluster<0.159.0>:ns_cluster:handle_call:204]Changing address to "127.0.0.1" due to client request
+[cluster:info,2018-06-15T15:19:05.103Z,ns_1@127.0.0.1:ns_cluster<0.159.0>:ns_cluster:do_change_address:437]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2018-06-15T15:19:05.227Z,ns_1@127.0.0.1:ns_couchdb_port<0.3974.8>:ns_port_server:log:223]ns_couchdb<0.3974.8>: working as port
+
+[ns_server:info,2018-06-15T15:19:05.280Z,ns_1@127.0.0.1:<0.4061.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[user:info,2018-06-15T15:19:05.339Z,ns_1@127.0.0.1:<0.4001.8>:ns_log:crash_consumption_loop:70]Service 'memcached' exited with status 135. Restarting. Messages:
+2018-06-15T15:19:05.071867Z FATAL     /lib/x86_64-linux-gnu/libpthread.so.0() [0x7f4ff8e1d000+0x11390]
+2018-06-15T15:19:05.071899Z FATAL     /lib/x86_64-linux-gnu/libc.so.6() [0x7f4ff7749000+0x14e156]
+2018-06-15T15:19:05.071914Z FATAL     /opt/couchbase/bin/../lib/libcbsasl.so.1.1.1() [0x7f4ff9a89000+0x116b8]
+2018-06-15T15:19:05.071928Z FATAL     /opt/couchbase/bin/../lib/libcbsasl.so.1.1.1() [0x7f4ff9a89000+0xeedc]
+2018-06-15T15:19:05.071946Z FATAL     /opt/couchbase/bin/../lib/libcbsasl.so.1.1.1() [0x7f4ff9a89000+0x12a4c]
+2018-06-15T15:19:05.071963Z FATAL     /opt/couchbase/bin/../lib/libcbsasl.so.1.1.1() [0x7f4ff9a89000+0x140f5]
+2018-06-15T15:19:05.071977Z FATAL     /opt/couchbase/bin/memcached() [0x400000+0x16be0]
+2018-06-15T15:19:05.071991Z FATAL     /opt/couchbase/bin/../lib/libplatform_so.so.0.1.0() [0x7f4ff925c000+0x6e5a]
+2018-06-15T15:19:05.072011Z FATAL     /lib/x86_64-linux-gnu/libpthread.so.0() [0x7f4ff8e1d000+0x76ba]
+2018-06-15T15:19:05.072081Z FATAL     /lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f4ff7749000+0x10741d]
+[ns_server:info,2018-06-15T15:19:17.828Z,ns_1@127.0.0.1:mb_master<0.4196.8>:mb_master:terminate:298]Synchronously shutting down child mb_master_sup
+[ns_server:info,2018-06-15T15:19:18.524Z,ns_1@127.0.0.1:ns_couchdb_port<0.3974.8>:ns_port_server:log:223]ns_couchdb<0.3974.8>: 790: got shutdown request. Exiting
+ns_couchdb<0.3974.8>: [os_mon] cpu supervisor port (cpu_sup): Erlang has closed
+ns_couchdb<0.3974.8>: [os_mon] memory supervisor port (memsup): Erlang has closed
+
+[ns_server:info,2018-06-15T15:19:18.529Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.4530.8>:ns_ssl_services_setup:init:407]Used ssl options:
+[{keyfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {certfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {versions,[tlsv1,'tlsv1.1','tlsv1.2']},
+ {cacertfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem-ca"},
+ {dh,<<48,130,1,8,2,130,1,1,0,152,202,99,248,92,201,35,238,246,5,77,93,120,10,
+       118,129,36,52,111,193,167,220,49,229,106,105,152,133,121,157,73,158,
+       232,153,197,197,21,171,140,30,207,52,165,45,8,221,162,21,199,183,66,
+       211,247,51,224,102,214,190,130,96,253,218,193,35,43,139,145,89,200,250,
+       145,92,50,80,134,135,188,205,254,148,122,136,237,220,186,147,187,104,
+       159,36,147,217,117,74,35,163,145,249,175,242,18,221,124,54,140,16,246,
+       169,84,252,45,47,99,136,30,60,189,203,61,86,225,117,255,4,91,46,110,
+       167,173,106,51,65,10,248,94,225,223,73,40,232,140,26,11,67,170,118,190,
+       67,31,127,233,39,68,88,132,171,224,62,187,207,160,189,209,101,74,8,205,
+       174,146,173,80,105,144,246,25,153,86,36,24,178,163,64,202,221,95,184,
+       110,244,32,226,217,34,55,188,230,55,16,216,247,173,246,139,76,187,66,
+       211,159,17,46,20,18,48,80,27,250,96,189,29,214,234,241,34,69,254,147,
+       103,220,133,40,164,84,8,44,241,61,164,151,9,135,41,60,75,4,202,133,173,
+       72,6,69,167,89,112,174,40,229,171,2,1,2>>},
+ {ciphers,[{dhe_rsa,aes_256_cbc,sha256},
+           {dhe_dss,aes_256_cbc,sha256},
+           {rsa,aes_256_cbc,sha256},
+           {dhe_rsa,aes_128_cbc,sha256},
+           {dhe_dss,aes_128_cbc,sha256},
+           {rsa,aes_128_cbc,sha256},
+           {dhe_rsa,aes_256_cbc,sha},
+           {dhe_dss,aes_256_cbc,sha},
+           {rsa,aes_256_cbc,sha},
+           {dhe_rsa,'3des_ede_cbc',sha},
+           {dhe_dss,'3des_ede_cbc',sha},
+           {rsa,'3des_ede_cbc',sha},
+           {dhe_rsa,aes_128_cbc,sha},
+           {dhe_dss,aes_128_cbc,sha},
+           {rsa,aes_128_cbc,sha}]}]
+[ns_server:info,2018-06-15T15:19:18.572Z,ns_1@127.0.0.1:<0.4532.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T15:19:18.572Z,ns_1@127.0.0.1:<0.4532.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:info,2018-06-15T15:19:20.256Z,ns_1@127.0.0.1:ns_couchdb_port<0.4559.8>:ns_port_server:log:223]ns_couchdb<0.4559.8>: Apache CouchDB v4.5.1-60-g3cf258d (LogLevel=info) is starting.
+
+[ns_server:info,2018-06-15T15:19:20.456Z,ns_1@127.0.0.1:ns_server_sup<0.4578.8>:dir_size:start_link:39]Starting quick version of dir_size with program name: godu
+[ns_server:info,2018-06-15T15:19:20.571Z,ns_1@127.0.0.1:ns_couchdb_port<0.4559.8>:ns_port_server:log:223]ns_couchdb<0.4559.8>: Apache CouchDB has started. Time to relax.
+ns_couchdb<0.4559.8>: 870: Booted. Waiting for shutdown request
+ns_couchdb<0.4559.8>: working as port
+
+[ns_server:info,2018-06-15T15:19:20.623Z,ns_1@127.0.0.1:<0.4588.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:info,2018-06-15T15:19:20.650Z,ns_1@127.0.0.1:menelaus_sup<0.4654.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T15:19:20.651Z,ns_1@127.0.0.1:menelaus_sup<0.4654.8>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[user:info,2018-06-15T15:19:20.654Z,ns_1@127.0.0.1:ns_server_sup<0.4578.8>:menelaus_sup:start_link:46]Couchbase Server has started on web port 8091 on node 'ns_1@127.0.0.1'. Version: "5.1.1-5723-enterprise".
+[ns_server:info,2018-06-15T15:19:20.674Z,ns_1@127.0.0.1:<0.4715.8>:ns_memcached_log_rotator:init:28]Starting log rotator on "/opt/couchbase/var/lib/couchbase/logs"/"memcached.log"* with an initial period of 39003ms
+[user:info,2018-06-15T15:19:20.711Z,ns_1@127.0.0.1:mb_master<0.4779.8>:mb_master:init:86]I'm the only node, so I'm the master.
+[cluster:info,2018-06-15T15:19:20.728Z,ns_1@127.0.0.1:ns_cluster<0.159.0>:ns_cluster:handle_call:204]Changing address to "127.0.0.1" due to client request
+[cluster:info,2018-06-15T15:19:20.728Z,ns_1@127.0.0.1:ns_cluster<0.159.0>:ns_cluster:do_change_address:437]Change of address to "127.0.0.1" is requested.
+[ns_server:info,2018-06-15T15:19:20.881Z,ns_1@127.0.0.1:<0.4647.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:info,2018-06-15T15:19:21.010Z,ns_1@127.0.0.1:<0.4857.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[user:info,2018-06-15T15:19:21.047Z,ns_1@127.0.0.1:<0.4584.8>:ns_log:crash_consumption_loop:70]Service 'memcached' exited with status 135. Restarting. Messages:
+2018-06-15T15:19:20.666228Z FATAL     /lib/x86_64-linux-gnu/libpthread.so.0() [0x7f3d5e677000+0x11390]
+2018-06-15T15:19:20.666256Z FATAL     /lib/x86_64-linux-gnu/libc.so.6() [0x7f3d5cfa3000+0x14e087]
+2018-06-15T15:19:20.666271Z FATAL     /opt/couchbase/bin/../lib/libmemcached_rbac.so.1.0.0(_ZN2cb4rbac21loadPrivilegeDatabaseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x1d2) [0x7f3d5f50f000+0x7332]
+2018-06-15T15:19:20.666285Z FATAL     /opt/couchbase/bin/memcached() [0x400000+0x6907f]
+2018-06-15T15:19:20.666299Z FATAL     /opt/couchbase/bin/memcached() [0x400000+0x4bef2]
+2018-06-15T15:19:20.666312Z FATAL     /opt/couchbase/bin/../lib/libplatform_so.so.0.1.0(_ZN9Couchbase6Thread12thread_entryEv+0xf) [0x7f3d5eab6000+0xcabf]
+2018-06-15T15:19:20.666324Z FATAL     /opt/couchbase/bin/../lib/libplatform_so.so.0.1.0() [0x7f3d5eab6000+0x6e5a]
+2018-06-15T15:19:20.666338Z FATAL     /lib/x86_64-linux-gnu/libpthread.so.0() [0x7f3d5e677000+0x76ba]
+2018-06-15T15:19:20.666371Z FATAL     /lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f3d5cfa3000+0x10741d]
+[ns_server:warn,2018-06-15T15:19:21.061Z,ns_1@127.0.0.1:<0.4912.8>:ns_memcached:connect:1187]Unable to connect: {error,{badmatch,{error,econnrefused}}}, retrying.
+[ns_server:info,2018-06-15T15:19:21.194Z,ns_1@127.0.0.1:<0.4875.8>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:warn,2018-06-15T15:19:21.200Z,ns_1@127.0.0.1:memcached_refresh<0.4527.8>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[ns_server:warn,2018-06-15T15:19:21.748Z,ns_1@127.0.0.1:<0.4943.8>:ns_memcached:connect:1187]Unable to connect: {error,{badmatch,{error,econnrefused}}}, retrying.
+[ns_server:error,2018-06-15T15:19:21.760Z,ns_1@127.0.0.1:index_stats_collector-fts<0.4886.8>:index_rest:get_json:42]Request to (fts) http://127.0.0.1:8094/api/nsstats failed: {error,
+                                                            {econnrefused,
+                                                             [{lhttpc_client,
+                                                               send_request,1,
+                                                               [{file,
+                                                                 "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                {line,220}]},
+                                                              {lhttpc_client,
+                                                               execute,9,
+                                                               [{file,
+                                                                 "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                {line,169}]},
+                                                              {lhttpc_client,
+                                                               request,9,
+                                                               [{file,
+                                                                 "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                {line,92}]}]}}
+[stats:warn,2018-06-15T15:19:22.743Z,ns_1@127.0.0.1:<0.4754.8>:base_stats_collector:latest_tick:69](Collector: global_stats_collector) Dropped 1 ticks
+[ns_server:warn,2018-06-15T19:32:25.221Z,ns_1@127.0.0.1:stats_archiver-@fts<0.4892.8>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-15T19:32:25.223Z,ns_1@127.0.0.1:stats_archiver-@index<0.4897.8>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-15T19:32:25.224Z,ns_1@127.0.0.1:stats_archiver-@system<0.4740.8>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-15T19:32:25.226Z,ns_1@127.0.0.1:stats_archiver-@query<0.4746.8>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-15T19:32:25.227Z,ns_1@127.0.0.1:stats_archiver-@global<0.4751.8>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-15T19:32:25.228Z,ns_1@127.0.0.1:menelaus_web_alerts_srv<0.4680.8>:menelaus_web_alerts_srv:handle_info:190]Eaten 5 previously unconsumed check_alerts
+
+[ns_server:warn,2018-06-15T19:32:25.229Z,ns_1@127.0.0.1:mb_master<0.4779.8>:mb_master:handle_info:228]Skipped 8 heartbeats
+
+[ns_server:info,2018-06-15T19:32:25.229Z,ns_1@127.0.0.1:<0.4787.8>:ns_orchestrator:handle_info:483]Skipping janitor in state janitor_running
+[ns_server:info,2018-06-15T19:32:25.230Z,ns_1@127.0.0.1:<0.4787.8>:ns_orchestrator:handle_info:483]Skipping janitor in state janitor_running
+[ns_server:warn,2018-06-15T19:32:25.243Z,ns_1@127.0.0.1:stats_archiver-@system-processes<0.4743.8>:stats_archiver:flush:386]Dropped 2 {truncate,minute,60} messages
+[ns_server:warn,2018-06-15T19:32:25.336Z,ns_1@127.0.0.1:ns_heart<0.4622.8>:ns_heart:handle_info:116]Dropped 1 heartbeats
+[ns_server:info,2018-06-15T20:07:58.967Z,nonode@nohost:<0.89.0>:ns_server:init_logging:138]Started & configured logging
+[ns_server:info,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]Static config terms:
+[{error_logger_mf_dir,"/opt/couchbase/var/lib/couchbase/logs"},
+ {path_config_bindir,"/opt/couchbase/bin"},
+ {path_config_etcdir,"/opt/couchbase/etc/couchbase"},
+ {path_config_libdir,"/opt/couchbase/lib"},
+ {path_config_datadir,"/opt/couchbase/var/lib/couchbase"},
+ {path_config_tmpdir,"/opt/couchbase/var/lib/couchbase/tmp"},
+ {path_config_secdir,"/opt/couchbase/etc/security"},
+ {nodefile,"/opt/couchbase/var/lib/couchbase/couchbase-server.node"},
+ {loglevel_default,debug},
+ {loglevel_couchdb,info},
+ {loglevel_ns_server,debug},
+ {loglevel_error_logger,debug},
+ {loglevel_user,debug},
+ {loglevel_menelaus,debug},
+ {loglevel_ns_doctor,debug},
+ {loglevel_stats,debug},
+ {loglevel_rebalance,debug},
+ {loglevel_cluster,debug},
+ {loglevel_views,debug},
+ {loglevel_mapreduce_errors,debug},
+ {loglevel_xdcr,debug},
+ {loglevel_xdcr_trace,error},
+ {loglevel_access,info},
+ {disk_sink_opts,
+     [{rotation,
+          [{compress,true},
+           {size,41943040},
+           {num_files,10},
+           {buffer_size_max,52428800}]}]},
+ {disk_sink_opts_json_rpc,
+     [{rotation,
+          [{compress,true},
+           {size,41943040},
+           {num_files,2},
+           {buffer_size_max,52428800}]}]},
+ {disk_sink_opts_xdcr_trace,
+     [{rotation,[{compress,false},{size,83886080},{num_files,5}]}]},
+ {net_kernel_verbosity,10}]
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter error_logger_mf_dir, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_bindir, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_etcdir, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_libdir, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_datadir, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_tmpdir, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter path_config_secdir, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter nodefile, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_default, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_couchdb, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.980Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_ns_server, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_error_logger, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_user, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_menelaus, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_ns_doctor, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_stats, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_rebalance, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_cluster, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_views, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_mapreduce_errors, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_xdcr, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_xdcr_trace, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter loglevel_access, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter disk_sink_opts, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter disk_sink_opts_json_rpc, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter disk_sink_opts_xdcr_trace, which is given from command line
+[ns_server:warn,2018-06-15T20:07:58.981Z,nonode@nohost:<0.89.0>:ns_server:log_pending:32]not overriding parameter net_kernel_verbosity, which is given from command line
+[ns_server:info,2018-06-15T20:07:58.997Z,nonode@nohost:ns_server_cluster_sup<0.144.0>:log_os_info:start_link:25]OS type: {unix,linux} Version: {4,9,60}
+Runtime info: [{otp_release,"R16B03-1"},
+               {erl_version,"5.10.4.0.0.1"},
+               {erl_version_long,
+                   "Erlang R16B03-1 (erts-5.10.4.0.0.1) [source-53c0d14] [64-bit] [smp:4:4] [async-threads:16] [kernel-poll:true]\n"},
+               {system_arch_raw,"x86_64-unknown-linux-gnu"},
+               {system_arch,"x86_64-unknown-linux-gnu"},
+               {localtime,{{2018,6,15},{20,7,58}}},
+               {memory,
+                   [{total,110801072},
+                    {processes,9759136},
+                    {processes_used,9758088},
+                    {system,101041936},
+                    {atom,339441},
+                    {atom_used,319380},
+                    {binary,65448},
+                    {code,7716502},
+                    {ets,2245608}]},
+               {loaded,
+                   [ns_info,log_os_info,local_tasks,restartable,
+                    ns_server_cluster_sup,calendar,ale_default_formatter,
+                    'ale_logger-metakv','ale_logger-rebalance',
+                    'ale_logger-xdcr_trace','ale_logger-menelaus',
+                    'ale_logger-stats','ale_logger-json_rpc',
+                    'ale_logger-access','ale_logger-ns_server',
+                    'ale_logger-user','ale_logger-ns_doctor',
+                    'ale_logger-cluster','ale_logger-xdcr',otp_internal,
+                    ns_log_sink,io_lib_fread,ale_disk_sink,misc,couch_util,
+                    ns_server,filelib,cpu_sup,memsup,disksup,os_mon,io,
+                    release_handler,overload,alarm_handler,sasl,timer,
+                    tftp_sup,httpd_sup,httpc_handler_sup,httpc_cookie,
+                    inets_trace,httpc_manager,httpc,httpc_profile_sup,
+                    httpc_sup,ftp_sup,inets_sup,inets_app,ssl,lhttpc_manager,
+                    lhttpc_sup,lhttpc,tls_connection_sup,ssl_session_cache,
+                    ssl_pkix_db,ssl_manager,ssl_sup,ssl_app,crypto_server,
+                    crypto_sup,crypto_app,ale_error_logger_handler,
+                    'ale_logger-ale_logger','ale_logger-error_logger',
+                    beam_opcodes,beam_dict,beam_asm,beam_validator,beam_z,
+                    beam_flatten,beam_trim,beam_receive,beam_bsm,beam_peep,
+                    beam_dead,beam_split,beam_type,beam_bool,beam_except,
+                    beam_clean,beam_utils,beam_block,beam_jump,beam_a,
+                    v3_codegen,v3_life,v3_kernel,sys_core_dsetel,erl_bifs,
+                    sys_core_fold,cerl_trees,sys_core_inline,core_lib,cerl,
+                    v3_core,erl_bits,erl_expand_records,sys_pre_expand,sofs,
+                    erl_internal,sets,ordsets,erl_lint,compile,
+                    dynamic_compile,ale_utils,io_lib_pretty,io_lib_format,
+                    io_lib,ale_codegen,dict,ale,ale_dynamic_sup,ale_sup,
+                    ale_app,epp,ns_bootstrap,child_erlang,file_io_server,
+                    orddict,erl_eval,file,c,kernel_config,user_io,user_sup,
+                    supervisor_bridge,standard_error,code_server,unicode,
+                    hipe_unified_loader,gb_sets,ets,binary,code,file_server,
+                    net_kernel,global_group,erl_distribution,filename,
+                    inet_gethost_native,os,inet_parse,inet,inet_udp,
+                    inet_config,inet_db,global,gb_trees,rpc,supervisor,kernel,
+                    application_master,sys,application,gen_server,erl_parse,
+                    proplists,erl_scan,lists,application_controller,proc_lib,
+                    gen,gen_event,error_logger,heart,error_handler,
+                    erts_internal,erlang,erl_prim_loader,prim_zip,zlib,
+                    prim_file,prim_inet,prim_eval,init,otp_ring0]},
+               {applications,
+                   [{lhttpc,"Lightweight HTTP Client","1.3.0"},
+                    {os_mon,"CPO  CXC 138 46","2.2.14"},
+                    {public_key,"Public key infrastructure","0.21"},
+                    {asn1,"The Erlang ASN1 compiler version 2.0.4","2.0.4"},
+                    {kernel,"ERTS  CXC 138 10","2.16.4"},
+                    {ale,"Another Logger for Erlang","5.1.1-5723-enterprise"},
+                    {inets,"INETS  CXC 138 49","5.9.8"},
+                    {ns_server,"Couchbase server","5.1.1-5723-enterprise"},
+                    {crypto,"CRYPTO version 2","3.2"},
+                    {ssl,"Erlang/OTP SSL application","5.3.3"},
+                    {sasl,"SASL  CXC 138 11","2.3.4"},
+                    {stdlib,"ERTS  CXC 138 10","1.19.4"}]},
+               {pre_loaded,
+                   [erts_internal,erlang,erl_prim_loader,prim_zip,zlib,
+                    prim_file,prim_inet,prim_eval,init,otp_ring0]},
+               {process_count,111},
+               {node,nonode@nohost},
+               {nodes,[]},
+               {registered,
+                   [inets_sup,lhttpc_sup,code_server,ale_stats_events,
+                    lhttpc_manager,ale,application_controller,httpd_sup,
+                    release_handler,kernel_safe_sup,ale_sup,overload,
+                    standard_error,error_logger,alarm_handler,ale_dynamic_sup,
+                    timer_server,standard_error_sup,'sink-ns_log',
+                    crypto_server,'sink-disk_xdcr',crypto_sup,sasl_safe_sup,
+                    'sink-disk_debug',ns_server_cluster_sup,init,tftp_sup,
+                    'sink-disk_error',os_mon_sup,'sink-disk_json_rpc',inet_db,
+                    user,'sink-disk_default',tls_connection_sup,rex,
+                    'sink-disk_metakv',ssl_sup,cpu_sup,kernel_sup,memsup,
+                    'sink-disk_access_int',global_name_server,disksup,
+                    httpc_sup,'sink-disk_access',file_server_2,ssl_manager,
+                    'sink-xdcr_trace',global_group,httpc_profile_sup,
+                    'sink-disk_reports',httpc_manager,httpc_handler_sup,
+                    'sink-disk_stats','sink-disk_xdcr_errors',ftp_sup,
+                    sasl_sup,erl_prim_loader,local_tasks]},
+               {cookie,nocookie},
+               {wordsize,8},
+               {wall_clock,1}]
+[ns_server:info,2018-06-15T20:07:59.006Z,nonode@nohost:ns_server_cluster_sup<0.144.0>:log_os_info:start_link:27]Manifest:
+["<manifest>",
+ "  <remote fetch=\"git://github.com/blevesearch/\" name=\"blevesearch\" />",
+ "  <remote fetch=\"git://github.com/couchbase/\" name=\"couchbase\" review=\"review.couchbase.org\" />",
+ "  <remote fetch=\"ssh://git@github.com/couchbase/\" name=\"couchbase-priv\" review=\"review.couchbase.org\" />",
+ "  <remote fetch=\"git://github.com/couchbasedeps/\" name=\"couchbasedeps\" review=\"review.couchbase.org\" />",
+ "  <remote fetch=\"git://github.com/couchbaselabs/\" name=\"couchbaselabs\" review=\"review.couchbase.org\" />",
+ "  ","  <default remote=\"couchbase\" revision=\"master\" />","  ",
+ "  <project groups=\"notdefault,enterprise\" name=\"backup\" path=\"goproj/src/github.com/couchbase/backup\" remote=\"couchbase-priv\" revision=\"d0ef3ae636719ac85d91154b44b4646d767e8077\" upstream=\"spock\" />",
+ "  <project groups=\"kv\" name=\"benchmark\" remote=\"couchbasedeps\" revision=\"9e3465560240ffb242b50a47cb7f19251a12ee42\" />",
+ "  <project name=\"bitset\" path=\"godeps/src/github.com/willf/bitset\" remote=\"couchbasedeps\" revision=\"28a4168144bb8ac95454e1f51c84da1933681ad4\" />",
+ "  <project name=\"blance\" path=\"godeps/src/github.com/couchbase/blance\" revision=\"5cd1345cca3ed72f1e63d41d622fcda73e63fea8\" upstream=\"spock\" />",
+ "  <project name=\"bleve\" path=\"godeps/src/github.com/blevesearch/bleve\" remote=\"blevesearch\" revision=\"48ac9862db1c5149fc1837464b0e6ea752657d3a\" />",
+ "  <project name=\"bleve-mapping-ui\" path=\"godeps/src/github.com/blevesearch/bleve-mapping-ui\" remote=\"blevesearch\" revision=\"f551b6d4f32bb920a83dd28c705bddd5de0d03b2\" />",
+ "  <project name=\"blevex\" path=\"godeps/src/github.com/blevesearch/blevex\" remote=\"blevesearch\" revision=\"090b7a1971e18e66d8e8775c90c9534aed566ffb\" />",
+ "  <project name=\"bolt\" path=\"godeps/src/github.com/boltdb/bolt\" remote=\"couchbasedeps\" revision=\"51f99c862475898df9773747d3accd05a7ca33c1\" />",
+ "  <project name=\"buffer\" path=\"godeps/src/github.com/tdewolff/buffer\" remote=\"couchbasedeps\" revision=\"43cef5ba7b6ce99cc410632dad46cf1c6c97026e\" />",
+ "  <project groups=\"notdefault,build\" name=\"build\" path=\"cbbuild\" revision=\"26e475522800c534972746502b03b30eb2c5b2ee\" upstream=\"spock\">",
+ "    <annotation name=\"RELEASE\" value=\"spock\" />",
+ "    <annotation name=\"PRODUCT_BRANCH\" value=\"master\" />",
+ "    <annotation name=\"PRODUCT\" value=\"couchbase-server\" />",
+ "    <annotation name=\"BLD_NUM\" value=\"5723\" />",
+ "    <annotation name=\"VERSION\" value=\"5.1.1\" />","  </project>",
+ "  <project name=\"cbauth\" path=\"godeps/src/github.com/couchbase/cbauth\" revision=\"ef55ede46a9f416e54608775c9a2dc23d7f29c5c\" upstream=\"spock\" />",
+ "  <project name=\"cbflag\" path=\"godeps/src/github.com/couchbase/cbflag\" revision=\"dbeda68bf448ce8e85e52a3216f3b031ef18a4b7\" />",
+ "  <project name=\"cbft\" path=\"goproj/src/github.com/couchbase/cbft\" revision=\"cb43f8c4bb7a9d22ad511b15005f3fd3f88d7776\" />",
+ "  <project name=\"cbgt\" path=\"goproj/src/github.com/couchbase/cbgt\" revision=\"8b1e83aa7dacc5a21d54794a7333713363f0febb\" />",
+ "  <project groups=\"notdefault,enterprise\" name=\"cbq-gui\" path=\"goproj/src/github.com/couchbase/cbq-gui\" remote=\"couchbase-priv\" revision=\"7a80f6b5f6ab870e70de80a802e18c0a973e8a37\" upstream=\"spock\" />",
+ "  <project name=\"cbsummary\" path=\"goproj/src/github.com/couchbase/cbsummary\" revision=\"82da4bce50b547d0744d83f3c6b561e967a0482c\" />",
+ "  <project name=\"clog\" path=\"godeps/src/github.com/couchbase/clog\" revision=\"ef844635a21403c0a5115bfdbbfb416cc57dae51\" upstream=\"spock\" />",
+ "  <project name=\"cobra\" path=\"godeps/src/github.com/spf13/cobra\" remote=\"couchbasedeps\" revision=\"0f056af21f5f368e5b0646079d0094a2c64150f7\" />",
+ "  <project name=\"context\" path=\"godeps/src/github.com/gorilla/context\" remote=\"couchbasedeps\" revision=\"215affda49addc4c8ef7e2534915df2c8c35c6cd\" />",
+ "  <project name=\"couchbase-cli\" revision=\"9cbdd78e02fc58080a899ffde4316dabd098614e\" upstream=\"spock\" />",
+ "  <project name=\"couchdb\" revision=\"3cf258de6f4b75ba732fbb6f9df7c9d658f2a2f0\" upstream=\"spock\" />",
+ "  <project groups=\"notdefault,packaging\" name=\"couchdbx-app\" revision=\"a4b3b3e67f1374cb1c4ae89a9ab0d155556d6d93\" />",
+ "  <project groups=\"kv\" name=\"couchstore\" revision=\"843103bbb54052d4f2ae98bd5371c9c23fbcd8e3\" upstream=\"spock\" />",
+ "  <project name=\"crypto\" path=\"godeps/src/golang.org/x/crypto\" remote=\"couchbasedeps\" revision=\"f23ba3a5ee43012fcb4b92e1a2a405a92554f4f2\" />",
+ "  <project name=\"cuckoofilter\" path=\"godeps/src/github.com/seiflotfy/cuckoofilter\" remote=\"couchbasedeps\" revision=\"d04838794ab86926d32b124345777e55e6f43974\" />",
+ "  <project name=\"cznic-b\" path=\"godeps/src/github.com/cznic/b\" remote=\"couchbasedeps\" revision=\"b96e30f1b7bd34b0b9d8760798d67eca83d7f09e\" />",
+ "  <project name=\"docloader\" path=\"goproj/src/github.com/couchbase/docloader\" revision=\"4265bee8cb592765b3c0b1b208726294c9eda59a\" />",
+ "  <project name=\"dparval\" path=\"godeps/src/github.com/couchbase/dparval\" revision=\"9def03782da875a2477c05bf64985db3f19f59ae\" upstream=\"master\" />",
+ "  <project name=\"flatbuffers\" path=\"godeps/src/github.com/google/flatbuffers\" remote=\"couchbasedeps\" revision=\"1a8968225130caeddd16e227678e6f8af1926303\" />",
+ "  <project groups=\"kv\" name=\"forestdb\" revision=\"99e2edb2ea078924c3810f48a50bdc104a041d7d\" upstream=\"spock\" />",
+ "  <project name=\"geocouch\" revision=\"e41c993a9c2f915aa72dc982d4ac69b3c46bb7e9\" />",
+ "  <project name=\"ghistogram\" path=\"godeps/src/github.com/couchbase/ghistogram\" revision=\"d910dd063dd68fb4d2a1ba344440f834ebb4ef62\" upstream=\"spock\" />",
+ "  <project name=\"go-bindata-assetfs\" path=\"godeps/src/github.com/elazarl/go-bindata-assetfs\" remote=\"couchbasedeps\" revision=\"57eb5e1fc594ad4b0b1dbea7b286d299e0cb43c2\" />",
+ "  <project name=\"go-couchbase\" path=\"godeps/src/github.com/couchbase/go-couchbase\" revision=\"baa7196b14d00497d5067851267a3fb94879595b\" upstream=\"spock\" />",
+ "  <project name=\"go-curl\" path=\"godeps/src/github.com/andelf/go-curl\" remote=\"couchbasedeps\" revision=\"3b0453ce6faae42ab4d8cdb9ac1f93919c9d8d69\" upstream=\"20161221-couchbase\" />",
+ "  <project name=\"go-jsonpointer\" path=\"godeps/src/github.com/dustin/go-jsonpointer\" remote=\"couchbasedeps\" revision=\"75939f54b39e7dafae879e61f65438dadc5f288c\" />",
+ "  <project name=\"go-metrics\" path=\"godeps/src/github.com/rcrowley/go-metrics\" remote=\"couchbasedeps\" revision=\"dee209f2455f101a5e4e593dea94872d2c62d85d\" />",
+ "  <project name=\"go-porterstemmer\" path=\"godeps/src/github.com/blevesearch/go-porterstemmer\" remote=\"blevesearch\" revision=\"23a2c8e5cf1f380f27722c6d2ae8896431dc7d0e\" />",
+ "  <project name=\"go-slab\" path=\"godeps/src/github.com/couchbase/go-slab\" revision=\"1f5f7f282713ccfab3f46b1610cb8da34bcf676f\" upstream=\"master\" />",
+ "  <project name=\"go-zookeeper\" path=\"godeps/src/github.com/samuel/go-zookeeper\" remote=\"couchbasedeps\" revision=\"fa6674abf3f4580b946a01bf7a1ce4ba8766205b\" />",
+ "  <project name=\"go_json\" path=\"godeps/src/github.com/couchbase/go_json\" revision=\"35445a51ec375da433acb511df2034ede5a101d8\" />",
+ "  <project name=\"go_n1ql\" path=\"godeps/src/github.com/couchbase/go_n1ql\" revision=\"6cf4e348b127e21f56e53eb8c3faaea56afdc588\" upstream=\"master\" />",
+ "  <project name=\"gocb\" path=\"godeps/src/github.com/couchbase/gocb\" revision=\"6019ad1377ffcc81184d2457c065fd72ea7a98dc\" />",
+ "  <project name=\"gocbconnstr\" path=\"godeps/src/gopkg.in/couchbaselabs/gocbconnstr.v1\" remote=\"couchbaselabs\" revision=\"710456e087a6d497e87f41d0a9d98d6a75672186\" upstream=\"master\" />",
+ "  <project name=\"gocbcore\" path=\"godeps/src/gopkg.in/couchbase/gocbcore.v7\" revision=\"afa21ae052b8b110c65f758571e404523e9b07f9\" />",
+ "  <project name=\"godbc\" path=\"godeps/src/github.com/couchbase/godbc\" revision=\"6f14d6b74b5c6761678e7c7b3929f7e763b7fbf8\" />",
+ "  <project name=\"gofarmhash\" path=\"godeps/src/github.com/leemcloughlin/gofarmhash\" remote=\"couchbasedeps\" revision=\"0a055c5b87a8c55ce83459cbf2776b563822a942\" />",
+ "  <project name=\"goforestdb\" path=\"godeps/src/github.com/couchbase/goforestdb\" revision=\"0b501227de0e8c55d99ed14e900eea1a1dbaf899\" upstream=\"master\" />",
+ "  <project name=\"gojson\" path=\"godeps/src/github.com/dustin/gojson\" remote=\"couchbasedeps\" revision=\"af16e0e771e2ed110f2785564ae33931de8829e4\" />",
+ "  <project name=\"golang-snappy\" path=\"godeps/src/github.com/golang/snappy\" remote=\"couchbasedeps\" revision=\"723cc1e459b8eea2dea4583200fd60757d40097a\" />",
+ "  <project name=\"goleveldb\" path=\"godeps/src/github.com/syndtr/goleveldb\" remote=\"couchbasedeps\" revision=\"fa5b5c78794bc5c18f330361059f871ae8c2b9d6\" />",
+ "  <project name=\"gomemcached\" path=\"godeps/src/github.com/couchbase/gomemcached\" revision=\"3caad6d47156ff7d62c3fc03eaba683ee783e4bf\" upstream=\"spock\" />",
+ "  <project name=\"gometa\" path=\"goproj/src/github.com/couchbase/gometa\" revision=\"73108a510f7e39cb7cc167b857a3a2453ea5343b\" upstream=\"spock\" />",
+ "  <project groups=\"kv\" name=\"googletest\" remote=\"couchbasedeps\" revision=\"f397fa5ec6365329b2e82eb2d8c03a7897bbefb5\" />",
+ "  <project name=\"goskiplist\" path=\"godeps/src/github.com/ryszard/goskiplist\" remote=\"couchbasedeps\" revision=\"2dfbae5fcf46374f166f8969cb07e167f1be6273\" />",
+ "  <project name=\"gosnappy\" path=\"godeps/src/github.com/syndtr/gosnappy\" remote=\"couchbasedeps\" revision=\"156a073208e131d7d2e212cb749feae7c339e846\" />",
+ "  <project name=\"goutils\" path=\"godeps/src/github.com/couchbase/goutils\" revision=\"7a02f3df0ea980574216f469c192985a2083b957\" />",
+ "  <project name=\"goxdcr\" path=\"goproj/src/github.com/couchbase/goxdcr\" revision=\"a2a9b337cde9482ae3562f7932ae3b8caa8d067b\" upstream=\"spock\" />",
+ "  <project name=\"gtreap\" path=\"godeps/src/github.com/steveyen/gtreap\" remote=\"couchbasedeps\" revision=\"0abe01ef9be25c4aedc174758ec2d917314d6d70\" />",
+ "  <project name=\"httprouter\" path=\"godeps/src/github.com/julienschmidt/httprouter\" remote=\"couchbasedeps\" revision=\"975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e\" />",
+ "  <project name=\"indexing\" path=\"goproj/src/github.com/couchbase/indexing\" revision=\"7f5a24cf3d59387e15aeee50141212eb60642b35\" upstream=\"spock\" />",
+ "  <project name=\"jsonx\" path=\"godeps/src/gopkg.in/couchbaselabs/jsonx.v1\" remote=\"couchbaselabs\" revision=\"5b7baa20429a46a5543ee259664cc86502738cad\" upstream=\"master\" />",
+ "  <project groups=\"kv\" name=\"kv_engine\" revision=\"bbb1bc7f041fbbc19b2b5279a8856fae2d585554\" upstream=\"spock\" />",
+ "  <project name=\"levigo\" path=\"godeps/src/github.com/jmhodges/levigo\" remote=\"couchbasedeps\" revision=\"1ddad808d437abb2b8a55a950ec2616caa88969b\" />",
+ "  <project name=\"liner\" path=\"godeps/src/github.com/peterh/liner\" remote=\"couchbasedeps\" revision=\"3681c2a912330352991ecdd642f257efe5b85518\" />",
+ "  <project name=\"liner\" path=\"godeps/src/github.com/sbinet/liner\" remote=\"couchbasedeps\" revision=\"d9335eee40a45a4f5d74524c90040d6fe6013d50\" />",
+ "  <project name=\"minify\" path=\"godeps/src/github.com/tdewolff/minify\" remote=\"couchbasedeps\" revision=\"ede45cc53f43891267b1fe7c689db9c76d4ce0fb\" />",
+ "  <project name=\"mmap-go\" path=\"godeps/src/github.com/edsrzf/mmap-go\" remote=\"couchbasedeps\" revision=\"935e0e8a636ca4ba70b713f3e38a19e1b77739e8\" />",
+ "  <project name=\"moss\" path=\"godeps/src/github.com/couchbase/moss\" revision=\"867412a2af63ef98bd1388bd7dcc5bd43fc457b7\" upstream=\"spock\" />",
+ "  <project name=\"mossScope\" path=\"godeps/src/github.com/couchbase/mossScope\" revision=\"7f2d5778cdb05336441ed78fc059b7412c6623b0\" upstream=\"spock\" />",
+ "  <project name=\"mousetrap\" path=\"godeps/src/github.com/inconshreveable/mousetrap\" remote=\"couchbasedeps\" revision=\"76626ae9c91c4f2a10f34cad8ce83ea42c93bb75\" />",
+ "  <project groups=\"kv\" name=\"moxi\" revision=\"cd8da46b9b953800d430c8b0aa4667790727ed6f\" upstream=\"master\" />",
+ "  <project name=\"mux\" path=\"godeps/src/github.com/gorilla/mux\" remote=\"couchbasedeps\" revision=\"043ee6597c29786140136a5747b6a886364f5282\" />",
+ "  <project name=\"net\" path=\"godeps/src/golang.org/x/net\" remote=\"couchbasedeps\" revision=\"8968c61983e8f51a91b8c0ef25bf739278c89634\" />",
+ "  <project name=\"nitro\" path=\"goproj/src/github.com/couchbase/nitro\" revision=\"4f5714e663ad109e0ad1bdcbcf48d226179d62f5\" upstream=\"spock\" />",
+ "  <project name=\"npipe\" path=\"godeps/src/github.com/natefinch/npipe\" remote=\"couchbasedeps\" revision=\"272c8150302e83f23d32a355364578c9c13ab20f\" />",
+ "  <project name=\"ns_server\" revision=\"d74774ec046770a216f2cb8b602fe3e40ce48c09\" upstream=\"spock\" />",
+ "  <project name=\"parse\" path=\"godeps/src/github.com/tdewolff/parse\" remote=\"couchbasedeps\" revision=\"0334a869253aca4b3a10c56c3f3139b394aec3a9\" />",
+ "  <project name=\"pflag\" path=\"godeps/src/github.com/spf13/pflag\" remote=\"couchbasedeps\" revision=\"a232f6d9f87afaaa08bafaff5da685f974b83313\" />",
+ "  <project groups=\"kv\" name=\"phosphor\" revision=\"f4c71b44bfa05fcb904026e29367b10087b3753d\" />",
+ "  <project groups=\"notdefault,enterprise\" name=\"plasma\" path=\"goproj/src/github.com/couchbase/plasma\" remote=\"couchbase-priv\" revision=\"8a6dce293895f2ae7c1093fbc0318a4e6f35ec01\" upstream=\"spock\" />",
+ "  <project groups=\"kv\" name=\"platform\" revision=\"4abe0d4bb782c095c821749d3bd3f1deb7d156c2\" upstream=\"spock\" />",
+ "  <project name=\"protobuf\" path=\"godeps/src/github.com/golang/protobuf\" remote=\"couchbasedeps\" revision=\"655cdfa588ea190e901bc5590e65d5621688847c\" />",
+ "  <project name=\"query\" path=\"goproj/src/github.com/couchbase/query\" revision=\"dba28197b6c84a0a25621889202142ad7d168675\" upstream=\"spock\" />",
+ "  <project name=\"query-ui\" revision=\"b476488f9b64deee8c1c15e0fa392c1fa457a582\" upstream=\"spock\" />",
+ "  <project name=\"retriever\" path=\"godeps/src/github.com/couchbase/retriever\" revision=\"e3419088e4d3b4fe3aad3b364fdbe9a154f85f17\" upstream=\"master\" />",
+ "  <project name=\"roaring\" path=\"godeps/src/github.com/RoaringBitmap/roaring\" remote=\"couchbasedeps\" revision=\"dd6b41e153cc91db0440d4155626f8e2c2f298a4\" />",
+ "  <project name=\"segment\" path=\"godeps/src/github.com/blevesearch/segment\" remote=\"blevesearch\" revision=\"762005e7a34fd909a84586299f1dd457371d36ee\" />",
+ "  <project groups=\"kv\" name=\"sigar\" revision=\"79ee06355851960858ed76f5633b661a9eff80f9\" />",
+ "  <project name=\"strconv\" path=\"godeps/src/github.com/tdewolff/strconv\" remote=\"couchbasedeps\" revision=\"9b189f5be77f33c46776f24dbddb2a7ab32af214\" />",
+ "  <project groups=\"kv\" name=\"subjson\" revision=\"85ed622c5959fa1c20c83993aec0e2293d7fd20f\" upstream=\"master\" />",
+ "  <project groups=\"solaris,notdefault\" name=\"sys\" path=\"godeps/src/golang.org/x/sys\" remote=\"couchbasedeps\" revision=\"9d4e42a20653790449273b3c85e67d6d8bae6e2e\" />",
+ "  <project name=\"testrunner\" revision=\"6bb490aee050b6661738139e89e03110fd3000b4\" upstream=\"master\" />",
+ "  <project name=\"text\" path=\"godeps/src/golang.org/x/text\" remote=\"couchbasedeps\" revision=\"601048ad6acbab6cedd582db09b8c4839ff25b15\" />",
+ "  <project groups=\"kv\" name=\"tlm\" revision=\"f7c0947e531e99a8b7668f5282ff13156eb77ef4\" upstream=\"spock\">",
+ "    <copyfile dest=\"GNUmakefile\" src=\"GNUmakefile\" />",
+ "    <copyfile dest=\"Makefile\" src=\"Makefile\" />",
+ "    <copyfile dest=\"CMakeLists.txt\" src=\"CMakeLists.txt\" />",
+ "    <copyfile dest=\".clang-format\" src=\"dot-clang-format\" />",
+ "  </project>",
+ "  <project name=\"ts\" path=\"godeps/src/github.com/olekukonko/ts\" remote=\"couchbasedeps\" revision=\"ecf753e7c962639ab5a1fb46f7da627d4c0a04b8\" />",
+ "  <project groups=\"notdefault,packaging\" name=\"voltron\" remote=\"couchbase-priv\" revision=\"a383d165c6cd62a889687a7047aae67d123a9a80\" upstream=\"spock\" />",
+ "</manifest>"]
+
+[ns_server:info,2018-06-15T20:07:59.011Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:read_address_config_from_path:86]Reading ip config from "/opt/couchbase/var/lib/couchbase/ip_start"
+[ns_server:info,2018-06-15T20:07:59.011Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:read_address_config_from_path:86]Reading ip config from "/opt/couchbase/var/lib/couchbase/ip"
+[ns_server:info,2018-06-15T20:07:59.012Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:init:163]ip config not found. Looks like we're brand new node
+[ns_server:info,2018-06-15T20:07:59.125Z,nonode@nohost:dist_manager<0.147.0>:dist_manager:bringup:214]Attempting to bring up net_kernel with name 'ns_1@127.0.0.1'
+[ns_server:info,2018-06-15T20:07:59.139Z,ns_1@127.0.0.1:dist_manager<0.147.0>:dist_manager:save_node:147]saving node to "/opt/couchbase/var/lib/couchbase/couchbase-server.node"
+[ns_server:info,2018-06-15T20:07:59.164Z,ns_1@127.0.0.1:ns_config_sup<0.160.0>:ns_config_sup:init:32]loading static ns_config from "/opt/couchbase/etc/couchbase/config"
+[ns_server:info,2018-06-15T20:07:59.196Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_config:load_config:1082]Loading static config from "/opt/couchbase/etc/couchbase/config"
+[ns_server:info,2018-06-15T20:07:59.199Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_config:load_config:1096]Loading dynamic config from "/opt/couchbase/var/lib/couchbase/config/config.dat"
+[ns_server:info,2018-06-15T20:07:59.213Z,ns_1@127.0.0.1:ns_config<0.163.0>:ns_config:load_config:1125]Here's full dynamic config we loaded + static & default config:
+[{{local_changes_count,<<"182c8baf6b88cf138096b52cf8cfc4e6">>},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{28,63696295165}}]}]},
+ {{node,'ns_1@127.0.0.1',{project_intact,is_vulnerable}},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   false]},
+ {{node,'ns_1@127.0.0.1',xdcr_rest_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9998]},
+ {{node,'ns_1@127.0.0.1',uuid},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   <<"182c8baf6b88cf138096b52cf8cfc4e6">>]},
+ {{node,'ns_1@127.0.0.1',ssl_rest_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18091]},
+ {{node,'ns_1@127.0.0.1',ssl_query_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18093]},
+ {{node,'ns_1@127.0.0.1',ssl_proxy_upstream_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   11215]},
+ {{node,'ns_1@127.0.0.1',ssl_proxy_downstream_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   11214]},
+ {{node,'ns_1@127.0.0.1',ssl_capi_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18092]},
+ {{node,'ns_1@127.0.0.1',rest},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {port,8091},
+   {port_meta,global}]},
+ {{node,'ns_1@127.0.0.1',query_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   8093]},
+ {{node,'ns_1@127.0.0.1',projector_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9999]},
+ {{node,'ns_1@127.0.0.1',port_servers},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}]},
+ {{node,'ns_1@127.0.0.1',ns_log},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {filename,"/opt/couchbase/var/lib/couchbase/ns_log"}]},
+ {{node,'ns_1@127.0.0.1',moxi},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {port,11211},
+   {verbosity,[]}]},
+ {{node,'ns_1@127.0.0.1',memcached_defaults},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {maxconn,30000},
+   {dedicated_port_maxconn,5000},
+   {ssl_cipher_list,"HIGH"},
+   {connection_idle_time,0},
+   {verbosity,0},
+   {privilege_debug,false},
+   {breakpad_enabled,true},
+   {breakpad_minidump_dir_path,"/opt/couchbase/var/lib/couchbase/crash"},
+   {dedupe_nmvb_maps,false}]},
+ {{node,'ns_1@127.0.0.1',memcached_config},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   {[{interfaces,
+      {memcached_config_mgr,omit_missing_mcd_ports,
+       [{[{host,<<"*">>},{port,port},{maxconn,maxconn}]},
+        {[{host,<<"*">>},
+          {port,dedicated_port},
+          {maxconn,dedicated_port_maxconn}]},
+        {[{host,<<"*">>},
+          {port,ssl_port},
+          {maxconn,maxconn},
+          {ssl,
+           {[{key,
+              <<"/opt/couchbase/var/lib/couchbase/config/memcached-key.pem">>},
+             {cert,
+              <<"/opt/couchbase/var/lib/couchbase/config/memcached-cert.pem">>}]}}]}]}},
+     {ssl_cipher_list,{"~s",[ssl_cipher_list]}},
+     {client_cert_auth,{memcached_config_mgr,client_cert_auth,[]}},
+     {ssl_minimum_protocol,{memcached_config_mgr,ssl_minimum_protocol,[]}},
+     {connection_idle_time,connection_idle_time},
+     {privilege_debug,privilege_debug},
+     {breakpad,
+      {[{enabled,breakpad_enabled},
+        {minidump_dir,{memcached_config_mgr,get_minidump_dir,[]}}]}},
+     {extensions,
+      [{[{module,<<"/opt/couchbase/lib/memcached/stdin_term_handler.so">>},
+         {config,<<>>}]},
+       {[{module,<<"/opt/couchbase/lib/memcached/file_logger.so">>},
+         {config,
+          {"cyclesize=~B;sleeptime=~B;filename=~s/~s",
+           [log_cyclesize,log_sleeptime,log_path,log_prefix]}}]}]},
+     {admin,{"~s",[admin_user]}},
+     {verbosity,verbosity},
+     {audit_file,{"~s",[audit_file]}},
+     {rbac_file,{"~s",[rbac_file]}},
+     {dedupe_nmvb_maps,dedupe_nmvb_maps},
+     {xattr_enabled,{memcached_config_mgr,is_enabled,[[5,0]]}}]}]},
+ {{node,'ns_1@127.0.0.1',memcached},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {port,11210},
+   {dedicated_port,11209},
+   {ssl_port,11207},
+   {admin_user,"@ns_server"},
+   {other_users,["@cbq-engine","@projector","@goxdcr","@index","@fts"]},
+   {admin_pass,"*****"},
+   {engines,
+    [{membase,
+      [{engine,"/opt/couchbase/lib/memcached/ep.so"},
+       {static_config_string,"failpartialwarmup=false"}]},
+     {memcached,
+      [{engine,"/opt/couchbase/lib/memcached/default_engine.so"},
+       {static_config_string,"vb0=true"}]}]},
+   {config_path,"/opt/couchbase/var/lib/couchbase/config/memcached.json"},
+   {audit_file,"/opt/couchbase/var/lib/couchbase/config/audit.json"},
+   {rbac_file,"/opt/couchbase/var/lib/couchbase/config/memcached.rbac"},
+   {log_path,"/opt/couchbase/var/lib/couchbase/logs"},
+   {log_prefix,"memcached.log"},
+   {log_generations,20},
+   {log_cyclesize,10485760},
+   {log_sleeptime,19},
+   {log_rotation_period,39003}]},
+ {{node,'ns_1@127.0.0.1',membership},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   active]},
+ {{node,'ns_1@127.0.0.1',ldap_enabled},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   true]},
+ {{node,'ns_1@127.0.0.1',isasl},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {path,"/opt/couchbase/var/lib/couchbase/isasl.pw"}]},
+ {{node,'ns_1@127.0.0.1',is_enterprise},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   true]},
+ {{node,'ns_1@127.0.0.1',indexer_stmaint_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9105]},
+ {{node,'ns_1@127.0.0.1',indexer_stinit_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9103]},
+ {{node,'ns_1@127.0.0.1',indexer_stcatchup_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9104]},
+ {{node,'ns_1@127.0.0.1',indexer_scan_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9101]},
+ {{node,'ns_1@127.0.0.1',indexer_https_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   19102]},
+ {{node,'ns_1@127.0.0.1',indexer_http_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9102]},
+ {{node,'ns_1@127.0.0.1',indexer_admin_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   9100]},
+ {{node,'ns_1@127.0.0.1',fts_ssl_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   18094]},
+ {{node,'ns_1@127.0.0.1',fts_http_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   8094]},
+ {{node,'ns_1@127.0.0.1',config_version},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   {5,1,1}]},
+ {{node,'ns_1@127.0.0.1',compaction_daemon},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]},
+   {check_interval,30},
+   {min_db_file_size,131072},
+   {min_view_file_size,20971520}]},
+ {{node,'ns_1@127.0.0.1',capi_port},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   8092]},
+ {{node,'ns_1@127.0.0.1',audit},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}]},
+ {{request_limit,rest},undefined},
+ {{request_limit,capi},undefined},
+ {{couchdb,max_parallel_replica_indexers},2},
+ {{couchdb,max_parallel_indexers},4},
+ {set_view_update_daemon,
+  [{update_interval,5000},
+   {update_min_changes,5000},
+   {replica_update_min_changes,5000}]},
+ {server_groups,
+  [[{uuid,<<"0">>},{name,<<"Group 1">>},{nodes,['ns_1@127.0.0.1']}]]},
+ {secure_headers,[]},
+ {replication,[{enabled,true}]},
+ {remote_clusters,[]},
+ {read_only_user_creds,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230379}}]}|
+   '_deleted']},
+ {password_policy,[{min_length,6},{must_present,[]}]},
+ {nodes_wanted,['ns_1@127.0.0.1']},
+ {memcached,[]},
+ {max_bucket_count,10},
+ {index_aware_rebalance_disabled,false},
+ {email_alerts,
+  [{recipients,["root@localhost"]},
+   {sender,"couchbase@localhost"},
+   {enabled,false},
+   {email_server,
+    [{user,[]},{pass,"*****"},{host,"localhost"},{port,25},{encrypt,false}]},
+   {alerts,
+    [auto_failover_node,auto_failover_maximum_reached,
+     auto_failover_other_nodes_down,auto_failover_cluster_too_small,
+     auto_failover_disabled,ip,disk,overhead,ep_oom_errors,
+     ep_item_commit_failed,audit_dropped_events,indexer_ram_max_usage,
+     ep_clock_cas_drift_threshold_exceeded,communication_issue]}]},
+ {drop_request_memory_threshold_mib,undefined},
+ {buckets,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{2,63696230379}}]},
+   {configs,[]}]},
+ {autocompaction,
+  [{database_fragmentation_threshold,{30,undefined}},
+   {view_fragmentation_threshold,{30,undefined}}]},
+ {auto_reprovision_cfg,[{enabled,true},{max_nodes,1},{count,0}]},
+ {auto_failover_cfg,[{enabled,false},{timeout,120},{max_nodes,1},{count,0}]},
+ {audit,
+  [{auditd_enabled,false},
+   {rotate_interval,86400},
+   {rotate_size,20971520},
+   {disabled,[]},
+   {sync,[]},
+   {log_path,"/opt/couchbase/var/lib/couchbase/logs"}]},
+ {alert_limits,
+  [{max_overhead_perc,50},{max_disk_used,90},{max_indexer_ram,75}]},
+ {cert_and_pkey,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230376}}]}|
+   {<<"-----BEGIN CERTIFICATE-----\nMIIDAjCCAeqgAwIBAgIIFTgjkGRLXwQwDQYJKoZIhvcNAQELBQAwJDEiMCAGA1UE\nAxMZQ291Y2hiYXNlIFNlcnZlciBjMWE2ZTI0ODAeFw0xMzAxMDEwMDAwMDBaFw00\nOTEyMzEyMzU5NTlaMCQxIjAgBgNVBAMTGUNvdWNoYmFzZSBTZXJ2ZXIgYzFhNmUy\nNDgwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDRQ+b710+DLy9HAstr\nL/vOgetfyIkHiDnNX+wVXHuN65nbt9+F73jsWG84KvHhV4IQl/MF264/WygBuy/P\nD7BYNG9bAQzO+T1xySbxXFP6OCNHG/Pa6RXmqLYX3befjwPSunh3p4OEsy9nTz3C\nJUkltwqRV8iwHAtHjhGJhdaPLq0mu5OgJIBH/SQ4oaNRNdIQaijX0vHLxSAF/lm8\nBC6ItAc0r3Zagda70srHVaU9VrVA0lOKh9rmab7X65WaPHF+MnFtz7Xa6hUrp1Gn\nEtyfaggDVlD7bVTm3dLw9Xq7fMbcxN3aZQ/6o5P8/2yYryeKOdDv0QuTIJq++Z37\n/juJAgMBAAGjODA2MA4GA1UdDwEB/wQEAwICpDATBgNVHSUEDDAKBggrBgEFBQcD\nATAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQB1hH1Se05gx+dD\nnez244VgtJH0Nz9d0g02yfV7X7YoMg98XNO40N8WBziXk4AObGOZCKDO77rAXYMI\n9qhGLLsIB0q8YQeE+MPKsrAFpCwmhBWXbiH9x4flqC2Y3+4afyV67xlgH3IrMd3H\n+Vzujf2w7h3cOx2PKVp93co0DT1120MAnYgrRb0y6F7v4MYLAKJAE7u838/vCdgq\n9ioZSNKrxjcLnuZP5kgvcR5tj6F7Fhk1Pi8Y2kOAy6T9r3JvwAsWEiHEpguqCSnR\no5vcb9SVXtVIK4HuFu0CY/+k6KEjjPTu/s90jmW22zLRLchiEZ5wHnqjCtcAWw4H\n4hz3O/XM\n-----END CERTIFICATE-----\n">>,
+    <<"*****">>}]},
+ {otp,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230379}}]},
+   {cookie,{sanitized,<<"xwkf11tmQ6a3OWN/Y5yFvjjSzkyKLTkNewFlf/oFKmg=">>}}]},
+ {cluster_compat_version,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{7,63696230379}}]},
+   5,1]},
+ {goxdcr_upgrade,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230379}}]}|
+   '_deleted']},
+ {roles_definitions,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230379}}]}|
+   '_deleted']},
+ {users_upgrade,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230379}}]}|
+   '_deleted']},
+ {client_cert_auth,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696230379}}]},
+   {state,"disable"},
+   {prefixes,[]}]},
+ {{node,'ns_1@127.0.0.1',stop_xdcr},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{2,63696230379}}]}|
+   '_deleted']},
+ {memory_quota,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{2,63696295160}}]}|
+   1000]},
+ {fts_memory_quota,256},
+ {cluster_name,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295117}}]},
+   99,98,49]},
+ {{node,'ns_1@127.0.0.1',services},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295160}}]},
+   fts,index,kv,n1ql]},
+ {settings,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295082}}]},
+   {stats,[{send_stats,true}]}]},
+ {rest,[{port,8091}]},
+ {rest_creds,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295161}}]}|
+   {"admin",
+    {auth,
+     [{<<"plain">>,<<"NdD+Z87gZRI6l2jkayF7IrjX7XKHUa6H3OR02E3RnQSs4oqI">>},
+      {<<"sha1">>,
+       {[{<<"h">>,<<"JG7Mlaye5bKZLW0DUwn/k2EceQo=">>},
+         {<<"s">>,<<"n5VYHi3aL1CURmH2eaFOBMWG620=">>},
+         {<<"i">>,4000}]}},
+      {<<"sha256">>,
+       {[{<<"h">>,<<"uP9QAJKiN3LrGGQcz1Jt7tZx3hKFcvJ2Scx0G6hmVwc=">>},
+         {<<"s">>,<<"kTkCy9f+XoROwwY2gWiKEuXgW7PJbVPSLrMg+7vYLEE=">>},
+         {<<"i">>,4000}]}},
+      {<<"sha512">>,
+       {[{<<"h">>,
+          <<"2KdY0Zvw0SrQvdf78cbRIi1LqanE1O0vrNA7WA6QcW3xMgTQjAlwCnGsy4fpMSfr/eyyDEumxAncTGg4SDV9EQ==">>},
+         {<<"s">>,
+          <<"407DOMHadX2eujH9oMAx7/+HlFuodOixkUNZY+NIbxqDOnSFXOmNno3AK0yVmWMCYcRYjk9vz4MgJwV8Ong1nQ==">>},
+         {<<"i">>,4000}]}}]}}]},
+ {uuid,
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295161}}]}|
+   <<"dd09bd71bb9e50939d5fe269380df4c8">>]},
+ {{metakv,<<"/indexing/settings/config">>},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{10,63696295161}}]}|
+   <<"{\"indexer.settings.compaction.days_of_week\":\"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday\",\"indexer.settings.compaction.interval\":\"00:00,00:00\",\"indexer.settings.compaction.compaction_mode\":\"circular\",\"indexer.settings.persisted_snapshot.interval\":5000,\"indexer.settings.log_level\":\"info\",\"indexer.settings.compaction.min_frag\":30,\"indexer.settings.inmemory_snapshot.interval\":200,\"indexer.settings.max_cpu_percent\":0,\"indexer.settings.storage_mode\":\"plasma\",\"indexer.settings.recovery.max_rollbacks\":5,\"indexer.settings.memory_quota\":268435456,\"indexer.settings.compaction.abort_exceed_interval\":false}">>]},
+ {{metakv,<<"/fts/cbgt/cfg/nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6">>},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295161}}]}|
+   <<"{\"uuid\":\"772c825540ca491c\",\"nodeDefs\":{\"182c8baf6b88cf138096b52cf8cfc4e6\":{\"hostPort\":\"127.0.0.1:8094\",\"uuid\":\"182c8baf6b88cf138096b52cf8cfc4e6\",\"implVersion\":\"5.0.0\",\"tags\":[\"feed\",\"janitor\",\"pindex\",\"queryer\",\"cbauth_service\"],\"container\":\"\",\"weight\":1,\"extras\":\"{\\\"nsHostPort\\\":\\\"127.0.0.1:8091\\\",\\\"version-cbft.app\\\":\\\"v0.5.0\\\",\\\"version-cbft.lib\\\":\\\"v0.5.0\\\"}\"}},\"implVersion\":\"5.0.0\"}">>]},
+ {{metakv,
+   <<"/fts/cbgt/cfg/nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6">>},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295161}}]}|
+   <<"{\"uuid\":\"31cad4aa2faa2988\",\"nodeDefs\":{\"182c8baf6b88cf138096b52cf8cfc4e6\":{\"hostPort\":\"127.0.0.1:8094\",\"uuid\":\"182c8baf6b88cf138096b52cf8cfc4e6\",\"implVersion\":\"5.0.0\",\"tags\":[\"feed\",\"janitor\",\"pindex\",\"queryer\",\"cbauth_service\"],\"container\":\"\",\"weight\":1,\"extras\":\"{\\\"nsHostPort\\\":\\\"127.0.0.1:8091\\\",\\\"version-cbft.app\\\":\\\"v0.5.0\\\",\\\"version-cbft.lib\\\":\\\"v0.5.0\\\"}\"}},\"implVersion\":\"5.0.0\"}">>]},
+ {{metakv,<<"/fts/cbgt/cfg/version">>},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295161}}]}|
+   <<"5.0.0">>]},
+ {{service_map,fts},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{2,63696295165}}]},
+   'ns_1@127.0.0.1']},
+ {{service_map,index},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{2,63696295165}}]},
+   'ns_1@127.0.0.1']},
+ {{service_map,n1ql},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{2,63696295165}}]},
+   'ns_1@127.0.0.1']},
+ {{metakv,<<"/indexing/info/versionToken">>},
+  [{'_vclock',[{<<"182c8baf6b88cf138096b52cf8cfc4e6">>,{1,63696295165}}]}|
+   <<"{\"Version\":2}">>]}]
+[ns_server:info,2018-06-15T20:07:59.257Z,ns_1@127.0.0.1:ns_ssl_services_setup<0.179.0>:ns_ssl_services_setup:init:407]Used ssl options:
+[{keyfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {certfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem"},
+ {versions,[tlsv1,'tlsv1.1','tlsv1.2']},
+ {cacertfile,"/opt/couchbase/var/lib/couchbase/config/ssl-cert-key.pem-ca"},
+ {dh,<<48,130,1,8,2,130,1,1,0,152,202,99,248,92,201,35,238,246,5,77,93,120,10,
+       118,129,36,52,111,193,167,220,49,229,106,105,152,133,121,157,73,158,
+       232,153,197,197,21,171,140,30,207,52,165,45,8,221,162,21,199,183,66,
+       211,247,51,224,102,214,190,130,96,253,218,193,35,43,139,145,89,200,250,
+       145,92,50,80,134,135,188,205,254,148,122,136,237,220,186,147,187,104,
+       159,36,147,217,117,74,35,163,145,249,175,242,18,221,124,54,140,16,246,
+       169,84,252,45,47,99,136,30,60,189,203,61,86,225,117,255,4,91,46,110,
+       167,173,106,51,65,10,248,94,225,223,73,40,232,140,26,11,67,170,118,190,
+       67,31,127,233,39,68,88,132,171,224,62,187,207,160,189,209,101,74,8,205,
+       174,146,173,80,105,144,246,25,153,86,36,24,178,163,64,202,221,95,184,
+       110,244,32,226,217,34,55,188,230,55,16,216,247,173,246,139,76,187,66,
+       211,159,17,46,20,18,48,80,27,250,96,189,29,214,234,241,34,69,254,147,
+       103,220,133,40,164,84,8,44,241,61,164,151,9,135,41,60,75,4,202,133,173,
+       72,6,69,167,89,112,174,40,229,171,2,1,2>>},
+ {ciphers,[{dhe_rsa,aes_256_cbc,sha256},
+           {dhe_dss,aes_256_cbc,sha256},
+           {rsa,aes_256_cbc,sha256},
+           {dhe_rsa,aes_128_cbc,sha256},
+           {dhe_dss,aes_128_cbc,sha256},
+           {rsa,aes_128_cbc,sha256},
+           {dhe_rsa,aes_256_cbc,sha},
+           {dhe_dss,aes_256_cbc,sha},
+           {rsa,aes_256_cbc,sha},
+           {dhe_rsa,'3des_ede_cbc',sha},
+           {dhe_dss,'3des_ede_cbc',sha},
+           {rsa,'3des_ede_cbc',sha},
+           {dhe_rsa,aes_128_cbc,sha},
+           {dhe_dss,aes_128_cbc,sha},
+           {rsa,aes_128_cbc,sha}]}]
+[ns_server:info,2018-06-15T20:07:59.319Z,ns_1@127.0.0.1:<0.181.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T20:07:59.319Z,ns_1@127.0.0.1:<0.181.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:info,2018-06-15T20:08:01.163Z,ns_1@127.0.0.1:ns_couchdb_port<0.213.0>:ns_port_server:log:223]ns_couchdb<0.213.0>: Apache CouchDB v4.5.1-60-g3cf258d (LogLevel=info) is starting.
+
+[ns_server:info,2018-06-15T20:08:01.399Z,ns_1@127.0.0.1:ns_server_sup<0.234.0>:dir_size:start_link:39]Starting quick version of dir_size with program name: godu
+[ns_server:info,2018-06-15T20:08:01.508Z,ns_1@127.0.0.1:ns_couchdb_port<0.213.0>:ns_port_server:log:223]ns_couchdb<0.213.0>: Apache CouchDB has started. Time to relax.
+ns_couchdb<0.213.0>: 158: Booted. Waiting for shutdown request
+
+[ns_server:info,2018-06-15T20:08:01.611Z,ns_1@127.0.0.1:<0.244.0>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:warn,2018-06-15T20:08:01.624Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[ns_server:warn,2018-06-15T20:08:01.627Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[user:info,2018-06-15T20:08:01.628Z,ns_1@127.0.0.1:ns_cookie_manager<0.158.0>:ns_cookie_manager:do_cookie_sync:127]Node 'ns_1@127.0.0.1' synchronized otp cookie {sanitized,
+                                               <<"xwkf11tmQ6a3OWN/Y5yFvjjSzkyKLTkNewFlf/oFKmg=">>} from cluster
+[ns_server:warn,2018-06-15T20:08:01.654Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[ns_server:info,2018-06-15T20:08:01.725Z,ns_1@127.0.0.1:ns_couchdb_port<0.213.0>:ns_port_server:log:223]ns_couchdb<0.213.0>: working as port
+
+[ns_server:error,2018-06-15T20:08:01.747Z,ns_1@127.0.0.1:ns_heart<0.285.0>:ns_heart:grab_one_service_status:512]Failed to grab service index status: {exit,
+                                      {noproc,
+                                       {gen_server,call,
+                                        ['service_agent-index',get_status,
+                                         2000]}},
+                                      [{gen_server,call,3,
+                                        [{file,"gen_server.erl"},{line,188}]},
+                                       {ns_heart,grab_one_service_status,1,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,509}]},
+                                       {ns_heart,
+                                        '-grab_service_statuses/0-lc$^1/1-1-',
+                                        1,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,505}]},
+                                       {ns_heart,current_status_slow_inner,0,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,349}]},
+                                       {ns_heart,current_status_slow,1,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,250}]},
+                                       {ns_heart,update_current_status,1,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,187}]},
+                                       {ns_heart,handle_info,2,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,118}]},
+                                       {gen_server,handle_msg,5,
+                                        [{file,"gen_server.erl"},
+                                         {line,604}]}]}
+[ns_server:info,2018-06-15T20:08:01.747Z,ns_1@127.0.0.1:menelaus_sup<0.311.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for fts
+
+[ns_server:info,2018-06-15T20:08:01.747Z,ns_1@127.0.0.1:menelaus_sup<0.311.0>:menelaus_pluggable_ui:validate_plugin_spec:119]Loaded pluggable UI specification for n1ql
+
+[ns_server:error,2018-06-15T20:08:01.747Z,ns_1@127.0.0.1:ns_heart<0.285.0>:ns_heart:grab_one_service_status:512]Failed to grab service fts status: {exit,
+                                    {noproc,
+                                     {gen_server,call,
+                                      ['service_agent-fts',get_status,2000]}},
+                                    [{gen_server,call,3,
+                                      [{file,"gen_server.erl"},{line,188}]},
+                                     {ns_heart,grab_one_service_status,1,
+                                      [{file,"src/ns_heart.erl"},{line,509}]},
+                                     {ns_heart,
+                                      '-grab_service_statuses/0-lc$^1/1-1-',1,
+                                      [{file,"src/ns_heart.erl"},{line,505}]},
+                                     {ns_heart,
+                                      '-grab_service_statuses/0-lc$^1/1-1-',1,
+                                      [{file,"src/ns_heart.erl"},{line,505}]},
+                                     {ns_heart,current_status_slow_inner,0,
+                                      [{file,"src/ns_heart.erl"},{line,349}]},
+                                     {ns_heart,current_status_slow,1,
+                                      [{file,"src/ns_heart.erl"},{line,250}]},
+                                     {ns_heart,update_current_status,1,
+                                      [{file,"src/ns_heart.erl"},{line,187}]},
+                                     {ns_heart,handle_info,2,
+                                      [{file,"src/ns_heart.erl"},
+                                       {line,118}]}]}
+[user:info,2018-06-15T20:08:01.762Z,ns_1@127.0.0.1:ns_server_sup<0.234.0>:menelaus_sup:start_link:46]Couchbase Server has started on web port 8091 on node 'ns_1@127.0.0.1'. Version: "5.1.1-5723-enterprise".
+[ns_server:error,2018-06-15T20:08:01.764Z,ns_1@127.0.0.1:ns_heart_slow_status_updater<0.291.0>:ns_heart:grab_one_service_status:512]Failed to grab service index status: {exit,
+                                      {noproc,
+                                       {gen_server,call,
+                                        ['service_agent-index',get_status,
+                                         2000]}},
+                                      [{gen_server,call,3,
+                                        [{file,"gen_server.erl"},{line,188}]},
+                                       {ns_heart,grab_one_service_status,1,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,509}]},
+                                       {ns_heart,
+                                        '-grab_service_statuses/0-lc$^1/1-1-',
+                                        1,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,505}]},
+                                       {ns_heart,current_status_slow_inner,0,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,349}]},
+                                       {ns_heart,current_status_slow,1,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,250}]},
+                                       {ns_heart,slow_updater_loop,0,
+                                        [{file,"src/ns_heart.erl"},
+                                         {line,244}]},
+                                       {proc_lib,init_p_do_apply,3,
+                                        [{file,"proc_lib.erl"},{line,239}]}]}
+[ns_server:error,2018-06-15T20:08:01.765Z,ns_1@127.0.0.1:ns_heart_slow_status_updater<0.291.0>:ns_heart:grab_one_service_status:512]Failed to grab service fts status: {exit,
+                                    {noproc,
+                                     {gen_server,call,
+                                      ['service_agent-fts',get_status,2000]}},
+                                    [{gen_server,call,3,
+                                      [{file,"gen_server.erl"},{line,188}]},
+                                     {ns_heart,grab_one_service_status,1,
+                                      [{file,"src/ns_heart.erl"},{line,509}]},
+                                     {ns_heart,
+                                      '-grab_service_statuses/0-lc$^1/1-1-',1,
+                                      [{file,"src/ns_heart.erl"},{line,505}]},
+                                     {ns_heart,
+                                      '-grab_service_statuses/0-lc$^1/1-1-',1,
+                                      [{file,"src/ns_heart.erl"},{line,505}]},
+                                     {ns_heart,current_status_slow_inner,0,
+                                      [{file,"src/ns_heart.erl"},{line,349}]},
+                                     {ns_heart,current_status_slow,1,
+                                      [{file,"src/ns_heart.erl"},{line,250}]},
+                                     {ns_heart,slow_updater_loop,0,
+                                      [{file,"src/ns_heart.erl"},{line,244}]},
+                                     {proc_lib,init_p_do_apply,3,
+                                      [{file,"proc_lib.erl"},{line,239}]}]}
+[ns_server:warn,2018-06-15T20:08:01.789Z,ns_1@127.0.0.1:<0.377.0>:ns_memcached:connect:1187]Unable to connect: {error,{badmatch,{error,econnrefused}}}, retrying.
+[ns_server:info,2018-06-15T20:08:01.801Z,ns_1@127.0.0.1:<0.380.0>:ns_memcached_log_rotator:init:28]Starting log rotator on "/opt/couchbase/var/lib/couchbase/logs"/"memcached.log"* with an initial period of 39003ms
+[ns_server:info,2018-06-15T20:08:01.823Z,ns_1@127.0.0.1:<0.266.0>:goport:handle_port_os_exit:458]Port exited with status 0
+[ns_server:warn,2018-06-15T20:08:01.829Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[ns_server:error,2018-06-15T20:08:02.110Z,ns_1@127.0.0.1:index_status_keeper_worker<0.425.0>:index_rest:get_json:42]Request to (indexer) http://127.0.0.1:9102/getIndexStatus failed: {error,
+                                                                   {econnrefused,
+                                                                    [{lhttpc_client,
+                                                                      send_request,
+                                                                      1,
+                                                                      [{file,
+                                                                        "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                       {line,
+                                                                        220}]},
+                                                                     {lhttpc_client,
+                                                                      execute,
+                                                                      9,
+                                                                      [{file,
+                                                                        "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                       {line,
+                                                                        169}]},
+                                                                     {lhttpc_client,
+                                                                      request,
+                                                                      9,
+                                                                      [{file,
+                                                                        "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                       {line,
+                                                                        92}]}]}}
+[ns_server:error,2018-06-15T20:08:02.111Z,ns_1@127.0.0.1:index_status_keeper_worker<0.425.0>:index_rest:get_json:42]Request to (fts) http://127.0.0.1:8094/api/nsstatus failed: {error,
+                                                             {econnrefused,
+                                                              [{lhttpc_client,
+                                                                send_request,
+                                                                1,
+                                                                [{file,
+                                                                  "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                 {line,220}]},
+                                                               {lhttpc_client,
+                                                                execute,9,
+                                                                [{file,
+                                                                  "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                 {line,169}]},
+                                                               {lhttpc_client,
+                                                                request,9,
+                                                                [{file,
+                                                                  "/home/couchbase/jenkins/workspace/couchbase-server-unix/couchdb/src/lhttpc/lhttpc_client.erl"},
+                                                                 {line,
+                                                                  92}]}]}}
+[user:info,2018-06-15T20:08:02.203Z,ns_1@127.0.0.1:mb_master<0.458.0>:mb_master:init:86]I'm the only node, so I'm the master.
+[ns_server:warn,2018-06-15T20:08:02.627Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[ns_server:warn,2018-06-15T20:08:02.628Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.
+[ns_server:warn,2018-06-15T20:08:02.655Z,ns_1@127.0.0.1:memcached_refresh<0.176.0>:ns_memcached:connect:1184]Unable to connect: {error,{badmatch,{error,econnrefused}}}.

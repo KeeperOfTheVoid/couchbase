@@ -1,0 +1,235 @@
+2018-06-15T15:19:21.719+00:00 [INFO] main: /opt/couchbase/bin/cbft started (v0.5.0/5.0.0)
+2018-06-15T15:19:21.719+00:00 [INFO]   -authType="cbauth"
+2018-06-15T15:19:21.719+00:00 [INFO]   -bindHttp="127.0.0.1:8094,0.0.0.0:8094"
+2018-06-15T15:19:21.719+00:00 [INFO]   -bindHttps=":18094"
+2018-06-15T15:19:21.719+00:00 [INFO]   -cfgConnect="metakv"
+2018-06-15T15:19:21.719+00:00 [INFO]   -container=""
+2018-06-15T15:19:21.719+00:00 [INFO]   -dataDir="/opt/couchbase/var/lib/couchbase/data/@fts"
+2018-06-15T15:19:21.719+00:00 [INFO]   -extras="127.0.0.1:8091"
+2018-06-15T15:19:21.719+00:00 [INFO]   -help="false"
+2018-06-15T15:19:21.719+00:00 [INFO]   -options="startCheckServer=skip,slowQueryLogTimeout=5s,defaultMaxPartitionsPerPIndex=171,bleveMaxResultWindow=10000,failoverAssignAllPrimaries=false,hideUI=true,cbaudit=true,ftsMemoryQuota=262144000,maxReplicasAllowed=3,bucketTypesAllowed=membase:ephemeral"
+2018-06-15T15:19:21.719+00:00 [INFO]   -register="wanted"
+2018-06-15T15:19:21.719+00:00 [INFO]   -server="http://127.0.0.1:8091"
+2018-06-15T15:19:21.719+00:00 [INFO]   -staticDir="static"
+2018-06-15T15:19:21.719+00:00 [INFO]   -staticETag=""
+2018-06-15T15:19:21.720+00:00 [INFO]   -tags="feed,janitor,pindex,queryer,cbauth_service"
+2018-06-15T15:19:21.720+00:00 [INFO]   -tlsCertFile="/opt/couchbase/var/lib/couchbase/config/memcached-cert.pem"
+2018-06-15T15:19:21.720+00:00 [INFO]   -tlsKeyFile="/opt/couchbase/var/lib/couchbase/config/memcached-key.pem"
+2018-06-15T15:19:21.723+00:00 [INFO]   -uuid="182c8baf6b88cf138096b52cf8cfc4e6"
+2018-06-15T15:19:21.723+00:00 [INFO]   -version="false"
+2018-06-15T15:19:21.723+00:00 [INFO]   -weight="1"
+2018-06-15T15:19:21.723+00:00 [INFO]   GOMAXPROCS=4
+2018-06-15T15:19:21.723+00:00 [INFO] main: registered bleve stores
+2018-06-15T15:19:21.723+00:00 [INFO]   gtreap
+2018-06-15T15:19:21.723+00:00 [INFO]   boltdb
+2018-06-15T15:19:21.723+00:00 [INFO]   goleveldb
+2018-06-15T15:19:21.723+00:00 [INFO]   moss
+2018-06-15T15:19:21.723+00:00 [INFO]   metrics
+2018-06-15T15:19:21.726+00:00 [INFO] main: curr dir: "/opt/couchbase/var/lib/couchbase"
+2018-06-15T15:19:21.726+00:00 [INFO] main: data dir: "/opt/couchbase/var/lib/couchbase/data/@fts"
+2018-06-15T15:19:21.761+00:00 [INFO] moss_herder: memQuota: 262144000
+2018-06-15T15:19:21.762+00:00 [INFO] cfg_metakv: Set, key: nodeDefs-known, cas: 1, split: true, nodeUUID: 182c8baf6b88cf138096b52cf8cfc4e6
+2018-06-15T15:19:21.763+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-known, added: map[182c8baf6b88cf138096b52cf8cfc4e6:true], removed: map[], updated: map[]
+2018-06-15T15:19:21.763+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-known, childPath: /fts/cbgt/cfg/nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6
+2018-06-15T15:19:21.766+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T15:19:21.768+00:00 [INFO] cfg_metakv: Set, key: nodeDefs-wanted, cas: 3, split: true, nodeUUID: 182c8baf6b88cf138096b52cf8cfc4e6
+2018-06-15T15:19:21.768+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-wanted, added: map[182c8baf6b88cf138096b52cf8cfc4e6:true], removed: map[], updated: map[]
+2018-06-15T15:19:21.768+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-wanted, childPath: /fts/cbgt/cfg/nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6
+2018-06-15T15:19:21.772+00:00 [INFO] manager: loading dataDir...
+2018-06-15T15:19:21.772+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T15:19:21.789+00:00 [INFO] manager: loading dataDir... done
+2018-06-15T15:19:21.789+00:00 [INFO] janitor: awakes, op: kick, msg: start
+2018-06-15T15:19:21.830+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:96
+2018-06-15T15:19:21.846+00:00 [INFO] audit: created new audit service
+2018-06-15T15:19:21.849+00:00 [INFO] main: ctl starting, dryRun: false, waitForMemberNodes: 30, verbose: 3, maxConcurrentPartitionMovesPerNode: 1
+2018-06-15T15:19:21.865+00:00 [INFO] ctl: kickIndexDefs, kind: init
+2018-06-15T15:19:21.869+00:00 [INFO] planner: nodesRemove: []string(nil)
+2018-06-15T15:19:21.869+00:00 [INFO] planner: step planner
+2018-06-15T15:19:21.875+00:00 [INFO] cfg_metakv: Set, key: version, cas: 1, split: false, nodeUUID: 182c8baf6b88cf138096b52cf8cfc4e6
+2018-06-15T15:19:21.875+00:00 [INFO] cfg_metakv: Set path: /fts/cbgt/cfg/version
+2018-06-15T15:19:21.876+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T15:19:21.881+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+2018-06-15T15:19:21.903+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T15:19:21.903+00:00 [INFO] janitor: awakes, op: kick, msg: cfg changed, key: nodeDefs-wanted
+2018-06-15T15:19:21.903+00:00 [INFO] ctl: kickIndexDefs, kind: cfgEvent
+2018-06-15T15:19:21.909+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:96
+2018-06-15T15:19:21.913+00:00 [INFO] ctl: run, kind: nodeDefs-wanted, updated memberNodes: [{UUID:182c8baf6b88cf138096b52cf8cfc4e6 ServiceURL:http://127.0.0.1:8094 ManagerURL:http://{"nsHostPort":"127.0.0.1:8091","version-cbft.app":"v0.5.0","version-cbft.lib":"v0.5.0"}}]
+2018-06-15T15:19:21.913+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T15:19:21.913+00:00 [INFO] init_http: web UI / REST API is available (via 0.0.0.0): http://127.0.0.1:8094
+2018-06-15T15:19:21.913+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T15:19:21.913+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T15:19:21.913+00:00 [INFO] init_http: web UI / REST API is available: https://:18094
+2018-06-15T15:19:21.913+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T15:19:21.913+00:00 [INFO] main: cbauth_service registering...
+2018-06-15T15:19:21.913+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T15:19:21.913+00:00 [INFO] init_http: web UI / REST API is available: http://0.0.0.0:8094
+2018-06-15T15:19:21.913+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T15:19:21.919+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: , changed, rv: &{Rev:[48] Tasks:[]}
+2018-06-15T15:19:21.920+00:00 [INFO] ctl/manager: GetCurrentTopology, haveTopologyRev: , changed, rv: &{Rev:[52] Nodes:[182c8baf6b88cf138096b52cf8cfc4e6] IsBalanced:true Messages:[]}
+2018-06-15T15:19:25.670+00:00 [INFO] ctl/manager: GetNodeInfo
+2018-06-15T15:19:25.671+00:00 [INFO] ctl/manager: PrepareTopologyChange, change: {755959a587094a351b4e0900e383a7e6 [] topology-change-rebalance [{{182c8baf6b88cf138096b52cf8cfc4e6 0 <nil>} recovery-full}] []}
+2018-06-15T15:19:25.674+00:00 [INFO] ctl/manager: PrepareTopologyChange, done
+2018-06-15T15:19:25.674+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: 0, changed, rv: &{Rev:[50] Tasks:[{Rev:[49] ID:prepare:755959a587094a351b4e0900e383a7e6 Type:task-prepared Status:task-running IsCancelable:true Progress:100 DetailedProgress:map[] Description:prepare topology change ErrorMessage: Extra:map[topologyChange:{ID:755959a587094a351b4e0900e383a7e6 CurrentTopologyRev:[] Type:topology-change-rebalance KeepNodes:[{NodeInfo:{NodeID:182c8baf6b88cf138096b52cf8cfc4e6 Priority:0 Opaque:<nil>} RecoveryType:recovery-full}] EjectNodes:[]}]}]}
+2018-06-15T15:19:25.675+00:00 [INFO] ctl/manager: StartTopologyChange, change: {755959a587094a351b4e0900e383a7e6 [] topology-change-rebalance [{{182c8baf6b88cf138096b52cf8cfc4e6 0 <nil>} recovery-full}] []}
+2018-06-15T15:19:25.675+00:00 [INFO] ctl/manager: StartTopologyChange, started
+2018-06-15T15:19:25.676+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: 2, changed, rv: &{Rev:[52] Tasks:[{Rev:[51] ID:rebalance:755959a587094a351b4e0900e383a7e6 Type:task-rebalance Status:task-running IsCancelable:true Progress:0 DetailedProgress:map[] Description:topology change ErrorMessage: Extra:map[topologyChange:{ID:755959a587094a351b4e0900e383a7e6 CurrentTopologyRev:[] Type:topology-change-rebalance KeepNodes:[{NodeInfo:{NodeID:182c8baf6b88cf138096b52cf8cfc4e6 Priority:0 Opaque:<nil>} RecoveryType:recovery-full}] EjectNodes:[]}]}]}
+2018-06-15T15:19:25.679+00:00 [INFO] ctl: waitForWantedNodes, wantedNodes: [182c8baf6b88cf138096b52cf8cfc4e6]
+2018-06-15T15:19:25.681+00:00 [INFO] ctl: waitForWantedNodes, nodesToRemove: []
+2018-06-15T15:19:25.687+00:00 [INFO] planner: nodesRemove: []string{}
+2018-06-15T15:19:25.687+00:00 [INFO] planner: step unregister
+2018-06-15T15:19:25.688+00:00 [INFO] planner: step planner
+2018-06-15T15:19:25.695+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: 4, changed, rv: &{Rev:[53] Tasks:[]}
+2018-06-15T15:24:18.738+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":5,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T15:24:18.738+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1489248,
+    "pct_cpu_gc": 0.000006019245852032116,
+    "total_gc": 2
+}
+2018-06-15T15:29:15.765+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":10,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T15:29:15.765+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1881984,
+    "pct_cpu_gc": 0.0000046684694623634,
+    "total_gc": 4
+}
+2018-06-15T15:34:12.794+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":15,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T15:34:12.794+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1493320,
+    "pct_cpu_gc": 0.000004521160235961482,
+    "total_gc": 7
+}
+2018-06-15T15:39:09.824+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":20,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T15:39:09.824+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1885168,
+    "pct_cpu_gc": 0.000004910095305817584,
+    "total_gc": 9
+}
+2018-06-15T15:44:06.853+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":25,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T15:44:06.854+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1493208,
+    "pct_cpu_gc": 0.000004357288934990636,
+    "total_gc": 12
+}
+2018-06-15T15:49:03.888+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":30,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T15:49:03.889+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1905696,
+    "pct_cpu_gc": 0.00000475142052903976,
+    "total_gc": 14
+}
+2018-06-15T19:35:42.680+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":35,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T19:35:42.681+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1617696,
+    "pct_cpu_gc": 0.000021393420230196954,
+    "total_gc": 17
+}
+2018-06-15T19:40:39.715+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":40,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T19:40:39.715+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 2012200,
+    "pct_cpu_gc": 0.000019518737583037133,
+    "total_gc": 19
+}
+2018-06-15T19:45:36.743+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":45,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T19:45:36.744+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1633824,
+    "pct_cpu_gc": 0.000017795003033406796,
+    "total_gc": 22
+}
+2018-06-15T19:50:33.772+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":50,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T19:50:33.772+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 2029032,
+    "pct_cpu_gc": 0.000017314915557944997,
+    "total_gc": 24
+}
+2018-06-15T19:55:30.800+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":55,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T19:55:30.800+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1643168,
+    "pct_cpu_gc": 0.000015795877218244852,
+    "total_gc": 27
+}
+2018-06-15T20:00:27.829+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":60,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T20:00:27.829+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 2032408,
+    "pct_cpu_gc": 0.000014908632371290869,
+    "total_gc": 29
+}
+2018-06-15T20:05:24.864+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":65,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T20:05:24.864+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1645232,
+    "pct_cpu_gc": 0.000013901609498558589,
+    "total_gc": 32
+}
+2018-06-15T20:08:02.638+00:00 [INFO] main: /opt/couchbase/bin/cbft started (v0.5.0/5.0.0)
+2018-06-15T20:08:02.638+00:00 [INFO]   -authType="cbauth"
+2018-06-15T20:08:02.639+00:00 [INFO]   -bindHttp="127.0.0.1:8094,0.0.0.0:8094"
+2018-06-15T20:08:02.639+00:00 [INFO]   -bindHttps=":18094"
+2018-06-15T20:08:02.639+00:00 [INFO]   -cfgConnect="metakv"
+2018-06-15T20:08:02.639+00:00 [INFO]   -container=""
+2018-06-15T20:08:02.639+00:00 [INFO]   -dataDir="/opt/couchbase/var/lib/couchbase/data/@fts"
+2018-06-15T20:08:02.640+00:00 [INFO]   -extras="127.0.0.1:8091"
+2018-06-15T20:08:02.640+00:00 [INFO]   -help="false"
+2018-06-15T20:08:02.640+00:00 [INFO]   -options="startCheckServer=skip,slowQueryLogTimeout=5s,defaultMaxPartitionsPerPIndex=171,bleveMaxResultWindow=10000,failoverAssignAllPrimaries=false,hideUI=true,cbaudit=true,ftsMemoryQuota=262144000,maxReplicasAllowed=3,bucketTypesAllowed=membase:ephemeral"
+2018-06-15T20:08:02.640+00:00 [INFO]   -register="wanted"
+2018-06-15T20:08:02.640+00:00 [INFO]   -server="http://127.0.0.1:8091"
+2018-06-15T20:08:02.640+00:00 [INFO]   -staticDir="static"
+2018-06-15T20:08:02.640+00:00 [INFO]   -staticETag=""
+2018-06-15T20:08:02.641+00:00 [INFO]   -tags="feed,janitor,pindex,queryer,cbauth_service"
+2018-06-15T20:08:02.641+00:00 [INFO]   -tlsCertFile="/opt/couchbase/var/lib/couchbase/config/memcached-cert.pem"
+2018-06-15T20:08:02.641+00:00 [INFO]   -tlsKeyFile="/opt/couchbase/var/lib/couchbase/config/memcached-key.pem"
+2018-06-15T20:08:02.642+00:00 [INFO]   -uuid="182c8baf6b88cf138096b52cf8cfc4e6"
+2018-06-15T20:08:02.642+00:00 [INFO]   -version="false"
+2018-06-15T20:08:02.642+00:00 [INFO]   -weight="1"
+2018-06-15T20:08:02.642+00:00 [INFO]   GOMAXPROCS=4
+2018-06-15T20:08:02.642+00:00 [INFO] main: registered bleve stores
+2018-06-15T20:08:02.642+00:00 [INFO]   metrics
+2018-06-15T20:08:02.642+00:00 [INFO]   gtreap
+2018-06-15T20:08:02.642+00:00 [INFO]   boltdb
+2018-06-15T20:08:02.642+00:00 [INFO]   goleveldb
+2018-06-15T20:08:02.642+00:00 [INFO]   moss
+2018-06-15T20:08:02.646+00:00 [INFO] main: curr dir: "/opt/couchbase/var/lib/couchbase"
+2018-06-15T20:08:02.646+00:00 [INFO] main: data dir: "/opt/couchbase/var/lib/couchbase/data/@fts"
+2018-06-15T20:08:02.651+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T20:08:02.651+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T20:08:02.651+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T20:08:02.651+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T20:08:02.651+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+2018-06-15T20:08:02.651+00:00 [INFO] moss_herder: memQuota: 262144000
+2018-06-15T20:08:02.651+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+2018-06-15T20:08:02.655+00:00 [INFO] manager: loading dataDir...
+2018-06-15T20:08:02.657+00:00 [INFO] manager: loading dataDir... done
+2018-06-15T20:08:02.657+00:00 [INFO] janitor: awakes, op: kick, msg: start
+2018-06-15T20:08:02.658+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:96
+2018-06-15T20:08:02.699+00:00 [INFO] audit: created new audit service
+2018-06-15T20:08:02.707+00:00 [INFO] main: ctl starting, dryRun: false, waitForMemberNodes: 30, verbose: 3, maxConcurrentPartitionMovesPerNode: 1
+2018-06-15T20:08:02.711+00:00 [INFO] ctl: kickIndexDefs, kind: init
+2018-06-15T20:08:02.716+00:00 [INFO] planner: nodesRemove: []string(nil)
+2018-06-15T20:08:02.716+00:00 [INFO] planner: step planner
+2018-06-15T20:08:02.718+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-known/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T20:08:02.722+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, key: nodeDefs-wanted/182c8baf6b88cf138096b52cf8cfc4e6, deletion: false
+2018-06-15T20:08:02.722+00:00 [INFO] ctl: kickIndexDefs, kind: cfgEvent
+2018-06-15T20:08:02.722+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+2018-06-15T20:08:02.722+00:00 [INFO] janitor: awakes, op: kick, msg: cfg changed, key: nodeDefs-wanted
+2018-06-15T20:08:02.728+00:00 [INFO] ctl: run, kind: nodeDefs-wanted, updated memberNodes: [{UUID:182c8baf6b88cf138096b52cf8cfc4e6 ServiceURL:http://127.0.0.1:8094 ManagerURL:http://{"nsHostPort":"127.0.0.1:8091","version-cbft.app":"v0.5.0","version-cbft.lib":"v0.5.0"}}]
+2018-06-15T20:08:02.728+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T20:08:02.728+00:00 [INFO] init_http: web UI / REST API is available (via 0.0.0.0): http://127.0.0.1:8094
+2018-06-15T20:08:02.728+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T20:08:02.728+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T20:08:02.728+00:00 [INFO] init_http: web UI / REST API is available: https://:18094
+2018-06-15T20:08:02.728+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T20:08:02.728+00:00 [INFO] main: cbauth_service registering...
+2018-06-15T20:08:02.728+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T20:08:02.728+00:00 [INFO] init_http: web UI / REST API is available: http://0.0.0.0:8094
+2018-06-15T20:08:02.728+00:00 [INFO] main: ------------------------------------------------------
+2018-06-15T20:08:02.735+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: , changed, rv: &{Rev:[48] Tasks:[]}
+2018-06-15T20:08:02.736+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:96
+2018-06-15T20:08:02.736+00:00 [INFO] ctl/manager: GetCurrentTopology, haveTopologyRev: , changed, rv: &{Rev:[52] Nodes:[182c8baf6b88cf138096b52cf8cfc4e6] IsBalanced:true Messages:[]}
+2018-06-15T20:13:02.235+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":2,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":5,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T20:13:02.235+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1938408,
+    "pct_cpu_gc": 0.0000036731535469432653,
+    "total_gc": 1
+}
+2018-06-15T20:18:02.232+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":2,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":2,"TotJanitorOpRes":2,"TotJanitorOpErr":2,"TotJanitorOpDone":2,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":2,"TotJanitorKickStart":2,"TotJanitorKickErr":2,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":1,"TotJanitorStop":0,"TotRefreshLastNodeDefs":2,"TotRefreshLastIndexDefs":10,"TotRefreshLastPlanPIndexes":0}}
+2018-06-15T20:18:02.232+00:00 [INFO] stats: {
+    "num_bytes_used_ram": 1551912,
+    "pct_cpu_gc": 0.000004214276771937381,
+    "total_gc": 4
+}

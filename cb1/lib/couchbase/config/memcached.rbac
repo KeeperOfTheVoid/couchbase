@@ -1,0 +1,56 @@
+{
+  "@ns_server": {
+    "buckets": {},
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@cbq-engine": {
+    "buckets": {},
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@projector": {
+    "buckets": {},
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@goxdcr": {
+    "buckets": {},
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@index": {
+    "buckets": {},
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@fts": {
+    "buckets": {},
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "admin": {
+    "buckets": {},
+    "privileges": [
+      "AuditManagement",
+      "BucketManagement",
+      "IdleConnection",
+      "NodeManagement",
+      "SessionManagement",
+      "Stats"
+    ],
+    "domain": "local"
+  }
+}

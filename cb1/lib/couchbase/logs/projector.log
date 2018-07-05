@@ -1,0 +1,267 @@
+2018-06-15T15:19:21.369+00:00 [Info] Projector started with command line: [/opt/couchbase/bin/projector -kvaddrs=127.0.0.1:11210 -adminport=:9999 -diagDir=/opt/couchbase/var/lib/couchbase/crash 127.0.0.1:8091]
+2018-06-15T15:19:21.371+00:00 [Info] Parsing the args
+2018-06-15T15:19:21.375+00:00 [Info] uid: 1000; gid: 1000; hostname: 6d75c146bee1
+2018-06-15T15:19:21.375+00:00 [Info] amd64 linux; cpus: 4; GOMAXPROCS: 4; version: go1.7.3
+2018-06-15T15:19:21.418+00:00 [Info]  changing GOGC percentage from 100 to 100
+2018-06-15T15:19:21.419+00:00 [Info] amd64 linux; cpus: 4; GOMAXPROCS: 4; version: go1.7.3
+2018-06-15T15:19:21.427+00:00 [Info] PROJ[:9999] changing GOGC percentage from 100 to 100
+2018-06-15T15:19:21.427+00:00 [Info] PROJ[:9999] started ...
+2018-06-15T15:19:21.427+00:00 [Info] pram[:9999] registered /adminport/vbmapRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/failoverLogRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/mutationTopicRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/restartVbucketsRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/shutdownVbucketsRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/addBucketsRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/delBucketsRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/addInstancesRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/delInstancesRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/repairEndpointsRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/shutdownTopicRequest
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered /adminport/stats
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-func /stats
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-func /settings
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-func /debug/pprof
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/block
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/goroutine
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/heap
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/threadcreate
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/profile
+2018-06-15T15:19:21.428+00:00 [Info] MSAT starting with 60000 tick ...
+2018-06-15T15:19:21.428+00:00 [Info] pram[:9999] starting ...
+2018-06-15T15:19:21.433+00:00 [Info] New settings received: 
+{"indexer.settings.compaction.days_of_week":"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday","indexer.settings.compaction.interval":"00:00,00:00","indexer.settings.compaction.compaction_mode":"circular","indexer.settings.persisted_snapshot.interval":5000,"indexer.settings.log_level":"info","indexer.settings.compaction.min_frag":30,"indexer.settings.inmemory_snapshot.interval":200,"indexer.settings.max_cpu_percent":0,"indexer.settings.storage_mode":"plasma","indexer.settings.recovery.max_rollbacks":5,"indexer.settings.memory_quota":268435456,"indexer.settings.compaction.abort_exceed_interval":false}
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings notifier from metakv
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.statsLogDumpInterval will updated to `60`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.scan_getseqnos_retries will updated to `30`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.smallSnapshotThreshold will updated to `30`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot.fdb.interval will updated to `5000`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.inmemory_snapshot.moi.interval will updated to `20`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.compaction_mode will updated to `circular`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.recovery.max_rollbacks will updated to `5`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot.moi.interval will updated to `600000`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.memory_quota will updated to `268435456`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.allow_large_keys will updated to `true`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.persistence_threads will updated to `8`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.plasma.recovery.max_rollbacks will updated to `2`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.interval will updated to `00:00,00:00`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.max_writer_lock_prob will updated to `20`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.storage_mode will updated to `plasma`
+2018-06-15T15:19:21.433+00:00 [Warn] PROJ[:9999] immutable settings indexer.settings.send_buffer_size cannot be update to `1024`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.gc_percent will updated to `100`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot_init_build.fdb.interval will updated to `5000`
+2018-06-15T15:19:21.433+00:00 [Warn] PROJ[:9999] immutable settings queryport.client.settings.poolSize cannot be update to `1000`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot_init_build.moi.interval will updated to `600000`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.abort_exceed_interval will updated to `false`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.maxVbQueueLength will updated to `0`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.wal_size will updated to `4096`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.recovery_threads will updated to `4`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.recovery.max_rollbacks will updated to `2`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.max_array_seckey_size will updated to `10240`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.max_cpu_percent will updated to `0`
+2018-06-15T15:19:21.433+00:00 [Warn] PROJ[:9999] immutable settings queryport.client.settings.poolOverflow cannot be update to `30`
+2018-06-15T15:19:21.433+00:00 [Info] PROJ[:9999] settings indexer.settings.build.batch_size will updated to `5`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot.interval will updated to `5000`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.memProfFname will updated to ``
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.inmemory_snapshot.interval will updated to `200`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings projector.settings.log_level will updated to `info`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.cpuProfile will updated to `false`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.days_of_week will updated to `Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.max_seckey_size will updated to `4608`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.largeSnapshotThreshold will updated to `200`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.minVbQueueLength will updated to `250`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot_init_build.interval will updated to `5000`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.inmemory_snapshot.fdb.interval will updated to `200`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.bufferPoolBlockSize will updated to `16384`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.check_period will updated to `30`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.sliceBufSize will updated to `50000`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.log_level will updated to `info`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.min_frag will updated to `30`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.cpuProfFname will updated to ``
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings queryport.client.settings.backfillLimit will updated to `5120`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.memProfile will updated to `false`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.storage_mode.disable_upgrade will updated to `false`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.min_size will updated to `524288000`
+2018-06-15T15:19:21.434+00:00 [Warn] PROJ[:9999] immutable settings indexer.settings.scan_timeout cannot be update to `120000`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.debug will updated to `false`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.fast_flush_mode will updated to `true`
+2018-06-15T15:19:21.434+00:00 [Info] PROJ[:9999] settings indexer.settings.num_replica will updated to `0`
+2018-06-15T15:19:21.434+00:00 [Info] amd64 linux; cpus: 4; GOMAXPROCS: 4; version: go1.7.3
+2018-06-15T15:19:21.752+00:00 [Info] pram[:9999] Request "/adminport/shutdownTopicRequest"
+2018-06-15T15:19:21.752+00:00 [Info] PROJ[:9999] ##1 doShutdownTopic() "MAINT_STREAM_TOPIC_182c8baf6b88cf138096b52cf8cfc4e6"
+2018-06-15T15:19:21.752+00:00 [Error] PROJ[:9999] ##1 acquireFeed(): projector.topicMissing
+2018-06-15T15:19:21.752+00:00 [Info] PROJ[:9999] ##1 doShutdownTopic() returns ...
+2018-06-15T15:19:21.788+00:00 [Info] pram[:9999] Request "/adminport/shutdownTopicRequest"
+2018-06-15T15:19:21.788+00:00 [Info] PROJ[:9999] ##2 doShutdownTopic() "INIT_STREAM_TOPIC_182c8baf6b88cf138096b52cf8cfc4e6"
+2018-06-15T15:19:21.788+00:00 [Error] PROJ[:9999] ##2 acquireFeed(): projector.topicMissing
+2018-06-15T15:19:21.788+00:00 [Info] PROJ[:9999] ##2 doShutdownTopic() returns ...
+2018-06-15T15:20:21.429+00:00 [Info] memstats {"Alloc":945664, "TotalAlloc":1420344, "Sys":4820992, "Lookups":11, "Mallocs":8525,"Frees":1532, "HeapAlloc":945664, "HeapSys":2523136, "HeapIdle":802816, "HeapInuse":1720320,"HeapReleased":0, "HeapObjects":6993,"GCSys":311296, "LastGC":1529075961427439400,"PauseTotalNs":45234200, "PauseNs":[37316000, 7918200], "NumGC":2}
+2018-06-15T15:21:21.431+00:00 [Info] memstats {"Alloc":948656, "TotalAlloc":1423336, "Sys":4820992, "Lookups":12, "Mallocs":8567,"Frees":1541, "HeapAlloc":948656, "HeapSys":2523136, "HeapIdle":802816, "HeapInuse":1720320,"HeapReleased":0, "HeapObjects":7026,"GCSys":311296, "LastGC":1529076081431200900,"PauseTotalNs":45526700, "PauseNs":[292500], "NumGC":3}
+2018-06-15T15:22:21.429+00:00 [Info] memstats {"Alloc":714984, "TotalAlloc":1426576, "Sys":4820992, "Lookups":12, "Mallocs":8604,"Frees":2467, "HeapAlloc":714984, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":0, "HeapObjects":6137,"GCSys":311296, "LastGC":1529076081431200900,"PauseTotalNs":45526700, "PauseNs":[], "NumGC":3}
+2018-06-15T15:23:21.434+00:00 [Info] memstats {"Alloc":717416, "TotalAlloc":1429008, "Sys":4820992, "Lookups":12, "Mallocs":8636,"Frees":2475, "HeapAlloc":717416, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":0, "HeapObjects":6161,"GCSys":311296, "LastGC":1529076081431200900,"PauseTotalNs":45526700, "PauseNs":[], "NumGC":3}
+2018-06-15T15:24:21.434+00:00 [Info] memstats {"Alloc":713544, "TotalAlloc":1431624, "Sys":4820992, "Lookups":12, "Mallocs":8673,"Frees":2547, "HeapAlloc":713544, "HeapSys":2523136, "HeapIdle":1040384, "HeapInuse":1482752,"HeapReleased":0, "HeapObjects":6126,"GCSys":313344, "LastGC":1529076201436056000,"PauseTotalNs":45908500, "PauseNs":[381800], "NumGC":4}
+2018-06-15T15:25:21.432+00:00 [Info] memstats {"Alloc":888416, "TotalAlloc":1606496, "Sys":4820992, "Lookups":23, "Mallocs":10151,"Frees":2822, "HeapAlloc":888416, "HeapSys":2523136, "HeapIdle":851968, "HeapInuse":1671168,"HeapReleased":0, "HeapObjects":7329,"GCSys":313344, "LastGC":1529076201436056000,"PauseTotalNs":45908500, "PauseNs":[], "NumGC":4}
+2018-06-15T15:26:21.429+00:00 [Info] memstats {"Alloc":755904, "TotalAlloc":1609320, "Sys":4820992, "Lookups":25, "Mallocs":10185,"Frees":3922, "HeapAlloc":755904, "HeapSys":2523136, "HeapIdle":983040, "HeapInuse":1540096,"HeapReleased":0, "HeapObjects":6263,"GCSys":313344, "LastGC":1529076331423256300,"PauseTotalNs":46597000, "PauseNs":[688500], "NumGC":5}
+2018-06-15T15:27:21.429+00:00 [Info] memstats {"Alloc":759088, "TotalAlloc":1612504, "Sys":4820992, "Lookups":25, "Mallocs":10221,"Frees":3931, "HeapAlloc":759088, "HeapSys":2523136, "HeapIdle":974848, "HeapInuse":1548288,"HeapReleased":827392, "HeapObjects":6290,"GCSys":313344, "LastGC":1529076331423256300,"PauseTotalNs":46597000, "PauseNs":[], "NumGC":5}
+2018-06-15T15:28:21.429+00:00 [Info] memstats {"Alloc":735320, "TotalAlloc":1614936, "Sys":4820992, "Lookups":25, "Mallocs":10253,"Frees":4038, "HeapAlloc":735320, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":827392, "HeapObjects":6215,"GCSys":313344, "LastGC":1529076451452392900,"PauseTotalNs":47090500, "PauseNs":[493500], "NumGC":6}
+2018-06-15T15:29:21.428+00:00 [Info] memstats {"Alloc":738480, "TotalAlloc":1618096, "Sys":4820992, "Lookups":25, "Mallocs":10289,"Frees":4047, "HeapAlloc":738480, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":827392, "HeapObjects":6242,"GCSys":313344, "LastGC":1529076451452392900,"PauseTotalNs":47090500, "PauseNs":[], "NumGC":6}
+2018-06-15T15:30:21.434+00:00 [Info] memstats {"Alloc":757472, "TotalAlloc":1777088, "Sys":4820992, "Lookups":30, "Mallocs":11609,"Frees":5330, "HeapAlloc":757472, "HeapSys":2523136, "HeapIdle":999424, "HeapInuse":1523712,"HeapReleased":827392, "HeapObjects":6279,"GCSys":315392, "LastGC":1529076571465815300,"PauseTotalNs":47571100, "PauseNs":[480600], "NumGC":7}
+2018-06-15T15:31:21.429+00:00 [Info] memstats {"Alloc":762200, "TotalAlloc":1781816, "Sys":4820992, "Lookups":32, "Mallocs":11652,"Frees":5339, "HeapAlloc":762200, "HeapSys":2523136, "HeapIdle":999424, "HeapInuse":1523712,"HeapReleased":827392, "HeapObjects":6313,"GCSys":315392, "LastGC":1529076571465815300,"PauseTotalNs":47571100, "PauseNs":[], "NumGC":7}
+2018-06-15T15:32:21.430+00:00 [Info] memstats {"Alloc":738432, "TotalAlloc":1783096, "Sys":4820992, "Lookups":32, "Mallocs":11679,"Frees":5441, "HeapAlloc":738432, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":868352, "HeapObjects":6238,"GCSys":315392, "LastGC":1529076691489450800,"PauseTotalNs":47886800, "PauseNs":[315700], "NumGC":8}
+2018-06-15T15:33:21.434+00:00 [Info] memstats {"Alloc":741592, "TotalAlloc":1786256, "Sys":4820992, "Lookups":32, "Mallocs":11715,"Frees":5450, "HeapAlloc":741592, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":868352, "HeapObjects":6265,"GCSys":315392, "LastGC":1529076691489450800,"PauseTotalNs":47886800, "PauseNs":[], "NumGC":8}
+2018-06-15T15:34:21.429+00:00 [Info] memstats {"Alloc":740944, "TotalAlloc":1791200, "Sys":4820992, "Lookups":32, "Mallocs":11771,"Frees":5509, "HeapAlloc":740944, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":868352, "HeapObjects":6262,"GCSys":315392, "LastGC":1529076811515445300,"PauseTotalNs":48248900, "PauseNs":[362100], "NumGC":9}
+2018-06-15T15:35:21.429+00:00 [Info] memstats {"Alloc":896696, "TotalAlloc":1946952, "Sys":4820992, "Lookups":37, "Mallocs":13060,"Frees":5760, "HeapAlloc":896696, "HeapSys":2523136, "HeapIdle":868352, "HeapInuse":1654784,"HeapReleased":860160, "HeapObjects":7300,"GCSys":315392, "LastGC":1529076811515445300,"PauseTotalNs":48248900, "PauseNs":[], "NumGC":9}
+2018-06-15T15:36:21.434+00:00 [Info] memstats {"Alloc":759776, "TotalAlloc":1949776, "Sys":4820992, "Lookups":39, "Mallocs":13094,"Frees":6801, "HeapAlloc":759776, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":860160, "HeapObjects":6293,"GCSys":315392, "LastGC":1529076931532200100,"PauseTotalNs":48532500, "PauseNs":[283600], "NumGC":10}
+2018-06-15T15:37:21.429+00:00 [Info] memstats {"Alloc":762960, "TotalAlloc":1952960, "Sys":4820992, "Lookups":39, "Mallocs":13130,"Frees":6810, "HeapAlloc":762960, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":868352, "HeapObjects":6320,"GCSys":315392, "LastGC":1529076931532200100,"PauseTotalNs":48532500, "PauseNs":[], "NumGC":10}
+2018-06-15T15:38:21.433+00:00 [Info] memstats {"Alloc":739192, "TotalAlloc":1955392, "Sys":4820992, "Lookups":39, "Mallocs":13162,"Frees":6917, "HeapAlloc":739192, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":868352, "HeapObjects":6245,"GCSys":315392, "LastGC":1529077051553933800,"PauseTotalNs":48799200, "PauseNs":[266700], "NumGC":11}
+2018-06-15T15:39:21.430+00:00 [Info] memstats {"Alloc":743736, "TotalAlloc":1959936, "Sys":4820992, "Lookups":39, "Mallocs":13219,"Frees":6926, "HeapAlloc":743736, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":868352, "HeapObjects":6293,"GCSys":315392, "LastGC":1529077051553933800,"PauseTotalNs":48799200, "PauseNs":[], "NumGC":11}
+2018-06-15T15:40:21.434+00:00 [Info] memstats {"Alloc":759520, "TotalAlloc":2114600, "Sys":4820992, "Lookups":44, "Mallocs":14504,"Frees":8204, "HeapAlloc":759520, "HeapSys":2523136, "HeapIdle":999424, "HeapInuse":1523712,"HeapReleased":843776, "HeapObjects":6300,"GCSys":315392, "LastGC":1529077171577879600,"PauseTotalNs":49473400, "PauseNs":[674200], "NumGC":12}
+2018-06-15T15:41:21.429+00:00 [Info] memstats {"Alloc":764664, "TotalAlloc":2119744, "Sys":4820992, "Lookups":46, "Mallocs":14548,"Frees":8213, "HeapAlloc":764664, "HeapSys":2523136, "HeapIdle":999424, "HeapInuse":1523712,"HeapReleased":843776, "HeapObjects":6335,"GCSys":315392, "LastGC":1529077171577879600,"PauseTotalNs":49473400, "PauseNs":[], "NumGC":12}
+2018-06-15T15:42:21.432+00:00 [Info] memstats {"Alloc":740896, "TotalAlloc":2121024, "Sys":4820992, "Lookups":46, "Mallocs":14575,"Frees":8315, "HeapAlloc":740896, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":843776, "HeapObjects":6260,"GCSys":315392, "LastGC":1529077291594577100,"PauseTotalNs":50047400, "PauseNs":[574000], "NumGC":13}
+2018-06-15T15:43:21.428+00:00 [Info] memstats {"Alloc":744056, "TotalAlloc":2124184, "Sys":4820992, "Lookups":46, "Mallocs":14611,"Frees":8324, "HeapAlloc":744056, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":843776, "HeapObjects":6287,"GCSys":315392, "LastGC":1529077291594577100,"PauseTotalNs":50047400, "PauseNs":[], "NumGC":13}
+2018-06-15T15:44:21.429+00:00 [Info] memstats {"Alloc":741008, "TotalAlloc":2125576, "Sys":4820992, "Lookups":46, "Mallocs":14639,"Frees":8378, "HeapAlloc":741008, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":843776, "HeapObjects":6261,"GCSys":319488, "LastGC":1529077411619008300,"PauseTotalNs":50637600, "PauseNs":[590200], "NumGC":14}
+2018-06-15T15:45:21.430+00:00 [Info] memstats {"Alloc":898968, "TotalAlloc":2283536, "Sys":4820992, "Lookups":51, "Mallocs":15955,"Frees":8629, "HeapAlloc":898968, "HeapSys":2523136, "HeapIdle":868352, "HeapInuse":1654784,"HeapReleased":835584, "HeapObjects":7326,"GCSys":319488, "LastGC":1529077411619008300,"PauseTotalNs":50637600, "PauseNs":[], "NumGC":14}
+2018-06-15T15:46:21.430+00:00 [Info] memstats {"Alloc":762752, "TotalAlloc":2286776, "Sys":4820992, "Lookups":53, "Mallocs":15990,"Frees":9667, "HeapAlloc":762752, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":835584, "HeapObjects":6323,"GCSys":319488, "LastGC":1529077531656557300,"PauseTotalNs":51318500, "PauseNs":[680900], "NumGC":15}
+2018-06-15T15:47:21.429+00:00 [Info] memstats {"Alloc":765936, "TotalAlloc":2289960, "Sys":4820992, "Lookups":53, "Mallocs":16026,"Frees":9676, "HeapAlloc":765936, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":835584, "HeapObjects":6350,"GCSys":319488, "LastGC":1529077531656557300,"PauseTotalNs":51318500, "PauseNs":[], "NumGC":15}
+2018-06-15T15:48:21.429+00:00 [Info] memstats {"Alloc":742168, "TotalAlloc":2291240, "Sys":4820992, "Lookups":53, "Mallocs":16053,"Frees":9778, "HeapAlloc":742168, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":835584, "HeapObjects":6275,"GCSys":319488, "LastGC":1529077651676600800,"PauseTotalNs":51744900, "PauseNs":[426400], "NumGC":16}
+2018-06-15T15:49:21.429+00:00 [Info] memstats {"Alloc":745328, "TotalAlloc":2294400, "Sys":4820992, "Lookups":53, "Mallocs":16089,"Frees":9787, "HeapAlloc":745328, "HeapSys":2523136, "HeapIdle":1015808, "HeapInuse":1507328,"HeapReleased":835584, "HeapObjects":6302,"GCSys":319488, "LastGC":1529077651676600800,"PauseTotalNs":51744900, "PauseNs":[], "NumGC":16}
+2018-06-15T15:50:21.429+00:00 [Info] memstats {"Alloc":762048, "TotalAlloc":2449920, "Sys":4820992, "Lookups":58, "Mallocs":17392,"Frees":11064, "HeapAlloc":762048, "HeapSys":2523136, "HeapIdle":983040, "HeapInuse":1540096,"HeapReleased":819200, "HeapObjects":6328,"GCSys":319488, "LastGC":1529077771684874700,"PauseTotalNs":51953000, "PauseNs":[208100], "NumGC":17}
+2018-06-15T19:32:45.378+00:00 [Info] memstats {"Alloc":763808, "TotalAlloc":2455040, "Sys":4820992, "Lookups":60, "Mallocs":17436,"Frees":11105, "HeapAlloc":763808, "HeapSys":2523136, "HeapIdle":983040, "HeapInuse":1540096,"HeapReleased":819200, "HeapObjects":6331,"GCSys":321536, "LastGC":1529091145158620600,"PauseTotalNs":60731600, "PauseNs":[8778600], "NumGC":18}
+2018-06-15T19:33:45.376+00:00 [Info] memstats {"Alloc":766992, "TotalAlloc":2458224, "Sys":4820992, "Lookups":60, "Mallocs":17472,"Frees":11114, "HeapAlloc":766992, "HeapSys":2523136, "HeapIdle":983040, "HeapInuse":1540096,"HeapReleased":843776, "HeapObjects":6358,"GCSys":321536, "LastGC":1529091145158620600,"PauseTotalNs":60731600, "PauseNs":[], "NumGC":18}
+2018-06-15T19:34:45.375+00:00 [Info] memstats {"Alloc":743232, "TotalAlloc":2460656, "Sys":4820992, "Lookups":60, "Mallocs":17504,"Frees":11219, "HeapAlloc":743232, "HeapSys":2523136, "HeapIdle":999424, "HeapInuse":1523712,"HeapReleased":843776, "HeapObjects":6285,"GCSys":321536, "LastGC":1529091275149978600,"PauseTotalNs":61356000, "PauseNs":[624400], "NumGC":19}
+2018-06-15T19:35:45.375+00:00 [Info] memstats {"Alloc":746728, "TotalAlloc":2464152, "Sys":4820992, "Lookups":60, "Mallocs":17544,"Frees":11228, "HeapAlloc":746728, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":843776, "HeapObjects":6316,"GCSys":321536, "LastGC":1529091275149978600,"PauseTotalNs":61356000, "PauseNs":[], "NumGC":19}
+2018-06-15T19:36:45.380+00:00 [Info] memstats {"Alloc":762664, "TotalAlloc":2619416, "Sys":4820992, "Lookups":65, "Mallocs":18843,"Frees":12510, "HeapAlloc":762664, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":827392, "HeapObjects":6333,"GCSys":321536, "LastGC":1529091395158212200,"PauseTotalNs":61781600, "PauseNs":[425600], "NumGC":20}
+2018-06-15T19:37:45.375+00:00 [Info] memstats {"Alloc":767392, "TotalAlloc":2624144, "Sys":4820992, "Lookups":67, "Mallocs":18886,"Frees":12519, "HeapAlloc":767392, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":827392, "HeapObjects":6367,"GCSys":321536, "LastGC":1529091395158212200,"PauseTotalNs":61781600, "PauseNs":[], "NumGC":20}
+2018-06-15T19:38:45.376+00:00 [Info] memstats {"Alloc":743624, "TotalAlloc":2625424, "Sys":4820992, "Lookups":67, "Mallocs":18913,"Frees":12621, "HeapAlloc":743624, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":851968, "HeapObjects":6292,"GCSys":321536, "LastGC":1529091515168837600,"PauseTotalNs":62373200, "PauseNs":[591600], "NumGC":21}
+2018-06-15T19:39:45.380+00:00 [Info] memstats {"Alloc":746784, "TotalAlloc":2628584, "Sys":4820992, "Lookups":67, "Mallocs":18949,"Frees":12630, "HeapAlloc":746784, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":851968, "HeapObjects":6319,"GCSys":321536, "LastGC":1529091515168837600,"PauseTotalNs":62373200, "PauseNs":[], "NumGC":21}
+2018-06-15T19:40:45.376+00:00 [Info] memstats {"Alloc":749672, "TotalAlloc":2635912, "Sys":4820992, "Lookups":70, "Mallocs":19065,"Frees":12686, "HeapAlloc":749672, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":851968, "HeapObjects":6379,"GCSys":321536, "LastGC":1529091635196896700,"PauseTotalNs":62912000, "PauseNs":[538800], "NumGC":22}
+2018-06-15T19:41:45.375+00:00 [Info] memstats {"Alloc":901536, "TotalAlloc":2787776, "Sys":4820992, "Lookups":72, "Mallocs":20291,"Frees":12935, "HeapAlloc":901536, "HeapSys":2523136, "HeapIdle":901120, "HeapInuse":1622016,"HeapReleased":827392, "HeapObjects":7356,"GCSys":321536, "LastGC":1529091635196896700,"PauseTotalNs":62912000, "PauseNs":[], "NumGC":22}
+2018-06-15T19:42:45.378+00:00 [Info] memstats {"Alloc":744672, "TotalAlloc":2789152, "Sys":4820992, "Lookups":74, "Mallocs":20321,"Frees":14015, "HeapAlloc":744672, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":827392, "HeapObjects":6306,"GCSys":321536, "LastGC":1529091755216752500,"PauseTotalNs":63152900, "PauseNs":[240900], "NumGC":23}
+2018-06-15T19:43:45.376+00:00 [Info] memstats {"Alloc":747832, "TotalAlloc":2792312, "Sys":4820992, "Lookups":74, "Mallocs":20357,"Frees":14024, "HeapAlloc":747832, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":851968, "HeapObjects":6333,"GCSys":321536, "LastGC":1529091755216752500,"PauseTotalNs":63152900, "PauseNs":[], "NumGC":23}
+2018-06-15T19:44:45.376+00:00 [Info] memstats {"Alloc":744672, "TotalAlloc":2793592, "Sys":4820992, "Lookups":74, "Mallocs":20384,"Frees":14078, "HeapAlloc":744672, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":851968, "HeapObjects":6306,"GCSys":321536, "LastGC":1529091875231332200,"PauseTotalNs":63870900, "PauseNs":[718000], "NumGC":24}
+2018-06-15T19:45:45.375+00:00 [Info] memstats {"Alloc":747976, "TotalAlloc":2796896, "Sys":4820992, "Lookups":74, "Mallocs":20423,"Frees":14087, "HeapAlloc":747976, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":851968, "HeapObjects":6336,"GCSys":321536, "LastGC":1529091875231332200,"PauseTotalNs":63870900, "PauseNs":[], "NumGC":24}
+2018-06-15T19:46:45.375+00:00 [Info] memstats {"Alloc":765576, "TotalAlloc":2954128, "Sys":4820992, "Lookups":79, "Mallocs":21737,"Frees":15373, "HeapAlloc":765576, "HeapSys":2523136, "HeapIdle":983040, "HeapInuse":1540096,"HeapReleased":827392, "HeapObjects":6364,"GCSys":321536, "LastGC":1529091995255015100,"PauseTotalNs":64388900, "PauseNs":[518000], "NumGC":25}
+2018-06-15T19:47:45.375+00:00 [Info] memstats {"Alloc":770432, "TotalAlloc":2958984, "Sys":4820992, "Lookups":81, "Mallocs":21782,"Frees":15382, "HeapAlloc":770432, "HeapSys":2523136, "HeapIdle":983040, "HeapInuse":1540096,"HeapReleased":827392, "HeapObjects":6400,"GCSys":321536, "LastGC":1529091995255015100,"PauseTotalNs":64388900, "PauseNs":[], "NumGC":25}
+2018-06-15T19:48:45.378+00:00 [Info] memstats {"Alloc":746664, "TotalAlloc":2961416, "Sys":4820992, "Lookups":81, "Mallocs":21814,"Frees":15489, "HeapAlloc":746664, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":835584, "HeapObjects":6325,"GCSys":321536, "LastGC":1529092115268838500,"PauseTotalNs":64632700, "PauseNs":[243800], "NumGC":26}
+2018-06-15T19:49:45.375+00:00 [Info] memstats {"Alloc":749824, "TotalAlloc":2964576, "Sys":4820992, "Lookups":81, "Mallocs":21850,"Frees":15498, "HeapAlloc":749824, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":835584, "HeapObjects":6352,"GCSys":321536, "LastGC":1529092115268838500,"PauseTotalNs":64632700, "PauseNs":[], "NumGC":26}
+2018-06-15T19:50:45.375+00:00 [Info] memstats {"Alloc":746664, "TotalAlloc":2967008, "Sys":4820992, "Lookups":81, "Mallocs":21882,"Frees":15557, "HeapAlloc":746664, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":835584, "HeapObjects":6325,"GCSys":321536, "LastGC":1529092235286123200,"PauseTotalNs":65354500, "PauseNs":[721800], "NumGC":27}
+2018-06-15T19:51:45.378+00:00 [Info] memstats {"Alloc":904224, "TotalAlloc":3124568, "Sys":4820992, "Lookups":86, "Mallocs":23191,"Frees":15808, "HeapAlloc":904224, "HeapSys":2523136, "HeapIdle":884736, "HeapInuse":1638400,"HeapReleased":819200, "HeapObjects":7383,"GCSys":321536, "LastGC":1529092235286123200,"PauseTotalNs":65354500, "PauseNs":[], "NumGC":27}
+2018-06-15T19:52:45.378+00:00 [Info] memstats {"Alloc":747008, "TotalAlloc":3125960, "Sys":4820992, "Lookups":88, "Mallocs":23221,"Frees":16890, "HeapAlloc":747008, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":819200, "HeapObjects":6331,"GCSys":321536, "LastGC":1529092355296894800,"PauseTotalNs":65969700, "PauseNs":[615200], "NumGC":28}
+2018-06-15T19:53:45.375+00:00 [Info] memstats {"Alloc":750168, "TotalAlloc":3129120, "Sys":4820992, "Lookups":88, "Mallocs":23257,"Frees":16899, "HeapAlloc":750168, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":843776, "HeapObjects":6358,"GCSys":321536, "LastGC":1529092355296894800,"PauseTotalNs":65969700, "PauseNs":[], "NumGC":28}
+2018-06-15T19:54:45.379+00:00 [Info] memstats {"Alloc":747008, "TotalAlloc":3131552, "Sys":4820992, "Lookups":88, "Mallocs":23289,"Frees":16958, "HeapAlloc":747008, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":843776, "HeapObjects":6331,"GCSys":321536, "LastGC":1529092475306580000,"PauseTotalNs":66455100, "PauseNs":[485400], "NumGC":29}
+2018-06-15T19:55:45.376+00:00 [Info] memstats {"Alloc":751056, "TotalAlloc":3135600, "Sys":4820992, "Lookups":88, "Mallocs":23340,"Frees":16967, "HeapAlloc":751056, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":843776, "HeapObjects":6373,"GCSys":321536, "LastGC":1529092475306580000,"PauseTotalNs":66455100, "PauseNs":[], "NumGC":29}
+2018-06-15T19:56:45.376+00:00 [Info] memstats {"Alloc":766648, "TotalAlloc":3291144, "Sys":4820992, "Lookups":93, "Mallocs":24631,"Frees":18249, "HeapAlloc":766648, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":819200, "HeapObjects":6382,"GCSys":321536, "LastGC":1529092595318459000,"PauseTotalNs":66984400, "PauseNs":[529300], "NumGC":30}
+2018-06-15T19:57:45.375+00:00 [Info] memstats {"Alloc":771376, "TotalAlloc":3295872, "Sys":4820992, "Lookups":95, "Mallocs":24674,"Frees":18258, "HeapAlloc":771376, "HeapSys":2523136, "HeapIdle":991232, "HeapInuse":1531904,"HeapReleased":819200, "HeapObjects":6416,"GCSys":321536, "LastGC":1529092595318459000,"PauseTotalNs":66984400, "PauseNs":[], "NumGC":30}
+2018-06-15T19:58:45.377+00:00 [Info] memstats {"Alloc":747608, "TotalAlloc":3297152, "Sys":4820992, "Lookups":95, "Mallocs":24701,"Frees":18360, "HeapAlloc":747608, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":843776, "HeapObjects":6341,"GCSys":321536, "LastGC":1529092715331604200,"PauseTotalNs":67290800, "PauseNs":[306400], "NumGC":31}
+2018-06-15T19:59:45.380+00:00 [Info] memstats {"Alloc":750768, "TotalAlloc":3300312, "Sys":4820992, "Lookups":95, "Mallocs":24737,"Frees":18369, "HeapAlloc":750768, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":843776, "HeapObjects":6368,"GCSys":321536, "LastGC":1529092715331604200,"PauseTotalNs":67290800, "PauseNs":[], "NumGC":31}
+2018-06-15T20:00:45.377+00:00 [Info] memstats {"Alloc":749704, "TotalAlloc":3304840, "Sys":4820992, "Lookups":95, "Mallocs":24792,"Frees":18428, "HeapAlloc":749704, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":843776, "HeapObjects":6364,"GCSys":321536, "LastGC":1529092835344734800,"PauseTotalNs":67619800, "PauseNs":[329000], "NumGC":32}
+2018-06-15T20:01:45.376+00:00 [Info] memstats {"Alloc":905776, "TotalAlloc":3460912, "Sys":4820992, "Lookups":100, "Mallocs":26086,"Frees":18679, "HeapAlloc":905776, "HeapSys":2523136, "HeapIdle":884736, "HeapInuse":1638400,"HeapReleased":827392, "HeapObjects":7407,"GCSys":321536, "LastGC":1529092835344734800,"PauseTotalNs":67619800, "PauseNs":[], "NumGC":32}
+2018-06-15T20:02:45.376+00:00 [Info] memstats {"Alloc":748272, "TotalAlloc":3462304, "Sys":4820992, "Lookups":102, "Mallocs":26116,"Frees":19764, "HeapAlloc":748272, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":827392, "HeapObjects":6352,"GCSys":321536, "LastGC":1529092955368329800,"PauseTotalNs":68284400, "PauseNs":[664600], "NumGC":33}
+2018-06-15T20:03:45.376+00:00 [Info] memstats {"Alloc":751432, "TotalAlloc":3465464, "Sys":4820992, "Lookups":102, "Mallocs":26152,"Frees":19773, "HeapAlloc":751432, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":868352, "HeapObjects":6379,"GCSys":321536, "LastGC":1529092955368329800,"PauseTotalNs":68284400, "PauseNs":[], "NumGC":33}
+2018-06-15T20:04:45.375+00:00 [Info] memstats {"Alloc":748208, "TotalAlloc":3467832, "Sys":4820992, "Lookups":102, "Mallocs":26183,"Frees":19832, "HeapAlloc":748208, "HeapSys":2523136, "HeapIdle":1007616, "HeapInuse":1515520,"HeapReleased":868352, "HeapObjects":6351,"GCSys":321536, "LastGC":1529093075378535400,"PauseTotalNs":69012300, "PauseNs":[727900], "NumGC":34}
+2018-06-15T20:08:02.080+00:00 [Info] Projector started with command line: [/opt/couchbase/bin/projector -kvaddrs=127.0.0.1:11210 -adminport=:9999 -diagDir=/opt/couchbase/var/lib/couchbase/crash 127.0.0.1:8091]
+2018-06-15T20:08:02.081+00:00 [Info] Parsing the args
+2018-06-15T20:08:02.083+00:00 [Info] uid: 1000; gid: 1000; hostname: a9513b02c401
+2018-06-15T20:08:02.083+00:00 [Info] amd64 linux; cpus: 4; GOMAXPROCS: 4; version: go1.7.3
+2018-06-15T20:08:02.396+00:00 [Info]  changing GOGC percentage from 100 to 100
+2018-06-15T20:08:02.396+00:00 [Info] amd64 linux; cpus: 4; GOMAXPROCS: 4; version: go1.7.3
+2018-06-15T20:08:02.396+00:00 [Info] PROJ[:9999] changing GOGC percentage from 100 to 100
+2018-06-15T20:08:02.396+00:00 [Info] PROJ[:9999] started ...
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/vbmapRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/failoverLogRequest
+2018-06-15T20:08:02.397+00:00 [Info] MSAT starting with 60000 tick ...
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/mutationTopicRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/restartVbucketsRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/shutdownVbucketsRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/addBucketsRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/delBucketsRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/addInstancesRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/delInstancesRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/repairEndpointsRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/shutdownTopicRequest
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered /adminport/stats
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-func /stats
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-func /settings
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-func /debug/pprof
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/block
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/goroutine
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/heap
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/threadcreate
+2018-06-15T20:08:02.397+00:00 [Info] pram[:9999] registered handler-obj /debug/pprof/profile
+2018-06-15T20:08:02.398+00:00 [Info] pram[:9999] starting ...
+2018-06-15T20:08:02.399+00:00 [Info] New settings received: 
+{"indexer.settings.compaction.days_of_week":"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday","indexer.settings.compaction.interval":"00:00,00:00","indexer.settings.compaction.compaction_mode":"circular","indexer.settings.persisted_snapshot.interval":5000,"indexer.settings.log_level":"info","indexer.settings.compaction.min_frag":30,"indexer.settings.inmemory_snapshot.interval":200,"indexer.settings.max_cpu_percent":0,"indexer.settings.storage_mode":"plasma","indexer.settings.recovery.max_rollbacks":5,"indexer.settings.memory_quota":268435456,"indexer.settings.compaction.abort_exceed_interval":false}
+2018-06-15T20:08:02.399+00:00 [Info] PROJ[:9999] settings notifier from metakv
+2018-06-15T20:08:02.399+00:00 [Info] PROJ[:9999] settings queryport.client.settings.backfillLimit will updated to `5120`
+2018-06-15T20:08:02.399+00:00 [Info] PROJ[:9999] settings indexer.settings.minVbQueueLength will updated to `250`
+2018-06-15T20:08:02.399+00:00 [Info] PROJ[:9999] settings projector.settings.log_level will updated to `info`
+2018-06-15T20:08:02.399+00:00 [Info] PROJ[:9999] settings indexer.settings.log_level will updated to `info`
+2018-06-15T20:08:02.399+00:00 [Info] PROJ[:9999] settings indexer.settings.storage_mode.disable_upgrade will updated to `false`
+2018-06-15T20:08:02.399+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.min_frag will updated to `30`
+2018-06-15T20:08:02.400+00:00 [Warn] PROJ[:9999] immutable settings indexer.settings.send_buffer_size cannot be update to `1024`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.storage_mode will updated to `plasma`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot_init_build.moi.interval will updated to `600000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.recovery.max_rollbacks will updated to `2`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.cpuProfFname will updated to ``
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot_init_build.fdb.interval will updated to `5000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.inmemory_snapshot.moi.interval will updated to `20`
+2018-06-15T20:08:02.400+00:00 [Warn] PROJ[:9999] immutable settings queryport.client.settings.poolSize cannot be update to `1000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.smallSnapshotThreshold will updated to `30`
+2018-06-15T20:08:02.400+00:00 [Warn] PROJ[:9999] immutable settings queryport.client.settings.poolOverflow cannot be update to `30`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot_init_build.interval will updated to `5000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.allow_large_keys will updated to `true`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.abort_exceed_interval will updated to `false`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.min_size will updated to `524288000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.check_period will updated to `30`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.debug will updated to `false`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.bufferPoolBlockSize will updated to `16384`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.num_replica will updated to `0`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.persistence_threads will updated to `8`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.max_writer_lock_prob will updated to `20`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.memory_quota will updated to `268435456`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.interval will updated to `00:00,00:00`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.sliceBufSize will updated to `50000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.fast_flush_mode will updated to `true`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.recovery.max_rollbacks will updated to `5`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.max_seckey_size will updated to `4608`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.moi.recovery_threads will updated to `4`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.days_of_week will updated to `Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.memProfile will updated to `false`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.scan_getseqnos_retries will updated to `30`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.memProfFname will updated to ``
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.inmemory_snapshot.fdb.interval will updated to `200`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.cpuProfile will updated to `false`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.compaction.compaction_mode will updated to `circular`
+2018-06-15T20:08:02.400+00:00 [Warn] PROJ[:9999] immutable settings indexer.settings.scan_timeout cannot be update to `120000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.inmemory_snapshot.interval will updated to `200`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.maxVbQueueLength will updated to `0`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.gc_percent will updated to `100`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot.moi.interval will updated to `600000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.max_cpu_percent will updated to `0`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.statsLogDumpInterval will updated to `60`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot.fdb.interval will updated to `5000`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.plasma.recovery.max_rollbacks will updated to `2`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.build.batch_size will updated to `5`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.largeSnapshotThreshold will updated to `200`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.max_array_seckey_size will updated to `10240`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.wal_size will updated to `4096`
+2018-06-15T20:08:02.400+00:00 [Info] PROJ[:9999] settings indexer.settings.persisted_snapshot.interval will updated to `5000`
+2018-06-15T20:08:02.400+00:00 [Info] amd64 linux; cpus: 4; GOMAXPROCS: 4; version: go1.7.3
+2018-06-15T20:08:02.516+00:00 [Info] pram[:9999] Request "/adminport/shutdownTopicRequest"
+2018-06-15T20:08:02.516+00:00 [Info] PROJ[:9999] ##1 doShutdownTopic() "MAINT_STREAM_TOPIC_182c8baf6b88cf138096b52cf8cfc4e6"
+2018-06-15T20:08:02.516+00:00 [Error] PROJ[:9999] ##1 acquireFeed(): projector.topicMissing
+2018-06-15T20:08:02.516+00:00 [Info] PROJ[:9999] ##1 doShutdownTopic() returns ...
+2018-06-15T20:08:02.533+00:00 [Info] pram[:9999] Request "/adminport/shutdownTopicRequest"
+2018-06-15T20:08:02.533+00:00 [Info] PROJ[:9999] ##2 doShutdownTopic() "INIT_STREAM_TOPIC_182c8baf6b88cf138096b52cf8cfc4e6"
+2018-06-15T20:08:02.533+00:00 [Error] PROJ[:9999] ##2 acquireFeed(): projector.topicMissing
+2018-06-15T20:08:02.533+00:00 [Info] PROJ[:9999] ##2 doShutdownTopic() returns ...
+2018-06-15T20:09:02.399+00:00 [Info] memstats {"Alloc":960784, "TotalAlloc":1411672, "Sys":4820992, "Lookups":11, "Mallocs":8416,"Frees":1515, "HeapAlloc":960784, "HeapSys":2588672, "HeapIdle":884736, "HeapInuse":1703936,"HeapReleased":0, "HeapObjects":6901,"GCSys":309248, "LastGC":1529093282396857900,"PauseTotalNs":5419300, "PauseNs":[5024500, 394800], "NumGC":2}
+2018-06-15T20:10:02.398+00:00 [Info] memstats {"Alloc":962432, "TotalAlloc":1413320, "Sys":4820992, "Lookups":12, "Mallocs":8451,"Frees":1524, "HeapAlloc":962432, "HeapSys":2588672, "HeapIdle":884736, "HeapInuse":1703936,"HeapReleased":0, "HeapObjects":6927,"GCSys":309248, "LastGC":1529093282396857900,"PauseTotalNs":5419300, "PauseNs":[], "NumGC":2}
+2018-06-15T20:11:02.398+00:00 [Info] memstats {"Alloc":713328, "TotalAlloc":1416264, "Sys":4820992, "Lookups":12, "Mallocs":8486,"Frees":2368, "HeapAlloc":713328, "HeapSys":2588672, "HeapIdle":1171456, "HeapInuse":1417216,"HeapReleased":0, "HeapObjects":6118,"GCSys":311296, "LastGC":1529093402399905100,"PauseTotalNs":5979800, "PauseNs":[560500], "NumGC":3}
+2018-06-15T20:12:02.399+00:00 [Info] memstats {"Alloc":716488, "TotalAlloc":1419424, "Sys":4820992, "Lookups":12, "Mallocs":8522,"Frees":2377, "HeapAlloc":716488, "HeapSys":2588672, "HeapIdle":1163264, "HeapInuse":1425408,"HeapReleased":0, "HeapObjects":6145,"GCSys":311296, "LastGC":1529093402399905100,"PauseTotalNs":5979800, "PauseNs":[], "NumGC":3}
+2018-06-15T20:13:02.397+00:00 [Info] memstats {"Alloc":713264, "TotalAlloc":1421824, "Sys":4820992, "Lookups":12, "Mallocs":8554,"Frees":2437, "HeapAlloc":713264, "HeapSys":2588672, "HeapIdle":1171456, "HeapInuse":1417216,"HeapReleased":0, "HeapObjects":6117,"GCSys":311296, "LastGC":1529093532138418800,"PauseTotalNs":6519100, "PauseNs":[539300], "NumGC":4}
+2018-06-15T20:14:02.398+00:00 [Info] memstats {"Alloc":889128, "TotalAlloc":1597688, "Sys":4820992, "Lookups":25, "Mallocs":10043,"Frees":2712, "HeapAlloc":889128, "HeapSys":2555904, "HeapIdle":933888, "HeapInuse":1622016,"HeapReleased":0, "HeapObjects":7331,"GCSys":311296, "LastGC":1529093532138418800,"PauseTotalNs":6519100, "PauseNs":[], "NumGC":4}
+2018-06-15T20:15:02.398+00:00 [Info] memstats {"Alloc":756704, "TotalAlloc":1601376, "Sys":4820992, "Lookups":27, "Mallocs":10080,"Frees":3816, "HeapAlloc":756704, "HeapSys":2588672, "HeapIdle":1122304, "HeapInuse":1466368,"HeapReleased":0, "HeapObjects":6264,"GCSys":311296, "LastGC":1529093652148879100,"PauseTotalNs":7124100, "PauseNs":[605000], "NumGC":5}
+2018-06-15T20:16:02.398+00:00 [Info] memstats {"Alloc":759888, "TotalAlloc":1604560, "Sys":4820992, "Lookups":27, "Mallocs":10116,"Frees":3825, "HeapAlloc":759888, "HeapSys":2588672, "HeapIdle":1114112, "HeapInuse":1474560,"HeapReleased":925696, "HeapObjects":6291,"GCSys":311296, "LastGC":1529093652148879100,"PauseTotalNs":7124100, "PauseNs":[], "NumGC":5}
+2018-06-15T20:17:02.399+00:00 [Info] memstats {"Alloc":736120, "TotalAlloc":1605840, "Sys":4820992, "Lookups":27, "Mallocs":10143,"Frees":3927, "HeapAlloc":736120, "HeapSys":2588672, "HeapIdle":1155072, "HeapInuse":1433600,"HeapReleased":925696, "HeapObjects":6216,"GCSys":311296, "LastGC":1529093772158963600,"PauseTotalNs":7208300, "PauseNs":[84200], "NumGC":6}
+2018-06-15T20:18:02.401+00:00 [Info] memstats {"Alloc":739776, "TotalAlloc":1609496, "Sys":4820992, "Lookups":27, "Mallocs":10186,"Frees":3936, "HeapAlloc":739776, "HeapSys":2588672, "HeapIdle":1138688, "HeapInuse":1449984,"HeapReleased":925696, "HeapObjects":6250,"GCSys":311296, "LastGC":1529093772158963600,"PauseTotalNs":7208300, "PauseNs":[], "NumGC":6}
+2018-06-15T20:19:02.400+00:00 [Info] memstats {"Alloc":755936, "TotalAlloc":1765528, "Sys":4820992, "Lookups":32, "Mallocs":11492,"Frees":5223, "HeapAlloc":755936, "HeapSys":2555904, "HeapIdle":1097728, "HeapInuse":1458176,"HeapReleased":925696, "HeapObjects":6269,"GCSys":311296, "LastGC":1529093892178288600,"PauseTotalNs":7747100, "PauseNs":[538800], "NumGC":7}

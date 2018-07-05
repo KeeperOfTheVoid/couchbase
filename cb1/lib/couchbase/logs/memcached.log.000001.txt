@@ -1,0 +1,35 @@
+2018-06-15T15:19:05.000000Z NOTICE ---------- Opening logfile: /opt/couchbase/var/lib/couchbase/logs/memcached.log.000001.txt
+2018-06-15T15:19:05.529068Z NOTICE Restarting file logging
+2018-06-15T15:19:05.526160Z NOTICE Couchbase version 5.1.1-5723 starting.
+2018-06-15T15:19:05.526228Z NOTICE NUMA: NOT setting memory allocation policy to 'interleave' - request failed: Operation not permitted
+2018-06-15T15:19:05.526592Z NOTICE Loading RBAC configuration from [/opt/couchbase/var/lib/couchbase/config/memcached.rbac]
+2018-06-15T15:19:05.528736Z NOTICE Loading error maps from [/opt/couchbase/etc/error_maps]
+2018-06-15T15:19:05.532224Z NOTICE Audit changed from: disabled to: disabled
+2018-06-15T15:19:05.554284Z NOTICE Create bucket with engine: Disconnect engine v1.0.
+2018-06-15T15:19:05.558646Z NOTICE Enable management port(s)
+2018-06-15T15:19:05.558678Z NOTICE Enable user port(s)
+2018-06-15T15:19:05.559035Z NOTICE 35 Listen on 0.0.0.0:11210
+2018-06-15T15:19:05.559116Z NOTICE 36 Listen on [::]:11210
+2018-06-15T15:19:05.559253Z NOTICE 37 Listen on 0.0.0.0:11209
+2018-06-15T15:19:05.559289Z NOTICE 38 Listen on [::]:11209
+2018-06-15T15:19:05.559340Z NOTICE 39 Listen on 0.0.0.0:11207
+2018-06-15T15:19:05.559372Z NOTICE 40 Listen on [::]:11207
+2018-06-15T15:19:05.559389Z NOTICE Initialization complete. Accepting clients.
+2018-06-15T15:19:18.530281Z NOTICE 41: Loading RBAC configuration from [/opt/couchbase/var/lib/couchbase/config/memcached.rbac] [ 127.0.0.1:59819 - 127.0.0.1:11209 (@ns_server) ]
+2018-06-15T15:19:18.532362Z NOTICE 41: RBAC configuration updated [ 127.0.0.1:59819 - 127.0.0.1:11209 (@ns_server) ]
+2018-06-15T15:19:20.653155Z NOTICE 42: Loading RBAC configuration from [/opt/couchbase/var/lib/couchbase/config/memcached.rbac] [ 127.0.0.1:35853 - 127.0.0.1:11209 (@ns_server) ]
+2018-06-15T15:19:20.665979Z FATAL Breakpad caught crash in memcached version 5.1.1-5723. Writing crash dump to /opt/couchbase/var/lib/couchbase/crash/7537375c-8e86-f0ec-69f2133a-636c787d.dmp before terminating.
+2018-06-15T15:19:20.666051Z FATAL Stack backtrace of crashed thread:
+2018-06-15T15:19:20.666179Z FATAL     /opt/couchbase/bin/memcached() [0x400000+0x367b4]
+2018-06-15T15:19:20.666196Z FATAL     /opt/couchbase/bin/memcached(_ZN15google_breakpad16ExceptionHandler12GenerateDumpEPNS0_12CrashContextE+0x40c) [0x400000+0x8fe9c]
+2018-06-15T15:19:20.666212Z FATAL     /opt/couchbase/bin/memcached(_ZN15google_breakpad16ExceptionHandler13SignalHandlerEiP9siginfo_tPv+0xa8) [0x400000+0x901d8]
+2018-06-15T15:19:20.666228Z FATAL     /lib/x86_64-linux-gnu/libpthread.so.0() [0x7f3d5e677000+0x11390]
+2018-06-15T15:19:20.666256Z FATAL     /lib/x86_64-linux-gnu/libc.so.6() [0x7f3d5cfa3000+0x14e087]
+2018-06-15T15:19:20.666271Z FATAL     /opt/couchbase/bin/../lib/libmemcached_rbac.so.1.0.0(_ZN2cb4rbac21loadPrivilegeDatabaseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x1d2) [0x7f3d5f50f000+0x7332]
+2018-06-15T15:19:20.666285Z FATAL     /opt/couchbase/bin/memcached() [0x400000+0x6907f]
+2018-06-15T15:19:20.666299Z FATAL     /opt/couchbase/bin/memcached() [0x400000+0x4bef2]
+2018-06-15T15:19:20.666312Z FATAL     /opt/couchbase/bin/../lib/libplatform_so.so.0.1.0(_ZN9Couchbase6Thread12thread_entryEv+0xf) [0x7f3d5eab6000+0xcabf]
+2018-06-15T15:19:20.666324Z FATAL     /opt/couchbase/bin/../lib/libplatform_so.so.0.1.0() [0x7f3d5eab6000+0x6e5a]
+2018-06-15T15:19:20.666338Z FATAL     /lib/x86_64-linux-gnu/libpthread.so.0() [0x7f3d5e677000+0x76ba]
+2018-06-15T15:19:20.666371Z FATAL     /lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f3d5cfa3000+0x10741d]
+2018-06-15T15:19:20.000000Z NOTICE ---------- Closing logfile

@@ -1,0 +1,19 @@
+2018-06-15T20:08:02.000000Z NOTICE ---------- Opening logfile: /opt/couchbase/var/lib/couchbase/logs/memcached.log.000003.txt
+2018-06-15T20:08:02.746495Z NOTICE Restarting file logging
+2018-06-15T20:08:02.743414Z NOTICE Couchbase version 5.1.1-5723 starting.
+2018-06-15T20:08:02.743545Z NOTICE NUMA: NOT setting memory allocation policy to 'interleave' - request failed: Operation not permitted
+2018-06-15T20:08:02.745331Z NOTICE Loading RBAC configuration from [/opt/couchbase/var/lib/couchbase/config/memcached.rbac]
+2018-06-15T20:08:02.746674Z NOTICE Loading error maps from [/opt/couchbase/etc/error_maps]
+2018-06-15T20:08:02.754842Z NOTICE Audit changed from: disabled to: disabled
+2018-06-15T20:08:02.785315Z NOTICE Create bucket with engine: Disconnect engine v1.0.
+2018-06-15T20:08:02.790823Z NOTICE Enable management port(s)
+2018-06-15T20:08:02.790850Z NOTICE Enable user port(s)
+2018-06-15T20:08:02.791238Z NOTICE 35 Listen on 0.0.0.0:11210
+2018-06-15T20:08:02.791313Z NOTICE 36 Listen on [::]:11210
+2018-06-15T20:08:02.791416Z NOTICE 37 Listen on 0.0.0.0:11209
+2018-06-15T20:08:02.791468Z NOTICE 38 Listen on [::]:11209
+2018-06-15T20:08:02.791570Z NOTICE 39 Listen on 0.0.0.0:11207
+2018-06-15T20:08:02.791643Z NOTICE 40 Listen on [::]:11207
+2018-06-15T20:08:02.791673Z NOTICE Initialization complete. Accepting clients.
+2018-06-15T20:08:02.832856Z NOTICE 42: Loading RBAC configuration from [/opt/couchbase/var/lib/couchbase/config/memcached.rbac] [ 127.0.0.1:45603 - 127.0.0.1:11209 (@ns_server) ]
+2018-06-15T20:08:02.834937Z NOTICE 42: RBAC configuration updated [ 127.0.0.1:45603 - 127.0.0.1:11209 (@ns_server) ]

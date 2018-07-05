@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+   couchbase:
+      image: couchbase
+      volumes:
+         - /Users/l640395/IdeaProjects/tutorials/couchbase/cb1:/opt/couchbase/var
+      ports:
+         - "8091:8091"
+         - "11210:11210"
+      container_name: cb1 
